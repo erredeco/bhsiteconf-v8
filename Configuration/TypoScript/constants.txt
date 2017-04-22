@@ -1,0 +1,64 @@
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:bhsiteconf/Configuration/TypoScript/Constants/" extensions="ts">
+
+# customsubcategory=0_general=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.cat.general
+# customsubcategory=1_resources=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.cat.resources
+# customsubcategory=2_language=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.cat.language
+# customsubcategory=3_extension=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.cat.extension
+
+plugin.tx_bhsiteconf.settings {
+	# cat=plugin.tx_bhsiteconf/0_general/0010; type=string; label=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.settings.headerText
+	headerText = Realized by: B Human S.r.L.  
+	# cat=plugin.tx_bhsiteconf/0_general/0020; type=string; label=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.settings.pagesInFooterMenu
+	pagesInFooterMenu =
+
+	# cat=plugin.tx_bhsiteconf/0_general/0030; type=string; label=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.settings.pagesInHeaderMenu
+	pagesInHeaderMenu =
+  
+	# cat=plugin.tx_bhsiteconf/0_general/0040; type=string; label=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.settings.absRefPrefix  
+  	absRefPrefix = / 
+}
+
+plugin.tx_bhsiteconf.extensionSetup{
+	# cat=plugin.tx_bhsiteconf/3_extension/0010; type=boolean; label=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.extensionSetup.realurlEnable
+	realurlEnable=0
+	# cat=plugin.tx_bhsiteconf/3_extension/0020; type=string; label=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.extensionSetup.realurlPath
+	//realurlPath = 
+}
+
+plugin.tx_bhsiteconf.view {
+	# cat=plugin.tx_bhsiteconf/file/0010; type=string; label=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.file.templateRootPath
+	templateRootPath = EXT:bhsiteconf/Resources/Private/Templates/Page/
+	# cat=plugin.tx_bhsiteconf/file/0020; type=string; label=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.file.partialsRootPath
+	partialRootPath = EXT:bhsiteconf/Resources/Private/Partials/Page/
+	# cat=plugin.tx_bhsiteconf/file/0030; type=string; label=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.file.layoutRootPath
+	layoutRootPath = EXT:bhsiteconf/Resources/Private/Layouts/Page/
+	# cat=plugin.tx_bhsiteconf/file/0040; type=string; label=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.file.overlaysRootPath
+	overlaysRootPath = EXT:bhsiteconf/Resources/Private/
+}
+
+plugin.tx_bhsiteconf.resource {
+	# cat=plugin.tx_bhsiteconf/1_resources/0010; type=string; label=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.resource.cssPath	
+	cssPath = EXT:bhsiteconf/Resources/Public/css/
+	# cat=plugin.tx_bhsiteconf/1_resources/0020; type=string; label=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.resource.jsPath
+	jsPath = EXT:bhsiteconf/Resources/Public/js/
+}
+
+//I define here the constants for the alternative templates, layouts, partials path for the lib.fluidtemplate object. remember that they occupy the .10 position on the array!
+
+styles.templates.templateRootPath = EXT:bhsiteconf/Resources/Private/Templates/ContentElements/ 
+styles.templates.partialRootPath = EXT:bhsiteconf/Resources/Private/Partials/ContentElements/
+styles.templates.layoutRootPath = EXT:bhsiteconf/Resources/Private/Layouts/ContentElements/
+
+//Language definitions
+plugin.tx_bhsiteconf.language {
+	# cat=plugin.tx_bhsiteconf/2_language/0010; type=int; label=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.language.languageUid
+	languageUid=0
+	# cat=plugin.tx_bhsiteconf/2_language/0020; type=string; label=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.language.languageName
+	languageName=it
+	# cat=plugin.tx_bhsiteconf/2_language/0030; type=string; label=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.language.languageKey
+	languageKey=it_IT
+	# cat=plugin.tx_bhsiteconf/2_language/0040; type=string; label=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.language.languageLocale
+	languageLocale=it_IT.utf8	
+}
+# add other languages when needed
+

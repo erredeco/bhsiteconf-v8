@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="it" datatype="plaintext" original="messages" date="2012-10-17T17:55:17Z" product-name="bhsiteconf">
+		<header/>
+		<body>
+			<trans-unit id="page.label.generic.error" xml:space="preserve">
+				<source>Ooops! An error occurred! You should not see this!</source>
+			</trans-unit>
+			<trans-unit id="page.label.allsitetitle" xml:space="preserve">
+				<source>&lt;h1&gt;B Human S.r.L. &lt;/h1&gt; &lt;h2&gt; Profitable Innovation &lt;/h2&gt;</source>
+			</trans-unit> 			
+			<trans-unit id="page.label.footer.bhcopyright" xml:space="preserve">
+				<source>B Human S.r.L. Tutti i diritti riservati.</source>
+			</trans-unit>
+			<trans-unit id="page.label.linktotop" xml:space="preserve">
+				<source>Torna Su</source>
+			</trans-unit>
+			<trans-unit id="page.label.breadcrumbs" xml:space="preserve">
+				<source>Voi siete qui:</source>
+			</trans-unit>			  			
+		</body>
+	</file>
+</xliff>

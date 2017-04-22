@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-04-27T21:00:00Z" product-name="tx_bhsiteconf">
+		<header/>
+		<body>
+			<trans-unit id="backend_layout.home.title" xml:space="preserve">
+				<source>Layout for home page</source>
+			</trans-unit>
+			<trans-unit id="backend_layout.home.description" xml:space="preserve">
+				<source>This layout is only for the home page</source>
+			</trans-unit>			
+			<trans-unit id="backend_layout.default.title" xml:space="preserve">
+				<source>Layout for all pages</source>
+			</trans-unit>
+			<trans-unit id="backend_layout.default.description" xml:space="preserve">
+				<source>This layout for all the pages and it is the default, if no layout is specified</source>
+			</trans-unit>
+			<trans-unit id="layout.column.main" xml:space="preserve">
+				<source>Main Column</source>
+			</trans-unit>
+			<trans-unit id="layout.column.bottom" xml:space="preserve">
+				<source>Bottom Column</source>
+			</trans-unit>			
+			<trans-unit id="layout.column.left" xml:space="preserve">
+				<source>Left Column</source>
+			</trans-unit>
+			<trans-unit id="layout.column.right" xml:space="preserve">
+				<source>Right Column</source>
+			</trans-unit>
+			<trans-unit id="layout.column.first" xml:space="preserve">
+				<source>First Column</source>
+			</trans-unit>
+			<trans-unit id="layout.column.second" xml:space="preserve">
+				<source>Second Column</source>
+			</trans-unit>
+			<trans-unit id="layout.column.third" xml:space="preserve">
+				<source>Third Column</source>
+			</trans-unit>			
+			<trans-unit id="layout.column.fourth" xml:space="preserve">
+				<source>Fourth Column</source>
+			</trans-unit>
+			<trans-unit id="ttcontent.header_layout.default" xml:space="preserve">
+				<source>Default Heading type (Heading H2)</source>
+			</trans-unit>
+			<trans-unit id="ttcontent.header_layout.3" xml:space="preserve">
+				<source>Heading type (Heading H3)</source>
+			</trans-unit>	
+			<trans-unit id="ttcontent.header_layout.4" xml:space="preserve">
+				<source>Heading type (Heading H4)</source>
+			</trans-unit>     
+			<trans-unit id="ttcontent.layout.types.textmedia.style1" xml:space="preserve">
+				<source>Example style 1</source>
+			</trans-unit>	
+			<trans-unit id="ttcontent.layout.types.textmedia.style2" xml:space="preserve">
+				<source>Example style 2</source>
+			</trans-unit>
+			<trans-unit id="wizards.tabs.additionalce" xml:space="preserve">
+				<source>Addititonal content elements</source>
+			</trans-unit>
+			<trans-unit id="ttcontent.headlinesubheadline.title" xml:space="preserve">
+				<source>Sample Content element (title and subtitle)</source>
+			</trans-unit>
+			<trans-unit id="ttcontent.headlinesubheadline.description" xml:space="preserve">
+				<source>Sample Description</source>
+			</trans-unit>           
+			<trans-unit id="ttcontent.headlinesubheadline.headline" xml:space="preserve">
+				<source>This is just for changing the label of the element headline</source>
+			</trans-unit>
+			<trans-unit id="ttcontent.headlinesubheadline.subheadline" xml:space="preserve">
+				<source>Subheadline</source>
+			</trans-unit>
+			<trans-unit id="ttcontent.plaintext.title" xml:space="preserve">
+				<source>Plain text Content element (custom, no images, only text)</source>
+			</trans-unit>
+			<trans-unit id="ttcontent.plaintext.description" xml:space="preserve">
+				<source>Plain text Content element (custom, no images, only text)</source>
+			</trans-unit>
+			<trans-unit id="ttcontent.newtextmedia.title" xml:space="preserve">
+				<source>Text &amp; Media, another version</source>
+			</trans-unit>
+			<trans-unit id="ttcontent.newtextmedia.description" xml:space="preserve">
+				<source>Any number of media wrapped right around a regular text element, with a different appearance</source>
+			</trans-unit>
+			<trans-unit id="gridelements.default.title" xml:space="preserve">
+				<source>Simple grid content element test</source>
+			</trans-unit> 
+			<trans-unit id="gridelements.default.description" xml:space="preserve">
+				<source>Simple grid content element test (description)</source>
+			</trans-unit>
+
+
+			<trans-unit id="gridelements.twocolumns.title" xml:space="preserve">
+				<source>2-columns container</source>
+			</trans-unit> 
+			<trans-unit id="gridelements.twocolumns.description" xml:space="preserve">
+				<source>Sub-grid with 2 elements</source>
+			</trans-unit> 
+			<trans-unit id="gridelements.threecolumns.title" xml:space="preserve">
+				<source>3-columns container</source>
+			</trans-unit> 
+			<trans-unit id="gridelements.threecolumns.description" xml:space="preserve">
+				<source>Sub-grid with 3 elements</source>
+			</trans-unit> 
+			<trans-unit id="gridelements.fourcolumns.title" xml:space="preserve">
+				<source>4-columns container</source>
+			</trans-unit>       
+			<trans-unit id="gridelements.fourcolumns.description" xml:space="preserve">
+				<source>Sub-grid with 4 elements</source>
+			</trans-unit>            
+			<trans-unit id="gridelements.accordion_container.title" xml:space="preserve">
+				<source>Accordion container</source>
+			</trans-unit>       
+			<trans-unit id="gridelements.accordion_container.description" xml:space="preserve">
+				<source>This element contains all the accordion elements</source>
+			</trans-unit>
+			<trans-unit id="gridelements.accordion_element.title" xml:space="preserve">
+				<source>Accordion Element</source>
+			</trans-unit> 
+			<trans-unit id="gridelements.accordion_element.description" xml:space="preserve">
+				<source>Single element for the accordion. WARNING! Never use alone! ONLY INSIDE accordion container!!</source>
+			</trans-unit>
+			<trans-unit id="gridelements.tab_container.title" xml:space="preserve">
+				<source>Tabs container</source>
+			</trans-unit>       
+			<trans-unit id="gridelements.tab_container.description" xml:space="preserve">
+				<source>This element contains all the Tabs elements</source>
+			</trans-unit>
+			<trans-unit id="gridelements.tab_element.title" xml:space="preserve">
+				<source>Tab Element</source>
+			</trans-unit> 
+			<trans-unit id="gridelements.tab_element.description" xml:space="preserve">
+				<source>Single element for the Tabs. WARNING! Never use alone! ONLY INSIDE Tabs container!!</source>
+			</trans-unit>
+
+
+
+		</body>
+	</file>
+</xliff>		       	

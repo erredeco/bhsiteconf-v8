@@ -1,0 +1,50 @@
+{namespace v=FluidTYPO3\Vhs\ViewHelpers}
+
+<div class="top-bar column row">
+  <div class="top-bar-title">
+    <strong>Site Title</strong>
+  </div>
+  <div>
+    <div class="top-bar-left">
+      <v:page.menu entryLevel="0" levels="3" expandAll="1">
+        <ul class="vertical menu medium-horizontal medium-dropdown" data-responsive-menu="accordion medium-dropdown">
+          <f:for each="{menu}" as="item">
+            <li>
+              <f:link.page pageUid="{item.uid}" title="{item.linktext}">{item.linktext}</f:link.page>
+              <f:if condition="item.hasSubpages">
+                <v:page.menu pageUid="{item.uid}">
+                  <ul class="vertical menu">
+                    <f:for each="{menu}" as="subItem">  
+                      <li>
+                        <f:link.page pageUid="{subItem.uid}" title="{subItem.linktext}">{subItem.linktext}</f:link.page>
+                        <f:if condition="subItem.hasSubpages">
+                          <v:page.menu pageUid="{subItem.uid}">
+                            <ul class="vertical menu">
+                              <f:for each="{menu}" as="subsubItem">  
+                                <li>
+                                  <f:link.page pageUid="{subsubItem.uid}" title="{subsubItem.linktext}">{subsubItem.linktext}</f:link.page>
+                                 </li> 
+                              </f:for>
+                            </ul>
+                          </v:page.menu>
+                        </f:if>
+                      </li>
+                    </f:for>
+                  </ul>
+                </v:page.menu>
+              </f:if>
+            </li>
+          </f:for> 
+        </ul>
+      </v:page.menu>     
+    </div>
+    <div class="top-bar-right">
+      <ul class="menu">
+        <li><input type="search" placeholder="Search"></li>
+        <li><button type="button" class="button">Search</button></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+

@@ -1,0 +1,10 @@
+.DS_Store
+*.sublime-workspace
+*.sublime-project
+*.log
+prova.*
+Bck
+Resources/Public/Assets/Js
+Resources/Public/Assets/Css
+Resources/Public/Assets/Images
+Resources/Public/Assets/Sprites

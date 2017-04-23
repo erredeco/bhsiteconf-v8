@@ -96,7 +96,6 @@ lib.stdContent {
       } 
     } 
    
-
     #test there is content on column 1 (colpos=1) (uncomment if needed; add others if needed)
     //testThereIsContent1 < .testThereIsContent0
     //testThereIsContent1.if.isTrue.numRows.select.where=colPos=1
@@ -111,6 +110,35 @@ lib.stdContent {
       value= level-{level:-1}      
       insertData = 1    
     }
+
+    ##------------------------------------------ 
+    # Use the image in the media field - old method - see below
+    ##------------------------------------------
+    #
+    # headerImg= FILES
+    # headerImg{
+    #    references {
+    #        data = levelmedia:-1, slide
+    #        listNum = 0
+    #    }
+    #    renderObj = IMG_RESOURCE
+    #    renderObj {
+    #        file {
+    #            import.data = file:current:publicUrl
+    #        }            
+    #    }
+    # }
+
+  }
+
+
+  dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+  dataProcessing.10 {
+    references {
+            table = pages
+            fieldName = media
+    }
+    as = headerImage
   }
 }
 

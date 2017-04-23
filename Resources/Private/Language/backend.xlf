@@ -3,6 +3,20 @@
 	<file source-language="en" datatype="plaintext" original="messages" date="2014-04-27T21:00:00Z" product-name="tx_bhsiteconf">
 		<header/>
 		<body>
+			<trans-unit id="option.default" xml:space="preserve">
+				<source>Default</source>
+			</trans-unit>			
+            <trans-unit id="option.small" xml:space="preserve">
+                <source>Small</source>
+            </trans-unit>
+            <trans-unit id="option.medium" xml:space="preserve">
+                <source>Medium</source>
+            </trans-unit>
+            <trans-unit id="option.large" xml:space="preserve">
+                <source>Large</source>
+            </trans-unit>
+
+
 			<trans-unit id="backend_layout.home.title" xml:space="preserve">
 				<source>Layout for home page</source>
 			</trans-unit>

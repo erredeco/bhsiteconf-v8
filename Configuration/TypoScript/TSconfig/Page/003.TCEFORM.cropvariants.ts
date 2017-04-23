@@ -1,7 +1,5 @@
 	
 TCEFORM.sys_file_reference.crop.config.cropVariants {
- 
-//TCEFORM.pages.columns.media.config.overrideChildTca.columns.crop.config.cropVariants {
     default {
         title = Default desktop
         selectedRatio = NaN
@@ -12,9 +10,9 @@ TCEFORM.sys_file_reference.crop.config.cropVariants {
 
             }
 
-            4:3 {
-                title = ratio 4/3
-                value = 1.3333333
+            5:3 {
+                title = ratio 5/3
+                value = 1.666667
             }
 
 
@@ -29,7 +27,7 @@ TCEFORM.sys_file_reference.crop.config.cropVariants {
         }
     }
 
-    specialMobile {
+    medium {
         title = Our special mobile variant
         selectedRatio = NaN
         allowedAspectRatios {

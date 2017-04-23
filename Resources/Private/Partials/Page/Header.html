@@ -1,5 +1,7 @@
 {namespace v=FluidTYPO3\Vhs\ViewHelpers}
 <header class="column row">
+<img data-interchange="[{f:uri.image(image:headerImage.0,cropVariant:'small',width:'640')}, small], [{f:uri.image(image:headerImage.0,cropVariant:'medium',width:'1024')}, medium], [{f:uri.image(image:headerImage.0,cropVariant:'default')}, large]">
+
     <nav role="navigation">
         <v:page.menu.list showHiddenInMenu="1" pages="{settings.pagesInHeaderMenu}" class="menu" classActive=""/>
     </nav>

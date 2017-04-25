@@ -38,9 +38,9 @@ plugin.tx_bhsiteconf.view {
 
 plugin.tx_bhsiteconf.resource {
 	# cat=plugin.tx_bhsiteconf/1_resources/0010; type=string; label=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.resource.cssPath	
-	cssPath = EXT:bhsiteconf/Resources/Public/css/
+	cssPath = EXT:bhsiteconf/Resources/Public/Assets/Css/
 	# cat=plugin.tx_bhsiteconf/1_resources/0020; type=string; label=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.resource.jsPath
-	jsPath = EXT:bhsiteconf/Resources/Public/js/
+	jsPath = EXT:bhsiteconf/Resources/Public/Assets/Js/
 }
 
 //I define here the constants for the alternative templates, layouts, partials path for the lib.fluidtemplate object. remember that they occupy the .10 position on the array!

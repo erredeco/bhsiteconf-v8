@@ -6,24 +6,24 @@
 
 page {
 	includeCSS {
-		all = EXT:bhsiteconf/Resources/Public/Assets/Css/app.min.css
+		all = {$plugin.tx_bhsiteconf.resource.cssPath}app.min.css
 	}
 
 	/* remove it for now
 	includeJSLibs {
-		modernizr = EXT:bhsiteconf/Resources/Public/Assets/Js/Vendor/modernizr-custom.min.js
+		modernizr = {$plugin.tx_bhsiteconf.resource.jsPath}Vendor/modernizr-custom.min.js
 		modernizr.forceOnTop = 1
 
 	}
 	*/
 
 	includeJSFooterlibs {
-    	jquery = EXT:bhsiteconf/Resources/Public/Assets/Js/Vendor/jquery.min.js
+    	jquery = {$plugin.tx_bhsiteconf.resource.jsPath}Vendor/jquery.min.js
     	jquery.forceOnTop = 1
 	}
 
 	includeJSFooter {
-    	all = EXT:bhsiteconf/Resources/Public/Assets/Js/all.min.js	
+    	all = {$plugin.tx_bhsiteconf.resource.jsPath}all.min.js	
 	}
 }
 

@@ -1,4 +1,6 @@
 	
+// This file is not used - see: Configuration/TCA/Overrides/pages_cropping.php and Configuration/TCA/Overrides/tt_content_cropping.php
+// It is here just as an example
 TCEFORM.sys_file_reference.crop.config.cropVariants {
     default {
         title = Default desktop

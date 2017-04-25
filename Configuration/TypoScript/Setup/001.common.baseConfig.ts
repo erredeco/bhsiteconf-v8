@@ -18,7 +18,7 @@ config{
 	xhtml_cleaning        = none
 	htmlSpecialChars      = 1
 	// decomment only if different from utf-8
-  // renderCharset         = utf-8
+  	// renderCharset         = utf-8
 
 	// Clean html
 	disableImgBorderAttr=1
@@ -101,4 +101,4 @@ config{
   	//decomment this only if you want to use it instead of absRefPrefix! (and comment absRefPrefix!); decomment also the line in constants.txt
 	//baseURL = {$plugin.tx_bhsiteconf.extensionSetup.realurlPath}
 	tx_realurl_enable = {$plugin.tx_bhsiteconf.extensionSetup.realurlEnable} 
-  }
+}

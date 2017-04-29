@@ -10,7 +10,9 @@ $pageTsFolder = 'Configuration/TypoScript/TSconfig/Page/';
 $pageTsStorages = [
     'AdmPanel.ts' 		=> 'Admin Panel',
     'TCEMAIN.ts' 		=> 'Set Page user and group permissions',
-    '002.TCEFORM.ts' 	=> 'Modify interface'
+    '002.TCEFORM.ts' 	=> 'Modify interface',
+
+    '502.RTE.styles.ts' => 'Allowed styles for RTE links'
 ];
 
 

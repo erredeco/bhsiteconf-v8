@@ -1,7 +1,5 @@
 <?php
-if (!defined('TYPO3_MODE')) {
-    die('Access denied.');
-}
+defined('TYPO3_MODE') or die();
 
 $contentElementIconFilePrefix = 'EXT:' . $_EXTKEY . '/Resources/Public/Icons/ContentElements/';
 
@@ -15,4 +13,4 @@ $iconRegistry->registerIcon(
 	'genericicon',
 	\TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
   ['source' => $contentElementIconFilePrefix . 'typo3logo.svg']
-);
+); 

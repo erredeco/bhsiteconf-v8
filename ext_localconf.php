@@ -13,4 +13,3 @@ if (! defined('TYPO3_MODE')) {
   <INCLUDE_TYPOSCRIPT: source="DIR:EXT:' . $_EXTKEY . '/Configuration/TypoScript/TSconfig/Shared/Users" extensions="ts">'
   );
 
-?>

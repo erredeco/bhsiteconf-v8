@@ -1,0 +1,6 @@
+<f:layout name="Default"/>
+<f:section name="Main">
+	<div class="accordion" {f:if(condition: data.flexform_allowmultiexpand, then: 'data-multi-expand="true"')} {f:if(condition: data.flexform_allowallclosed, then: 'data-allow-all-closed="true"')} data-accordion>
+		{data.tx_gridelements_view_column_100-> f:format.raw()}
+	</div>
+</f:section>

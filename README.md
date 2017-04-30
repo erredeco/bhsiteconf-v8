@@ -3,15 +3,6 @@ This extension is the provider for all the frontend configuration in TYPO3 CMS e
 it depends on vhs 
                                                                       
 ##Installation instructions 
-####Install Ruby
-               
-gem install sass (1)
-
-gem install compass (1)
-
-####Install Grunt and Bower:  
-npm install -g grunt-cli bower (1)
-
 
 ##copy from git
 
@@ -37,3 +28,10 @@ Users/riccardo/Progetti/Public_assets_for_typo3.7.development.it (mac)
   - grunt initialize
   - grunt deploy
 
+
+
+
+Vector Icons in /Resources/Public/Icons/ were:
+
+designed by Vaadin from Flaticon - http://vaadin.com/font-icons
+designed by Freepik from Flaticon - http://www.freepik.com

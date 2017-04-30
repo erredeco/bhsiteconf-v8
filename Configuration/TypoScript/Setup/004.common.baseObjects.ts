@@ -154,14 +154,20 @@ lib.contentElement {
 # template cObject for content grids
 ## ---------------------------------------------------------
 
-#I set here the common properties:
+lib.gridelements.defaultGridSetup.cObject =<  lib.contentElement 
+
+/*
+# This is the "old" definition from v.7; use it only if necessary and you don't want anymore
+# all the "stuff" of the default CE (like beforespace, afterspace,etc)
+# but you can remove them just removing the layout from the template!
+
 lib.gridelements.defaultGridSetup { 
     cObject = FLUIDTEMPLATE
     cObject {
         templateRootPaths {
             0 = {$styles.templates.templateRootPath}  
         }
-
+        
         dataProcessing.99 = TYPO3\CMS\Frontend\DataProcessing\SplitProcessor
         dataProcessing.99 {
             if.isTrue.field = layout
@@ -172,7 +178,10 @@ lib.gridelements.defaultGridSetup {
         }  
     }
 }
+*/
 
+//THis is not needed anymore: as a copy of lib.contentElement  you have the header!
+/*
 tt_content.gridelements_pi1 { 
     # uncomment this to wrap the grid as the other elements
     #stdWrap.dataWrap=<div id="c{field:uid}">|</div>
@@ -180,6 +189,7 @@ tt_content.gridelements_pi1 {
     #uncomment this to have the header back again!
     #10 =< lib.stdheader 
 }
+*/
 
 
 

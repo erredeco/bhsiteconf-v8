@@ -156,17 +156,26 @@ lib.contentElement {
 
 lib.gridelements.defaultGridSetup.cObject =<  lib.contentElement 
 
-/*
-# This is the "old" definition from v.7; use it only if necessary and you don't want anymore
-# all the "stuff" of the default CE (like beforespace, afterspace,etc)
-# but you can remove them just removing the layout from the template!
 
+# This is the definition you should use if you don't want to reference the lib.contentElement cObject
+
+/*
 lib.gridelements.defaultGridSetup { 
     cObject = FLUIDTEMPLATE
     cObject {
         templateRootPaths {
-            0 = {$styles.templates.templateRootPath}  
+            0 = EXT:fluid_styled_content/Resources/Private/Templates/
+            10 = {$styles.templates.templateRootPath}
         }
+        partialRootPaths {
+            0 = EXT:fluid_styled_content/Resources/Private/Partials/
+            10 = {$styles.templates.partialRootPath}
+        }
+        layoutRootPaths {
+            0 = EXT:fluid_styled_content/Resources/Private/Layouts/
+            10 = {$styles.templates.layoutRootPath}
+        }       
+
         
         dataProcessing.99 = TYPO3\CMS\Frontend\DataProcessing\SplitProcessor
         dataProcessing.99 {
@@ -181,6 +190,7 @@ lib.gridelements.defaultGridSetup {
 */
 
 //THis is not needed anymore: as a copy of lib.contentElement  you have the header!
+// And in version 8 lib.stdHeader has been removed
 /*
 tt_content.gridelements_pi1 { 
     # uncomment this to wrap the grid as the other elements

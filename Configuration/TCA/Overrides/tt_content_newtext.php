@@ -18,14 +18,14 @@ call_user_func(function () {
       [
         'LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:ttcontent.newtext.title',
         'newtext',
-        'content-textpic'
+        'content-text'
       ],
     'text',
     'after'
   );  
   
   //icon in list, page    
-  $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['newtext'] = 'content-textpic';  
+  $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['newtext'] = 'content-text';  
   
   // Define what fields to display: copy the whole textmedia!  
   $GLOBALS['TCA']['tt_content']['types']['newtext'] = $GLOBALS['TCA']['tt_content']['types']['text'];  

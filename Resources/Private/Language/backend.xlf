@@ -83,11 +83,11 @@
 			<trans-unit id="ttcontent.headlinesubheadline.subheadline" xml:space="preserve">
 				<source>Subheadline</source>
 			</trans-unit>
-			<trans-unit id="ttcontent.plaintext.title" xml:space="preserve">
-				<source>Plain text Content element (custom, no images, only text)</source>
+			<trans-unit id="ttcontent.newtext.title" xml:space="preserve">
+				<source>Plain new text Content element (custom, no images, only text)</source>
 			</trans-unit>
-			<trans-unit id="ttcontent.plaintext.description" xml:space="preserve">
-				<source>Plain text Content element (custom, no images, only text)</source>
+			<trans-unit id="ttcontent.newtext.description" xml:space="preserve">
+				<source>Plain new text Content element (custom, no images, only text)</source>
 			</trans-unit>
 			<trans-unit id="ttcontent.newtextmedia.title" xml:space="preserve">
 				<source>Text &amp; Media, another version</source>

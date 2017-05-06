@@ -38,13 +38,16 @@ lib.stdContent {
     }
 
     layoutRootPaths {
-        0 = {$plugin.tx_bhsiteconf.view.layoutRootPath}  
+        0 = EXT:bhsiteconf/Resources/Private/Layouts/Page/
+        1 = {$plugin.tx_bhsiteconf.view.layoutRootPath}  
     }
     partialRootPaths {
-        0 = {$plugin.tx_bhsiteconf.view.partialRootPath}  
+        0 = EXT:bhsiteconf/Resources/Private/Partials/Page/
+        1 = {$plugin.tx_bhsiteconf.view.partialRootPath}  
     }
     templateRootPaths {
-        0 = {$plugin.tx_bhsiteconf.view.templateRootPath}  
+        0 = EXT:bhsiteconf/Resources/Private/Templates/Page/
+        1 = {$plugin.tx_bhsiteconf.view.templateRootPath}  
     }
 
     ## with this I can omit the LLL:EXT:bhsiteconf/Resources/Private/Language/locallang.xml:label in  <f:translate key !! 
@@ -156,6 +159,7 @@ lib.contentElement {
 
 lib.gridelements.defaultGridSetup.cObject =<  lib.contentElement 
 
+//NOTE: here is an alternative http://www.typo3-probleme.de/2017/04/07/typo3-8-7-x-gridelements-typoscript-tca-und-templates-auslagern-1985/
 
 # This is the definition you should use if you don't want to reference the lib.contentElement cObject
 

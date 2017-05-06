@@ -1,13 +1,6 @@
-#################
-#### TCEMAIN ####
-#################
-TCEMAIN {
-    permissions {
-    	//Set "Editors" group as default for new pages
-        groupid = 2
-        user = show, editcontent, edit, new, delete
-        group = show, editcontent, edit, new
-        everybody = 0
-    }
-    translateToHidden = 1
+TCEMAIN.table.tt_content {
+   # Pages will *not* have "(copy)" appended:
+   disablePrependAtCopy = 1
+   # Pages will *not* be hidden upon copy:
+   disableHideAtCopy = 1
 }

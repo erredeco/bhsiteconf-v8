@@ -42,13 +42,13 @@
 				<source>Comment in Header</source>
 			</trans-unit>			
 			<trans-unit id="constant.file.templateRootPath" xml:space="preserve">
-				<source>Path to templates for this site (FE)</source>
+				<source>Additional path to templates for this site (FE)</source>
 			</trans-unit>
 			<trans-unit id="constant.file.layoutRootPath" xml:space="preserve">
-				<source>Path to layouts for this site (FE)</source>
+				<source>Additional path to layouts for this site (FE)</source>
 			</trans-unit>
 			<trans-unit id="constant.file.partialsRootPath" xml:space="preserve">
-				<source>Path to partials for this site (FE)</source>
+				<source>Additional to partials for this site (FE)</source>
 			</trans-unit>
 			<trans-unit id="constant.file.overlaysRootPath" xml:space="preserve">
 				<source>Path to root folder for overlays</source>

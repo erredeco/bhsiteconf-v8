@@ -4,11 +4,6 @@ if (! defined('TYPO3_MODE')) {
     die('Access denied.');
 }
 
-
-
-
-
-
 /* Add icons identifiers*/
 $iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Imaging\IconRegistry::class);
 $contentElementIconFilePrefix = 'EXT:bhsiteconf/Resources/Public/Icons/ContentElements/';

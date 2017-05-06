@@ -4,6 +4,14 @@ if (! defined('TYPO3_MODE')) {
     die('Access denied.');
 }
 
+$extensionKey = 'bhsiteconf';
+
+/* Add default TSConfig Typoscript per be usergroups */
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addUserTSConfig('
+  <INCLUDE_TYPOSCRIPT: source="DIR:EXT:'.$extensionKey.'/Configuration/TypoScript/TSconfig/Shared/Users" extensions="ts">'
+  );
+
 /* Add icons identifiers*/
 $iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Imaging\IconRegistry::class);
 $contentElementIconFilePrefix = 'EXT:bhsiteconf/Resources/Public/Icons/ContentElements/';

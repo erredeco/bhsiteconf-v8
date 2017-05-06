@@ -54,6 +54,8 @@ call_user_func(function () {
 	 * Define fields
 	 */
 
+
+
 	$GLOBALS['TCA']['tt_content']['types']['simpleteaser'] = array_replace_recursive(
 	    $GLOBALS['TCA']['tt_content']['types']['simpleteaser'],
 	    [
@@ -89,16 +91,14 @@ call_user_func(function () {
 	                    'enableRichtext' => true,
 	                    'richtextConfiguration' => 'default'
 	                ]
+	            ],
+	            'image' => [
+				    'config' => [
+				      'maxitems' => 1
+				    ]
 	            ]
 	        ]
-
-
-
 	    ]
 	);
-
-
-
-  	 
 
 });

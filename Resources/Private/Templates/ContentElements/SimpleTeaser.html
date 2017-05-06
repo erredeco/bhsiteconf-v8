@@ -2,11 +2,16 @@
 <f:layout name="Default" />
 <f:section name="Main">
 	<f:debug>{_all}</f:debug>
-<f:if condition="{e}">
-    <f:for each="{teaserimage}" as="file">
-        <f:image image="{file}" alt="{file.alternative}" title="{file.title}" width="200" /><br />
-        {file.description} / {file.identifier}<br />
-    </f:for>
+
+
+<f:if condition="{teaserimage.0}">
+<img data-interchange="[{f:uri.image(image:teaserimage.0,cropVariant:'small',width:'640')}, small], [{f:uri.image(image:teaserimage.0,cropVariant:'medium',width:'1024')}, medium], [{f:uri.image(image:teaserimage.0,cropVariant:'default')}, large]" alt="{teaserimage.0.alternative}" title="{teaserimage.0.title} ">
+
+
+
+ {teaserimage.0.link}
+
+
 </f:if>
 
 

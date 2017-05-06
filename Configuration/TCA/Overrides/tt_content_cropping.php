@@ -35,6 +35,8 @@ $mediumCropSettings['title'] = 'LLL:EXT:bhsiteconf/Resources/Private/Language/ba
 $smallCropSettings = $defaultCropSettings;
 $smallCropSettings['title'] = 'LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:option.small';
 
+
+
 //Textmedia Content element
 $GLOBALS['TCA']['tt_content']['types']['textmedia']['columnsOverrides']['assets']['config']['overrideChildTca']['columns']['crop']['config'] ['cropVariants']['default'] = $defaultCropSettings ;
 $GLOBALS['TCA']['tt_content']['types']['textmedia']['columnsOverrides']['assets']['config']['overrideChildTca']['columns']['crop']['config'] ['cropVariants']['medium'] = $mediumCropSettings ;
@@ -50,6 +52,10 @@ $GLOBALS['TCA']['tt_content']['types']['textpic']['columnsOverrides']['image']['
 $GLOBALS['TCA']['tt_content']['types']['textpic']['columnsOverrides']['image']['config']['overrideChildTca']['columns']['crop']['config'] ['cropVariants']['medium'] = $mediumCropSettings ;
 $GLOBALS['TCA']['tt_content']['types']['textpic']['columnsOverrides']['image']['config']['overrideChildTca']['columns']['crop']['config'] ['cropVariants']['small'] = $smallCropSettings ;
 
+//Simpleteaser content element
+$GLOBALS['TCA']['tt_content']['types']['simpleteaser']['columnsOverrides']['image']['config']['overrideChildTca']['columns']['crop']['config'] ['cropVariants']['default'] = $defaultCropSettings ;
+$GLOBALS['TCA']['tt_content']['types']['simpleteaser']['columnsOverrides']['image']['config']['overrideChildTca']['columns']['crop']['config'] ['cropVariants']['medium'] = $mediumCropSettings ;
+$GLOBALS['TCA']['tt_content']['types']['simpleteaser']['columnsOverrides']['image']['config']['overrideChildTca']['columns']['crop']['config'] ['cropVariants']['small'] = $smallCropSettings ;
 
 
 

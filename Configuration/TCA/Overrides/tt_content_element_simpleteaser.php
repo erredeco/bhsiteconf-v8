@@ -1,7 +1,7 @@
 <?php
 defined('TYPO3_MODE') or die();
 
-//Here I define a new content element "newtext" that is a copy of "text"!
+//Here I define a new content element "simpleteaser"!
 
 //prevent defining global variables 
 call_user_func(function () {
@@ -90,25 +90,7 @@ call_user_func(function () {
 	                    'richtextConfiguration' => 'default'
 	                ]
 	            ]
-	        ],
-
-
-        'image' => [
-            'label' => 'cicci',
-            'config' => [
-                'type' => 'select',
-                'renderType' => 'selectSingle',
-                'items' => [
-                    ['cicci', 0, ''],
-                ],
-                'itemsProcFunc' => 'BK2K\BootstrapPackage\Utility\TextIconUtility->addIconItems',
-                'fieldWizard' => [
-                    'selectIcons' => [
-                        'disabled' => false,
-                    ],
-                ],
-            ],
-        ],
+	        ]
 
 
 

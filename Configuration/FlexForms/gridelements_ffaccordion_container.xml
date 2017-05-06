@@ -7,12 +7,12 @@
 		<general>
 			<ROOT type="array">
 				<TCEforms>
-					<sheetTitle>Settings</sheetTitle>
+					<sheetTitle>LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:flexform.settings</sheetTitle>
 				</TCEforms>
 				<el type="array">
 					<allowmultiexpand type="array">
 						<TCEforms type="array">
-							<label>Allow multiple elements to be expanded at once</label>
+							<label>LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:gridelements.accordion_container.allowmultiexpand</label>
 							<config type="array">
 								<type>check</type>
 							</config>
@@ -21,7 +21,7 @@
           
 					<allowallclosed type="array">
 						<TCEforms type="array">
-							<label>Allow all elements to be closed</label>
+							<label>LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:gridelements.accordion_container.allowallclosed</label>
 							<config type="array">
 								<type>check</type>
 							</config>

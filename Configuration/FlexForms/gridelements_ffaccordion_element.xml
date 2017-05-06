@@ -7,12 +7,12 @@
 		<general>
 			<ROOT type="array">
 				<TCEforms>
-					<sheetTitle>Settings</sheetTitle>
+					<sheetTitle>LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:flexform.settings</sheetTitle>
 				</TCEforms>
 				<el type="array">
 					<active type="array">
 						<TCEforms type="array">
-							<label>Active</label>
+							<label>LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:flexform.active</label>
 							<config type="array">
 								<type>check</type>
 							</config>

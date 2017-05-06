@@ -16,6 +16,13 @@
                 <source>Large</source>
             </trans-unit>
 
+            <trans-unit id="flexform.settings" xml:space="preserve">
+                <source>Settings</source>
+            </trans-unit>
+
+            <trans-unit id="flexform.active" xml:space="preserve">
+                <source>Active</source>
+            </trans-unit>
 
 			<trans-unit id="backend_layout.home.title" xml:space="preserve">
 				<source>Layout for home page</source>
@@ -138,6 +145,16 @@
 			<trans-unit id="gridelements.accordion_container.description" xml:space="preserve">
 				<source>This element contains all the accordion elements</source>
 			</trans-unit>
+
+			<trans-unit id="gridelements.accordion_container.allowmultiexpand" xml:space="preserve">
+				<source>Allow multiple elements to be expanded at once</source>
+			</trans-unit>
+
+			<trans-unit id="gridelements.accordion_container.allowallclosed" xml:space="preserve">
+				<source>Allow all elements to be closed</source>
+			</trans-unit>
+
+
 			<trans-unit id="gridelements.accordion_element.title" xml:space="preserve">
 				<source>Accordion Element</source>
 			</trans-unit> 
@@ -156,9 +173,6 @@
 			<trans-unit id="gridelements.tab_element.description" xml:space="preserve">
 				<source>Single element for the Tabs. WARNING! Never use alone! ONLY INSIDE Tabs container!!</source>
 			</trans-unit>
-
-
-
 		</body>
 	</file>
-</xliff>		       	
+</xliff>

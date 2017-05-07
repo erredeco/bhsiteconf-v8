@@ -1,7 +1,7 @@
 <?php
 defined('TYPO3_MODE') or die();
 
-//Here I define a new content element "simpleteaser"!
+//Here I define a new content element "videoteaser"!
 
 //prevent defining global variables 
 call_user_func(function () {
@@ -22,12 +22,12 @@ call_user_func(function () {
 	 * Add Content Element
 	 */
 
-	if (!is_array($GLOBALS['TCA']['tt_content']['types']['simpleteaser'])) {
-	    $GLOBALS['TCA']['tt_content']['types']['simpleteaser'] = [];
+	if (!is_array($GLOBALS['TCA']['tt_content']['types']['videoteaser'])) {
+	    $GLOBALS['TCA']['tt_content']['types']['videoteaser'] = [];
 	}
 
 	/***************
-	 * Add content element to seletor list
+	 * Add content element to selector list
 	 */
 
 	\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItem(
@@ -35,8 +35,8 @@ call_user_func(function () {
 	'CType',
 	  [
 	    'LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:ttcontent.simpleteaser.title',
-	    'simpleteaser',
-	    'content-textpic'
+	    'videoteaser',
+	    'content-textmedia'
 	  ],
 	'simpletext',
 	'after'
@@ -46,7 +46,7 @@ call_user_func(function () {
 	 * Assign Icon
 	 */
 
-	$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['simpleteaser'] = 'content-textpic'; 
+	$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['videoteaser'] = 'content-textmedia'; 
 
 
 
@@ -56,8 +56,8 @@ call_user_func(function () {
 
 
 
-	$GLOBALS['TCA']['tt_content']['types']['simpleteaser'] = array_replace_recursive(
-	    $GLOBALS['TCA']['tt_content']['types']['simpleteaser'],
+	$GLOBALS['TCA']['tt_content']['types']['videoteaser'] = array_replace_recursive(
+	    $GLOBALS['TCA']['tt_content']['types']['videoteaser'],
 	    [
 	        'showitem' => '
 	            --div--;' . $formLanguageFilePrefix . 'general,
@@ -66,8 +66,8 @@ call_user_func(function () {
 	                teaser,
 	                bodytext,
 
-                --div--;' . $frontendLanguageFilePrefix . 'tabs.images,
-                    image,
+                --div--;' . $frontendLanguageFilePrefix . 'tabs.media,
+                    assets,
                     --palette--;' . $frontendLanguageFilePrefix . 'palette.imagelinks;imagelinks,                    
 	            --div--;' . $frontendLanguageFilePrefix . 'tabs.appearance,
 	                --palette--;' . $frontendLanguageFilePrefix . 'palette.frames;frames,
@@ -92,7 +92,7 @@ call_user_func(function () {
 	                    'richtextConfiguration' => 'default'
 	                ]
 	            ],
-	            'image' => [
+	            'assets' => [
 				    'config' => [
 				      'maxitems' => 1
 				    ]

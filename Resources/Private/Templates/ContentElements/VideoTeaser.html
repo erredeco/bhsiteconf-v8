@@ -1,16 +1,16 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 <f:layout name="Default" />
 <f:section name="Main">
-	<f:debug>{_all}</f:debug>
-
-
+<f:comment>
 <f:if condition="{teaserimage.0}">
 <img data-interchange="[{f:uri.image(image:teaserimage.0,cropVariant:'small',width:'640')}, small], [{f:uri.image(image:teaserimage.0,cropVariant:'medium',width:'1024')}, medium], [{f:uri.image(image:teaserimage.0,cropVariant:'default')}, large]" alt="{teaserimage.0.alternative}" title="{teaserimage.0.title} ">
 {teaserimage.0.link}
 </f:if>
 
-
-
+</f:comment>
+<f:if condition="{teaservideo.0}">
+<f:render partial="Media/Type" arguments="{file: teaservideo.0, dimensions: column.dimensions, data: data, settings: settings}" />	
+</f:if>
 	<f:if condition="{data.header}"><h3>{data.header}</h3></f:if>
 	
 
@@ -20,8 +20,8 @@
 
 	<f:format.html>{data.bodytext}</f:format.html>
 
-
-	<p><f:link.typolink parameter="{data.header_link}">More</f:link.typolink></p>
-
+	<f:if condition="{data.header_link}">
+		<p><f:link.typolink parameter="{data.header_link}">More</f:link.typolink></p>
+	</f:if>
 </f:section>
 </html>

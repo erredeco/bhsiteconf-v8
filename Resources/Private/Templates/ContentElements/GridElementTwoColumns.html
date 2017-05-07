@@ -1,5 +1,11 @@
 <f:layout name="Default"/>
 <f:section name="Main">
+<f:comment>
+<f:if condition="{backgroundimage.0}">
+{f:uri.image(image:backgroundimage.0)}
+</f:if>
+</f:comment>
+
 	<div class="row subtype-{data.tx_gridelements_backend_layout}">
 		<div class="small-6 column">
 			{data.tx_gridelements_view_column_100-> f:format.raw()}

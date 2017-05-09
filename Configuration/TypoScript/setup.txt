@@ -1,4 +1,1 @@
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:bhsiteconf/Configuration/TypoScript/Setup/" extensions="ts">
-
-#create the page
-page=PAGE

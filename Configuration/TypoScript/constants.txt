@@ -27,11 +27,11 @@ plugin.tx_bhsiteconf.extensionSetup{
 
 plugin.tx_bhsiteconf.view {
 	# cat=plugin.tx_bhsiteconf/file/0010; type=string; label=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.file.templateRootPath
-	templateRootPath = 
+	templateRootPath = EXT:bhsiteconf/Resources/Private/Templates/
 	# cat=plugin.tx_bhsiteconf/file/0020; type=string; label=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.file.partialsRootPath
-	partialRootPath = 
+	partialRootPath = EXT:bhsiteconf/Resources/Private/Partials/
 	# cat=plugin.tx_bhsiteconf/file/0030; type=string; label=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.file.layoutRootPath
-	layoutRootPath = 
+	layoutRootPath =  EXT:bhsiteconf/Resources/Private/Layouts/
 	# cat=plugin.tx_bhsiteconf/file/0040; type=string; label=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.file.overlaysRootPath
 	overlaysRootPath = EXT:bhsiteconf/Resources/Private/
 }

@@ -6,6 +6,12 @@ if (! defined('TYPO3_MODE')) {
 
 $extensionKey = 'bhsiteconf';
 
+/* Add default TSConfig Typoscript per pages */
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
+  '<INCLUDE_TYPOSCRIPT: source="DIR:EXT:'.$extensionKey.'/Configuration/TypoScript/TSconfig/Shared/Pages" extensions="ts">'
+  );
+
+
 /* Add default TSConfig Typoscript per be usergroups */
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addUserTSConfig('

@@ -14,7 +14,6 @@ call_user_func(function () {
     
     $pageTsStorages = [
         'AdmPanel.ts' 		=> 'Admin Panel',
-        'TCEMAIN.ts' 		=> 'Set Page user and group permissions',
         '002.TCEFORM.ts' 	=> 'Modify interface',
     
         '220.common.content.newtext.ts' => 'New plain text content element',
@@ -30,20 +29,10 @@ call_user_func(function () {
         '502.RTE.styles.ts' => 'Allowed styles for RTE links'
     ];
     
-    
-    
-    /* Add default TSConfig Typoscript per pages */
-    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
-      '<INCLUDE_TYPOSCRIPT: source="DIR:EXT:'.$extensionKey.'/Configuration/TypoScript/TSconfig/Shared/Pages" extensions="ts">'
-      );
-    
-    
     /***************
      * Register PageTS
      */
-    
-    
-    
+
     foreach ($pageTsStorages as $configFile => $name) {
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
             $extensionKey,

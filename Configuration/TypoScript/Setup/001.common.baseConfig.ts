@@ -1,22 +1,20 @@
 # -------------------------------------------------------------
 #   This file includes the basic configuration for the config properties
+#   REF: https://docs.typo3.org/typo3cms/TyposcriptReference/Setup/Config/Index.html#property-details
 # -------------------------------------------------------------
 
 config{
     # -------------------------------------------------------------
     #   DocType, Charset and header stuff
     # -------------------------------------------------------------
-		
-	doctype=html5	
+	
+	// Default is html5	
+	// doctype=html5	
  	htmlTag_setParams = class="no-js" lang="{$plugin.tx_bhsiteconf.language.languageName}" 
  	htmlTag_stdWrap.wrap (
 <!--[if IE 9]><html class="no-js lt-ie10" lang="{$plugin.tx_bhsiteconf.language.languageName}" > <![endif]-->  
  		)
 
-	xmlprologue           = none
-	doctypeSwitch         = 1
-	xhtml_cleaning        = none
-	htmlSpecialChars      = 1
 	// decomment only if different from utf-8
   	// renderCharset         = utf-8
 

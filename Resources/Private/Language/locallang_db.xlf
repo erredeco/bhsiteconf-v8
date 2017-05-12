@@ -20,7 +20,7 @@
 				<source>Enable or disable RealUrl</source>
 			</trans-unit>
       
-			<trans-unit id="constant.settings.absRefPrefix" xml:space="preserve">
+			<trans-unit id="constant.extensionSetup.absRefPrefix" xml:space="preserve">
 				<source>Set AbsRefPrefix</source>
 			</trans-unit>      
             

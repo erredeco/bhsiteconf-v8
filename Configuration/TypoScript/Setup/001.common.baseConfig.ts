@@ -97,7 +97,7 @@ config{
 	#   url settings && enable realurl
 	# -------------------------------------------------------------
 
-  	absRefPrefix = {$plugin.tx_bhsiteconf.settings.absRefPrefix}
+  	absRefPrefix = {$plugin.tx_bhsiteconf.extensionSetup.absRefPrefix}
   	//decomment this only if you want to use it instead of absRefPrefix! (and comment absRefPrefix!); decomment also the line in constants.txt
 	//baseURL = {$plugin.tx_bhsiteconf.extensionSetup.realurlPath}
 	tx_realurl_enable = {$plugin.tx_bhsiteconf.extensionSetup.realurlEnable} 

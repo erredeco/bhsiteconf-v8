@@ -62,5 +62,5 @@ plugin.tx_bhsiteconf.language {
 	# cat=plugin.tx_bhsiteconf/2_language/0040; type=string; label=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.language.languageLocale
 	languageLocale=it_IT.utf8	
 }
-# add other languages when needed
+# add other languages when needed and wrap with the proper condition e.g.: [globalVar=GP:L=1]
 

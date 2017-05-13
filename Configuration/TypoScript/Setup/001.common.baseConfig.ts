@@ -19,10 +19,10 @@ config{
   	// renderCharset         = utf-8
 
 	// Clean html
-	disableImgBorderAttr=1
+	disableImgBorderAttr = 1
 	removeDefaultJS = external
 	// Typo3 adds a lot of comments; get rid of them!
-	disablePrefixComment=1
+	disablePrefixComment = 1
 
   	additionalHeaders = Content-Type:text/html;charset=utf-8
   	enableContentLengthHeader = 1
@@ -43,9 +43,8 @@ config{
 	concatenateCss = 1
 
 	//Move all JS to footer for better performances
-	moveJsFromHeaderToFooter =0
+	moveJsFromHeaderToFooter = 0
 	inlineStyle2TempFile = 1
-	prefixLocalAnchors   = all
 
 	# -------------------------------------------------------------
 	#   Languages. See constants

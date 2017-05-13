@@ -26,7 +26,7 @@ call_user_func(function () {
 	}
 
 	/***************
-	 * Add content element to seletor list
+	 * Add content element to selector list
 	 */
 
 	\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItem(

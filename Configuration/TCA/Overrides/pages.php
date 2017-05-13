@@ -15,7 +15,6 @@ call_user_func(function () {
     $pageTsStorages = [
         'AdmPanel.ts' 		=> 'Admin Panel',
         '002.TCEFORM.ts' 	=> 'Modify interface',
-    
         '220.common.content.newtext.ts' => 'New plain text content element',
         '230.common.content.simpleteaser.ts' => 'New Simple Teaser content element',
         '240.common.content.videoteaser.ts' => 'New Video Teaser content element',

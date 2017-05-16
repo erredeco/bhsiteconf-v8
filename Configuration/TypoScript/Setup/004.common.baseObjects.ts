@@ -157,7 +157,7 @@ lib.contentElement {
 lib.gridelements.defaultGridSetup.cObject =<  lib.contentElement 
 
 
-//NOTE: here is an alternative http://www.typo3-probleme.de/2017/04/07/typo3-8-7-x-gridelements-typoscript-tca-und-templates-auslagern-1985/
+//NOTE: here is an alternative https://coders.care/blog/tutorial/gridelements-and-cms-8/ but it does not seem to work....
 
 # This is the definition you should use if you don't want to reference the lib.contentElement cObject
 

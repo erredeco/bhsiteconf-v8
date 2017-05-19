@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2012-10-17T17:55:17Z" product-name="bhsiteconf">
+	<file source-language="en" target-language="it" datatype="plaintext" original="messages" date="2012-10-17T17:55:17Z" product-name="bhsiteconf">
 		<header/>
 		<body>
 			<trans-unit id="page.label.generic.error" xml:space="preserve">
-				<source>Ooops! An error occurred! You should not see this!</source>
+				<target>Ooops! Questo è imbarazzante! Non dovresti vedermi!</target>
 			</trans-unit>
 			<trans-unit id="page.label.allsitetitle" xml:space="preserve">
-				<source>&lt;h1&gt;B Human S.r.L. &lt;/h1&gt; &lt;h2&gt; Profitable Innovation &lt;/h2&gt;</source>
+				<target>&lt;h1&gt;B Human S.r.L. &lt;/h1&gt; &lt;h2&gt; Profitable Innovation &lt;/h2&gt;</target>
 			</trans-unit> 			
 			<trans-unit id="page.label.footer.bhcopyright" xml:space="preserve">
-				<source>B Human S.r.L. All rights reserved.</source>
+				<target>B Human S.r.L. Tutti i diritti riservati.</target>
 			</trans-unit>
 			<trans-unit id="page.label.linktotop" xml:space="preserve">
-				<source>To top</source>
+				<target>Torna Su</target>
 			</trans-unit>
 			<trans-unit id="page.label.breadcrumbs" xml:space="preserve">
-				<source>You are here:</source>
+				<target>Voi siete qui:</target>
 			</trans-unit>			  			
 		</body>
 	</file>

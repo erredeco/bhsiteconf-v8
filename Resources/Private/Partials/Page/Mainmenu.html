@@ -6,19 +6,19 @@
     </div>
     <div>
       <div class="top-bar-left">
-        <v:page.menu entryLevel="0" levels="3" expandAll="1">
+        <v:menu entryLevel="0" levels="3" expandAll="1">
           <ul class="vertical menu medium-horizontal medium-dropdown" data-responsive-menu="accordion medium-dropdown">
             <f:for each="{menu}" as="item">
               <li>
                 <f:link.page pageUid="{item.uid}" title="{item.linktext}">{item.linktext}</f:link.page>
                 <f:if condition="item.hasSubpages">
-                  <v:page.menu pageUid="{item.uid}">
+                  <v:menu pageUid="{item.uid}">
                     <ul class="vertical menu">
                       <f:for each="{menu}" as="subItem">  
                         <li>
                           <f:link.page pageUid="{subItem.uid}" title="{subItem.linktext}">{subItem.linktext}</f:link.page>
                           <f:if condition="subItem.hasSubpages">
-                            <v:page.menu pageUid="{subItem.uid}">
+                            <v:menu pageUid="{subItem.uid}">
                               <ul class="vertical menu">
                                 <f:for each="{menu}" as="subsubItem">  
                                   <li>
@@ -26,17 +26,17 @@
                                    </li> 
                                 </f:for>
                               </ul>
-                            </v:page.menu>
+                            </v:menu>
                           </f:if>
                         </li>
                       </f:for>
                     </ul>
-                  </v:page.menu>
+                  </v:menu>
                 </f:if>
               </li>
             </f:for> 
           </ul>
-        </v:page.menu>     
+        </v:menu>     
       </div>
       <div class="top-bar-right">
         <ul class="menu">

@@ -63,9 +63,7 @@ call_user_func(function () {
 	            --div--;' . $formLanguageFilePrefix . 'general,
 	                --palette--;' . $frontendLanguageFilePrefix . 'palette.general;general,
 	                --palette--;' . $frontendLanguageFilePrefix . 'palette.headers;headers,
-	                teaser,
 	                bodytext,
-
                 --div--;' . $frontendLanguageFilePrefix . 'tabs.media,
                     assets,
                     --palette--;' . $frontendLanguageFilePrefix . 'palette.imagelinks;imagelinks,                    

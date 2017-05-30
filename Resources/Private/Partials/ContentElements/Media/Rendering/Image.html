@@ -1,0 +1,10 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:comment>
+<f:media class="image-embed-item" file="{file}" width="{dimensions.width}" height="{dimensions.height}" alt="{file.alternative}" title="{file.title}" />
+</f:comment>   
+<img class="image-embed-item" data-interchange="
+    [{f:uri.image(image:file,cropVariant:'small',maxWidth:'640')}, small], 
+    [{f:uri.image(image:file,cropVariant:'medium',maxWidth:'1024')}, medium], 
+    [{f:uri.image(image:file,cropVariant:'default',width:'{dimensions.width}',height:'{dimensions.height}')}, large]" 
+    alt="{file.alternative}"  title="{file.title} ">
+</html>

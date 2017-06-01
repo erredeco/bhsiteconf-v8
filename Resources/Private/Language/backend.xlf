@@ -39,6 +39,9 @@
 			<trans-unit id="layout.column.main" xml:space="preserve">
 				<source>Main Column</source>
 			</trans-unit>
+			<trans-unit id="layout.column.top" xml:space="preserve">
+				<source>Top Column</source>
+			</trans-unit>      
 			<trans-unit id="layout.column.bottom" xml:space="preserve">
 				<source>Bottom Column</source>
 			</trans-unit>			

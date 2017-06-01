@@ -1,0 +1,53 @@
+## ---------------------------------------------------------
+# backend layout for default page
+## ---------------------------------------------------------
+
+mod.web_layout.BackendLayouts {
+  frontend_default {
+    title= LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:backend_layout.default.title
+    description = LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:backend_layout.default.description
+    icon = genericpagelayout
+    config {
+      backend_layout {
+        colCount = 3
+        rowCount = 3
+        rows {
+          1 {
+            columns {
+              1 {
+                name = LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:layout.column.top
+                colspan = 3
+                colPos = 1
+              }
+            }
+          }
+          2 {
+            columns {
+              1 {
+                name = LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:layout.column.main
+                colspan = 3
+                colPos = 0
+              }
+            }
+          }
+          3 {
+            columns {
+              1 {
+                name = footer left
+                colPos = 2
+              }
+              2 {
+                name = footer center
+                colPos = 3
+              }
+              3 {
+                name = footer right
+                colPos = 4
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

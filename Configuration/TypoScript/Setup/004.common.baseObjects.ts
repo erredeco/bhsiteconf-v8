@@ -13,29 +13,32 @@ lib.stdContent {
     templateName.stdWrap {
         cObject = CASE
         cObject {
-            key.data = levelfield:-2,backend_layout_next_level,slide
-            key.override.field = backend_layout
+            
+            //if you want to use  backend_layout and backend_layout_next_level
+            //uncomment these and comment key.data=pagelayout
+            //key.data = levelfield:-2,backend_layout_next_level,slide
+            //key.override.field = backend_layout
 
             //if you want to use the files instead of backend_layout and backend_layout_next_level
             // the previous lines must become:
-            //key.data=pagelayout
+            key.data=pagelayout
 
             //Remember that 1,2, etc are the IDs of the be_layouts records on the database!!!
               
             default = TEXT 
             default.value = Default 
               
-            1 = TEXT
-            1.value = Default
+            //1 = TEXT
+            //1.value = Default
 
-            2 = TEXT
-            2.value = Home
+            //2 = TEXT
+            //2.value = Home
 
-            //pagets__frontend_home = TEXT
-            //pagets__frontend_home.value = Home
+            pagets__frontend_home = TEXT
+            pagets__frontend_home.value = Home
               
-            //pagets__frontend_default = TEXT
-            //pagets__frontend_default.value = Default      
+            pagets__frontend_default = TEXT
+            pagets__frontend_default.value = Default      
 
             //add other values 
         }

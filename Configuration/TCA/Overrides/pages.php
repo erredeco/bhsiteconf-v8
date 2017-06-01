@@ -15,6 +15,8 @@ call_user_func(function () {
     $pageTsStorages = [
         'AdmPanel.ts' 		=> 'Admin Panel',
         '002.TCEFORM.ts' 	=> 'Modify interface',
+        '010.page.layout.home.ts' => 'Layout for Home Page',
+        '020.page.layout.default.ts' => 'Layout for all pages',
         '220.common.content.newtext.ts' => 'New plain text content element',
         '230.common.content.simpleteaser.ts' => 'New Simple Teaser content element',
         '240.common.content.videoteaser.ts' => 'New Video Teaser content element',
@@ -23,7 +25,6 @@ call_user_func(function () {
       	'330.gridelements.fourcolumnscontainer.ts' => 'Grid Element, Four columns container',
       	'350.gridelements.accordion.ts' => 'Grid Element, Accordion',
       	'360.gridelements.tab.ts' => 'Grid Element, Tabs',
-    
         '500.RTE.default.ts' => 'Default RTE Configuration',
         '502.RTE.styles.ts' => 'Allowed styles for RTE links'
     ];

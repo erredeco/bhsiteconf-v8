@@ -19,23 +19,25 @@ call_user_func(function () {
 	  );
 
 	/* Add icons identifiers*/
-	$contentElementIconFilePrefix = 'EXT:bhsiteconf/Resources/Public/Icons/ContentElements/';
+	$iconFilePrefix = 'EXT:bhsiteconf/Resources/Public/Icons/';
 
-	$contentElementIconIdentifiers = [
-		'accordion' => '002-accordion-menu.svg',
-		'container' =>  '005-full-display-layout-interface-square-symbol.svg',
-		'fourcolumns' => '006-four-columns-layout-interface-symbol.svg',	
+	$iconIdentifiers = [   
+		'accordion' => '350.gridelements.accordion.svg',
+		'container' =>  'interface-square-symbol.svg',
+		'fourcolumns' => '330.gridelements.fourcolumnscontainer.svg',	
 		'genericicon' => 'typo3logo.svg',
-		'tab' => '001-tabs.svg',
-		'threecolumns' => '003-three-columns-layout.svg',
-		'twocolumns' => '004-two-columns-layout.svg'
+    'genericpagelayout' => '011.page.layout.default.svg',
+    'homepagelayout' => '010.page.layout.home.svg',    
+		'tab' => '360.gridelements.tab.svg',
+		'threecolumns' => '320.gridelements.threecolumnscontainer.svg',
+		'twocolumns' => '310.gridelements.twocolumnscontainer.svg' 
 	];  
 
-    foreach ($contentElementIconIdentifiers as $contentElementIconIdentifier => $contentElementIconFile) {
+    foreach ($iconIdentifiers as $iconIdentifier => $iconFile) {
 		\TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Imaging\IconRegistry::class)->registerIcon(
-			$contentElementIconIdentifier,
+			$iconIdentifier,
 			\TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-		  ['source' => $contentElementIconFilePrefix .$contentElementIconFile]
+		  ['source' => $iconFilePrefix .$iconFile]
 		);
     }
 
@@ -43,49 +45,49 @@ call_user_func(function () {
 /* Old method (not much different, only call each time the function):
 
 	$iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Imaging\IconRegistry::class);
-	$contentElementIconFilePrefix = 'EXT:bhsiteconf/Resources/Public/Icons/ContentElements/';
+	$iconFilePrefix = 'EXT:bhsiteconf/Resources/Public/Icons/ContentElements/';
 
 	$iconRegistry->registerIcon(
 		'genericicon',
 		\TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-	  ['source' => $contentElementIconFilePrefix . 'typo3logo.svg']
+	  ['source' => $iconFilePrefix . 'typo3logo.svg']
 	); 
 
 
 	$iconRegistry->registerIcon(
 		'tab',
 		\TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-	  ['source' => $contentElementIconFilePrefix . '001-tabs.svg']
+	  ['source' => $iconFilePrefix . '001-tabs.svg']
 	); 
 
 	$iconRegistry->registerIcon(
 		'accordion',
 		\TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-	  ['source' => $contentElementIconFilePrefix . '002-accordion-menu.svg']
+	  ['source' => $iconFilePrefix . '002-accordion-menu.svg']
 	); 
 
 	$iconRegistry->registerIcon(
 		'threecolumns',
 		\TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-	  ['source' => $contentElementIconFilePrefix . '003-three-columns-layout.svg']
+	  ['source' => $iconFilePrefix . '003-three-columns-layout.svg']
 	); 
 
 	$iconRegistry->registerIcon(
 		'twocolumns',
 		\TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-	  ['source' => $contentElementIconFilePrefix . '004-two-columns-layout.svg']
+	  ['source' => $iconFilePrefix . '004-two-columns-layout.svg']
 	); 
 
 	$iconRegistry->registerIcon(
 		'container',
 		\TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-	  ['source' => $contentElementIconFilePrefix . '005-full-display-layout-interface-square-symbol.svg']
+	  ['source' => $iconFilePrefix . '005-full-display-layout-interface-square-symbol.svg']
 	); 
 
 	$iconRegistry->registerIcon(
 		'fourcolumns',
 		\TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-	  ['source' => $contentElementIconFilePrefix . '006-four-columns-layout-interface-symbol.svg']
+	  ['source' => $iconFilePrefix . '006-four-columns-layout-interface-symbol.svg']
 	); 
 
 */

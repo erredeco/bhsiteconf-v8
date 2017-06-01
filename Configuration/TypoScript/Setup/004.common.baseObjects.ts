@@ -16,7 +16,12 @@ lib.stdContent {
             key.data = levelfield:-2,backend_layout_next_level,slide
             key.override.field = backend_layout
 
-            //Remember that 1,2, etc are the IDs of the be_layouts records on the database!!!  
+            //if you want to use the files instead of backend_layout and backend_layout_next_level
+            // the previous lines must become:
+            //key.data=pagelayout
+
+            //Remember that 1,2, etc are the IDs of the be_layouts records on the database!!!
+              
             default = TEXT 
             default.value = Default 
               
@@ -26,11 +31,11 @@ lib.stdContent {
             2 = TEXT
             2.value = Home
 
-            //frontend_home = TEXT
-            //frontend_home.value = Home
+            //pagets__frontend_home = TEXT
+            //pagets__frontend_home.value = Home
               
-            //frontend_default = TEXT
-            //frontend_default = Default      
+            //pagets__frontend_default = TEXT
+            //pagets__frontend_default.value = Default      
 
             //add other values 
         }

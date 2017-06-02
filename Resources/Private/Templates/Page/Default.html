@@ -1,11 +1,24 @@
 {namespace v=FluidTYPO3\Vhs\ViewHelpers}
 <f:layout name="Default" />
 <f:section name="Main">
-	<div class="column row default">
+	<div class="column row top">
+		<v:content.render column="1" />
+	</div>
+	<hr />
+	<div class="column row main">
 		<v:content.render column="0" />
 	</div>
-	<div class="column row">
-		<v:content.render column="1" />
-	</div>		
+	<hr />
+	<div class="row bottom">
+		<div class="medium-4 column">
+			<v:content.render column="2" />
+		</div>
+		<div class="medium-4 column">
+			<v:content.render column="3" />
+		</div>
+		<div class="medium-4 column">
+			<v:content.render column="4" />
+		</div>
+	</div>	
 	<f:render partial="LinkToTop" /> 
 </f:section>

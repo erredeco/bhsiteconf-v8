@@ -24,7 +24,6 @@ $EM_CONF[$_EXTKEY] = array(
 	'state' => 'experimental',
 	'uploadfolder' => 0,
 	'createDirs' => '',
-	'modify_tables' => '',
 	'clearcacheonload' => 1,
 	'lockType' => '',
 	'author' => 'Riccardo De Contardi',

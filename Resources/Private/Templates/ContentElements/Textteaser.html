@@ -6,7 +6,9 @@
     <div class="row">
         <div class="medium-4 column">
             <f:render partial="Header/All" arguments="{_all}" />
-            <f:format.html>{data.teaser}</f:format.html>
+            <f:if condition="{data.teaser}">    
+              <div class="lead"><f:format.html>{data.teaser}</f:format.html></div>
+            </f:if>        
         </div>
         <div class="medium-8 column">
             <f:format.html>{data.bodytext}</f:format.html>

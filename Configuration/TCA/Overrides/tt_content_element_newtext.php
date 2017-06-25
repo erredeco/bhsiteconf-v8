@@ -7,17 +7,6 @@ defined('TYPO3_MODE') or die();
 call_user_func(function () {
 
 	/***************
-	 * Define some variables:
-	 */
-
-	$languageFilePrefix = 'LLL:EXT:fluid_styled_content/Resources/Private/Language/Database.xlf:';
-	$customLanguageFilePrefix = 'LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:';
-	$frontendLanguageFilePrefix = 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:';
-	$tcaLanguageFilePrefix = 'LLL:EXT:lang/locallang_tca.xlf:';
-
-
-
-	/***************
 	 * Add Content Element
 	 */
 

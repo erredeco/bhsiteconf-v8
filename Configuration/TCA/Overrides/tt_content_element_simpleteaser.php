@@ -7,18 +7,6 @@ defined('TYPO3_MODE') or die();
 call_user_func(function () {
 
 	/***************
-	 * Define some variables:
-	 */
-
-	$languageFilePrefix = 'LLL:EXT:fluid_styled_content/Resources/Private/Language/Database.xlf:';
-	$customLanguageFilePrefix = 'LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:';
-	$frontendLanguageFilePrefix = 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:';
-	$tcaLanguageFilePrefix = 'LLL:EXT:lang/locallang_tca.xlf:';
-	$formLanguageFilePrefix = 'LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:';
-
-
-
-	/***************
 	 * Add Content Element
 	 */
 
@@ -60,40 +48,40 @@ call_user_func(function () {
 	    $GLOBALS['TCA']['tt_content']['types']['simpleteaser'],
 	    [
 	        'showitem' => '
-	            --div--;' . $formLanguageFilePrefix . 'general,
-	                --palette--;' . $frontendLanguageFilePrefix . 'palette.general;general,
-	                --palette--;' . $frontendLanguageFilePrefix . 'palette.headers;headers,
+	            --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
+	                --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
+	                --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.headers;headers,
 	                bodytext,
-                --div--;' . $frontendLanguageFilePrefix . 'tabs.images,
+                --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.images,
                     image,
-                    --palette--;' . $frontendLanguageFilePrefix . 'palette.imagelinks;imagelinks,                    
-	            --div--;' . $frontendLanguageFilePrefix . 'tabs.appearance,
-	                --palette--;' . $frontendLanguageFilePrefix . 'palette.frames;frames,
-	                --palette--;' . $frontendLanguageFilePrefix . 'palette.appearanceLinks;appearanceLinks,
-	            --div--;' . $formLanguageFilePrefix . 'language,
+                    --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.imagelinks;imagelinks,                    
+	            --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
+	                --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames,
+	                --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.appearanceLinks;appearanceLinks,
+	            --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,
 	                --palette--;;language,
-	            --div--;' . $formLanguageFilePrefix . 'access,
+	            --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,
 	                --palette--;;hidden,
-	                --palette--;' . $frontendLanguageFilePrefix . 'palette.access;access,
-	            --div--;' . $formLanguageFilePrefix . 'categories,
+	                --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,
+	            --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:categories,
 	                categories,
-	            --div--;' . $formLanguageFilePrefix . 'notes,
+	            --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes,
 	                rowDescription,
-	            --div--;' . $formLanguageFilePrefix . 'extended,
+	            --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended,
 	        ',
 	        'columnsOverrides' => [
 
 	            'bodytext' => [
-	                'label' => $frontendLanguageFilePrefix . 'bodytext_formlabel',
+	                'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel',
 	                'config' => [
 	                    'enableRichtext' => true,
 	                    'richtextConfiguration' => 'default'
 	                ]
 	            ],
 	            'image' => [
-				    'config' => [
-				      'maxitems' => 1
-				    ]
+    				    'config' => [
+    				      'maxitems' => 1
+    				    ]
 	            ]
 	        ]
 	    ]

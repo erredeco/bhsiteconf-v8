@@ -20,6 +20,7 @@ call_user_func(function () {
         '220.common.content.newtext.ts' => 'New plain text content element',
         '230.common.content.simpleteaser.ts' => 'New Simple Teaser content element',
         '240.common.content.videoteaser.ts' => 'New Video Teaser content element',
+        '250.common.content.textteaser.ts' => 'New Text with Teaser content element',
         '310.gridelements.twocolumnscontainer.ts' => 'Grid Element, Two columns container',
       	'320.gridelements.threecolumnscontainer.ts' => 'Grid Element, Three columns container',
       	'330.gridelements.fourcolumnscontainer.ts' => 'Grid Element, Four columns container',

@@ -8,12 +8,10 @@ config{
     #   DocType, Charset and header stuff
     # -------------------------------------------------------------
 	
-	// Default is html5	
+	// Default is html5, uncomment just if you want a different one.	
 	// doctype=html5	
  	htmlTag_setParams = class="no-js" lang="{$plugin.tx_bhsiteconf.language.languageName}" 
- 	htmlTag_stdWrap.wrap (
-<!--[if IE 9]><html class="no-js lt-ie10" lang="{$plugin.tx_bhsiteconf.language.languageName}" > <![endif]-->  
- 		)
+
 
 	// decomment only if different from utf-8
   	// renderCharset         = utf-8
@@ -21,7 +19,7 @@ config{
 	// Clean html
 	disableImgBorderAttr = 1
 	removeDefaultJS = external
-	// Typo3 adds a lot of comments; get rid of them!
+	// TYPO3 adds a lot of comments; get rid of them!
 	disablePrefixComment = 1
 
   	additionalHeaders = Content-Type:text/html;charset=utf-8

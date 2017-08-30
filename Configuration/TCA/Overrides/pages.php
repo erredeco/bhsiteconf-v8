@@ -6,8 +6,6 @@ call_user_func(function () {
     /***************
      * Temporary variables
      */
-    $extensionKey = 'bhsiteconf';
-    
     
     /* Register pageTs Config files for including at page level */
     $pageTsFolder = 'Configuration/TypoScript/TSconfig/Page/';
@@ -36,7 +34,7 @@ call_user_func(function () {
 
     foreach ($pageTsStorages as $configFile => $name) {
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
-            $extensionKey,
+            'bhsiteconf',
             $pageTsFolder . $configFile,
             $name
         );

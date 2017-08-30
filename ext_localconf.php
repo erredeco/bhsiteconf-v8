@@ -2,18 +2,16 @@
 defined('TYPO3_MODE') or die();
 
 call_user_func(function () {
-	$extensionKey = 'bhsiteconf';
-
 	/* Add default TSConfig Typoscript per pages */
 	\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
-	  '<INCLUDE_TYPOSCRIPT: source="DIR:EXT:'.$extensionKey.'/Configuration/TypoScript/TSconfig/Shared/Pages" extensions="ts">'
+	  '<INCLUDE_TYPOSCRIPT: source="DIR:EXT:bhsiteconf/Configuration/TypoScript/TSconfig/Shared/Pages" extensions="ts">'
 	  );
 
 
 	/* Add default TSConfig Typoscript per be usergroups */
 
 	\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addUserTSConfig('
-	  <INCLUDE_TYPOSCRIPT: source="DIR:EXT:'.$extensionKey.'/Configuration/TypoScript/TSconfig/Shared/Users" extensions="ts">'
+	  <INCLUDE_TYPOSCRIPT: source="DIR:EXT:bhsiteconf/Configuration/TypoScript/TSconfig/Shared/Users" extensions="ts">'
 	  );
 
 	/* Add icons identifiers*/

@@ -7,5 +7,13 @@ tt_content.newtext {
 	}
   settings{
     
-  }  
+  }
+   
+  dataProcessing {
+    10 = BH\bhsiteconf\DataProcessing\FlexFormProcessor
+    10 {
+      fieldName = pi_flexform
+      as = flexform
+    }
+  }   
 }

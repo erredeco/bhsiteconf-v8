@@ -76,26 +76,6 @@ call_user_func(function () {
       ]
   );
 
-
-
-
-  /*
-        'text' => [
-
-        ],  
-  */
-
-
-
-
-
-
-
-
-
-
-
-
   /***************
    * Add flexForms for content element configuration
    */

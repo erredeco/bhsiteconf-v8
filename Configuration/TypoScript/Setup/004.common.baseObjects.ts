@@ -136,16 +136,27 @@ lib.stdContent {
 
     }
 
-
-    dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
-    dataProcessing.10 {
-        references {
-            table = pages
-            fieldName = media
-        }
-    as = headerImage
+    ##------------------------------------------
+    # Data Processing
+    ##------------------------------------------
+    
+    dataProcessing{    
+        99 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+        99 {
+            references {
+                table = pages
+                fieldName = media
+            }
+        as = headerImage
+        }    
+    
     }
+    
 }
+
+## ---------------------------------------------------------
+# Dataprocessing that is used to write in page the content of tt_content:layout as separated by spaces
+## ---------------------------------------------------------
 
 lib.contentElement {
     dataProcessing.99 = TYPO3\CMS\Frontend\DataProcessing\SplitProcessor

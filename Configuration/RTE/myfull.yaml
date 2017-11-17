@@ -7,7 +7,7 @@ imports:
     - { resource: "EXT:rte_ckeditor/Configuration/RTE/Processing.yaml" }
     - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Base.yaml" }
     - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Plugins.yaml" }
-    
+
 # Add configuration for the editor
 # For complete documentation see http://docs.ckeditor.com/#!/api/CKEDITOR.config
 editor:
@@ -18,12 +18,11 @@ editor:
       - { name: "Orange title H2", element: "h2", styles: { color: "orange", background: "blue" } }
       - { name: "Orange title H3", element: "h3", styles: { color: "orange", background: "blue" } }
       - { name: "Quote / Citation", element: "blockquote" }
-      - { name: "Code block", element: "code" }    
+      - { name: "Code block", element: "code" }
       # Inline styles
       - { name: "Yellow marker", element: "span", styles: { background-color: "yellow" } }
 
     format_tags: "p;h2;h3;h4;pre"
-
     toolbarGroups:
       - { name: clipboard, groups: [clipboard, undo] }
       - { name: editing,   groups: [find, selection, spellchecker] }

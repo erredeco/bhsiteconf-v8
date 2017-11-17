@@ -1,9 +1,9 @@
 {namespace v=FluidTYPO3\Vhs\ViewHelpers}
 <header class="grid-container">
-  <f:if condition="{headerImage.0}">
-    <img data-interchange="[{f:uri.image(image:headerImage.0,cropVariant:'small',width:'640')}, small], [{f:uri.image(image:headerImage.0,cropVariant:'medium',width:'1024')}, medium], [{f:uri.image(image:headerImage.0,cropVariant:'default')}, large]">
-  </f:if>
-  <nav role="navigation">
-    <v:page.menu.list showHiddenInMenu="1" pages="{settings.pagesInHeaderMenu}" class="menu" classActive=""/>
-  </nav>
+	<f:if condition="{headerImage.0}">
+		<img data-interchange="[{f:uri.image(image:headerImage.0,cropVariant:'small',width:'640')}, small], [{f:uri.image(image:headerImage.0,cropVariant:'medium',width:'1024')}, medium], [{f:uri.image(image:headerImage.0,cropVariant:'default')}, large]">
+	</f:if>
+	<nav role="navigation">
+		<v:page.menu.list showHiddenInMenu="1" pages="{settings.pagesInHeaderMenu}" class="menu" classActive=""/>
+	</nav>
 </header>

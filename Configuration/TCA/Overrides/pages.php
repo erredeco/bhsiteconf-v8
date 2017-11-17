@@ -11,21 +11,21 @@ call_user_func(function () {
     $pageTsFolder = 'Configuration/TypoScript/TSconfig/Page/';
     
     $pageTsStorages = [
-        'AdmPanel.ts' 		=> 'Admin Panel',
-        '002.TCEFORM.ts' 	=> 'Modify interface',
-        '010.page.layout.home.ts' => 'Layout for Home Page',
-        '020.page.layout.default.ts' => 'Layout for all pages',
-        '220.common.content.newtext.ts' => 'New plain text content element',
-        '230.common.content.simpleteaser.ts' => 'New Simple Teaser content element',
-        '240.common.content.videoteaser.ts' => 'New Video Teaser content element',
-        '250.common.content.textteaser.ts' => 'New Text with Teaser content element',
-        '310.gridelements.twocolumnscontainer.ts' => 'Grid Element, Two columns container',
-      	'320.gridelements.threecolumnscontainer.ts' => 'Grid Element, Three columns container',
-      	'330.gridelements.fourcolumnscontainer.ts' => 'Grid Element, Four columns container',
-      	'350.gridelements.accordion.ts' => 'Grid Element, Accordion',
-      	'360.gridelements.tab.ts' => 'Grid Element, Tabs',
-        '500.RTE.default.ts' => 'Default RTE Configuration',
-        '502.RTE.styles.ts' => 'Allowed styles for RTE links'
+        'AdmPanel.typoscript' 		=> 'Admin Panel',
+        '002.TCEFORM.typoscript' 	=> 'Modify interface',
+        '010.page.layout.home.typoscript' => 'Layout for Home Page',
+        '020.page.layout.default.typoscript' => 'Layout for all pages',
+        '220.common.content.newtext.typoscript' => 'New plain text content element',
+        '230.common.content.simpleteaser.typoscript' => 'New Simple Teaser content element',
+        '240.common.content.videoteaser.typoscript' => 'New Video Teaser content element',
+        '250.common.content.textteaser.typoscript' => 'New Text with Teaser content element',
+        '310.gridelements.twocolumnscontainer.typoscript' => 'Grid Element, Two columns container',
+      	'320.gridelements.threecolumnscontainer.typoscript' => 'Grid Element, Three columns container',
+      	'330.gridelements.fourcolumnscontainer.typoscript' => 'Grid Element, Four columns container',
+      	'350.gridelements.accordion.typoscript' => 'Grid Element, Accordion',
+      	'360.gridelements.tab.typoscript' => 'Grid Element, Tabs',
+        '500.RTE.default.typoscript' => 'Default RTE Configuration',
+        '502.RTE.styles.typoscript' => 'Allowed styles for RTE links'
     ];
     
     /***************

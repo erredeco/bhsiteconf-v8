@@ -1,4 +1,4 @@
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:bhsiteconf/Configuration/TypoScript/Constants/" extensions="ts">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:bhsiteconf/Configuration/TypoScript/Constants/" extensions="typoscript">
 
 # customsubcategory=0_general=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.cat.general
 # customsubcategory=1_resources=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.cat.resources

@@ -9,7 +9,7 @@ $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['textteaser'] = 'conte
     'tt_content',
     'CType',
     [
-        'LLL:EXT:bhsiteconf/Resources/Private/Language/Backend.xlf:content_element.textteaser',
+        'LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:ttcontent.textteaser.title',
         'textteaser',
         'content-text-teaser'
     ],

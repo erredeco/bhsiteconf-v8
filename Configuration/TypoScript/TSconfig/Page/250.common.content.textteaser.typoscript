@@ -4,8 +4,8 @@ mod.wizards.newContentElement.wizardItems{
      elements{    
       textteaser {
             iconIdentifier = content-text-teaser
-            title = LLL:EXT:bhsiteconf/Resources/Private/Language/Backend.xlf:content_element.textteaser
-            description = LLL:EXT:bhsiteconf/Resources/Private/Language/Backend.xlf:content_element.textteaser.description
+            title = LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:ttcontent.textteaser.title
+            description = LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:ttcontent.textteaser.description
             tt_content_defValues {
                CType = textteaser
             }

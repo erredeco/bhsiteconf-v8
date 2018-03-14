@@ -1,5 +1,12 @@
 {namespace v=FluidTYPO3\Vhs\ViewHelpers}
-<header class="grid-container">
+<header class="grid-container">	
+	<f:comment>
+	if you have more than one image and you want to show all - pay attention to the Layout file where you call the partial (arguments!!)
+	<f:for each="{headerImage}" as="Item">
+		<f:uri.image image="{Item}" />
+
+	</f:for>
+	</f:comment>
 	<f:if condition="{headerImage.0}">
 		<img data-interchange="[{f:uri.image(image:headerImage.0,cropVariant:'small',width:'640')}, small], [{f:uri.image(image:headerImage.0,cropVariant:'medium',width:'1024')}, medium], [{f:uri.image(image:headerImage.0,cropVariant:'default')}, large]">
 	</f:if>

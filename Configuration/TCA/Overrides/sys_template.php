@@ -1,6 +1,15 @@
 <?php
-defined('TYPO3_MODE') or die();
+defined('TYPO3_MODE') || die();
 
-/* Add default Static Typoscript */
-TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile('bhsiteconf', 'Configuration/TypoScript', 'My Provider extension for pages and content');
+call_user_func(function()
+{
 
+    /**
+     * Default Static TypoScript for bhsiteconf
+     */
+    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
+        'bhsiteconf',
+        'Configuration/TypoScript',
+        'My Provider extension for pages and content'
+    );
+});

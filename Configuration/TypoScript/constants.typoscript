@@ -1,3 +1,10 @@
+## Add here dependencies
+
+# makes useless to include fluid_styled_content in "add static from extensions"
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:fluid_styled_content/Configuration/TypoScript/constants.txt">
+
+
+## Include whole folder!
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:bhsiteconf/Configuration/TypoScript/Constants/" extensions="typoscript">
 
 # customsubcategory=0_general=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.cat.general
@@ -45,7 +52,7 @@ plugin.tx_bhsiteconf.resource {
 	jsPath = EXT:bhsiteconf/Resources/Public/Assets/Js/
 }
 
-//I define here the constants for the alternative templates, layouts, partials path for the lib.fluidtemplate object. remember that they occupy the .10 position on the array!
+//I define here the constants for the alternative templates, layouts, partials path for the lib.contentElement object. remember that they occupy the .10 position on the array!
 
 styles.templates.templateRootPath = EXT:bhsiteconf/Resources/Private/Templates/ContentElements/ 
 styles.templates.partialRootPath = EXT:bhsiteconf/Resources/Private/Partials/ContentElements/

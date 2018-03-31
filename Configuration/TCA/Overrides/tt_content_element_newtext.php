@@ -1,50 +1,53 @@
 <?php
 defined('TYPO3_MODE') || die();
 
-//Here I define a new content element "newtext" that is a copy of "text"!
+/** 
+ * Here I define a new content element "newtext" that is a copy of "text"!
+ */
 
-//prevent defining global variables 
+/**
+ * Prevents defining global variables
+ */
 call_user_func(function () {
 
-	/***************
-	 * Add Content Element
-	 */
-
+    /**
+     * Add Content Element
+     */
 	if (!is_array($GLOBALS['TCA']['tt_content']['types']['newtext'])) {
 	    $GLOBALS['TCA']['tt_content']['types']['newtext'] = [];
 	}
 
-	/***************
+	/**
 	 * Add content element to selector list
 	 */
 
 	\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItem(
 	'tt_content',
 	'CType',
-	  [
+	[
 	    'LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:ttcontent.newtext.title',
 	    'newtext',
 	    'content-text'
-	  ],
+	],
 	'text',
 	'after'
 	);  
   
-	/***************
+	/**
 	 * Assign Icon
 	 */
 
 	$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['newtext'] = 'content-text'; 
 
-/***************
- * Configure element type
- */ 
-   //OLD: I copied the whole element, but now I've added the flexform, so I had to add it to the TCA; if you remove the flexform, just use this to copy the config of the standard "text" CType
-  //$GLOBALS['TCA']['tt_content']['types']['newtext'] = $GLOBALS['TCA']['tt_content']['types']['text'];  
+    /**
+     * Define fields
+     */
+    //OLD: I copied the whole element, but now I've added the flexform, so I had to add it to the TCA; if you remove the flexform, just use this to copy the config of the standard "text" CType
+    //$GLOBALS['TCA']['tt_content']['types']['newtext'] = $GLOBALS['TCA']['tt_content']['types']['text'];  
 
-  $GLOBALS['TCA']['tt_content']['types']['newtext'] = array_replace_recursive(
-      $GLOBALS['TCA']['tt_content']['types']['newtext'],
-      [
+    $GLOBALS['TCA']['tt_content']['types']['newtext'] = array_replace_recursive(
+        $GLOBALS['TCA']['tt_content']['types']['newtext'],
+        [
             'showitem' => '
                 --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
                     --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
@@ -73,16 +76,15 @@ call_user_func(function () {
                     ]
                 ]
             ]
-      ]
-  );
+        ]
+    );
 
-  /***************
-   * Add flexForms for content element configuration
-   */
-  \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
-      '*',
-      'FILE:EXT:bhsiteconf/Configuration/FlexForms/newtext.xml',
-      'newtext'
-  );
-
+    /**
+     * Add flexForms for content element configuration
+     */
+    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
+        '*',
+        'FILE:EXT:bhsiteconf/Configuration/FlexForms/newtext.xml',
+        'newtext'
+    );
 });

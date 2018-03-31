@@ -3,47 +3,41 @@ defined('TYPO3_MODE') || die();
 
 //Here I define a new content element "videoteaser"!
 
-//prevent defining global variables 
+/**
+ * Prevents defining global variables
+ */
 call_user_func(function () {
 
-	/***************
+	/**
 	 * Add Content Element
 	 */
-
 	if (!is_array($GLOBALS['TCA']['tt_content']['types']['videoteaser'])) {
 	    $GLOBALS['TCA']['tt_content']['types']['videoteaser'] = [];
 	}
 
-	/***************
+	/**
 	 * Add content element to selector list
 	 */
-
 	\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItem(
-	'tt_content',
-	'CType',
-	  [
-	    'LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:ttcontent.simpleteaser.title',
-	    'videoteaser',
-	    'content-textmedia'
-	  ],
-	'simpletext',
-	'after'
+		'tt_content',
+		'CType',
+		[
+		    'LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:ttcontent.simpleteaser.title',
+		    'videoteaser',
+		    'content-textmedia' 
+		],
+		'simpletext',
+		'after'
 	);  
   
-	/***************
+	/**
 	 * Assign Icon
 	 */
-
 	$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['videoteaser'] = 'content-textmedia'; 
 
-
-
-	/***************
+	/**
 	 * Define fields
 	 */
-
-
-
 	$GLOBALS['TCA']['tt_content']['types']['videoteaser'] = array_replace_recursive(
 	    $GLOBALS['TCA']['tt_content']['types']['videoteaser'],
 	    [
@@ -80,7 +74,7 @@ call_user_func(function () {
 	            ],
 	            'assets' => [
     				    'config' => [
-    				      'maxitems' => 1
+    				    	'maxitems' => 1
     				    ]
 	            ]
 	        ]

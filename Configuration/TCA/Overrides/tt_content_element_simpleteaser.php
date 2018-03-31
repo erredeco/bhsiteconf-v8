@@ -6,7 +6,7 @@ defined('TYPO3_MODE') || die();
 //prevent defining global variables 
 call_user_func(function () {
 
-	/***************
+	/**
 	 * Add Content Element
 	 */
 
@@ -14,7 +14,7 @@ call_user_func(function () {
 	    $GLOBALS['TCA']['tt_content']['types']['simpleteaser'] = [];
 	}
 
-	/***************
+	/**
 	 * Add content element to selector list
 	 */
 
@@ -30,20 +30,14 @@ call_user_func(function () {
 	'after'
 	);  
   
-	/***************
+	/**
 	 * Assign Icon
 	 */
-
 	$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['simpleteaser'] = 'content-textpic'; 
 
-
-
-	/***************
+	/**
 	 * Define fields
 	 */
-
-
-
 	$GLOBALS['TCA']['tt_content']['types']['simpleteaser'] = array_replace_recursive(
 	    $GLOBALS['TCA']['tt_content']['types']['simpleteaser'],
 	    [
@@ -79,9 +73,9 @@ call_user_func(function () {
 	                ]
 	            ],
 	            'image' => [
-    				    'config' => [
-    				      'maxitems' => 1
-    				    ]
+    				'config' => [
+    				    'maxitems' => 1
+    				]
 	            ]
 	        ]
 	    ]

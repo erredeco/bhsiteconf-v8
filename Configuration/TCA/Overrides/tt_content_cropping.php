@@ -1,5 +1,5 @@
 <?php
-defined('TYPO3_MODE') or die();
+defined('TYPO3_MODE') || die();
 
 $defaultCropSettings = [
     'title' => 'LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:option.default',

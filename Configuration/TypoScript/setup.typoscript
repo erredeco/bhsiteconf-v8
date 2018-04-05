@@ -1,8 +1,2 @@
-## Add here dependencies
-
-# makes useless to include fluid_styled_content in "add static from extensions"
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:fluid_styled_content/Configuration/TypoScript/setup.txt">
-
-
 ## Include whole folder!
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:bhsiteconf/Configuration/TypoScript/Setup/" extensions="typoscript">

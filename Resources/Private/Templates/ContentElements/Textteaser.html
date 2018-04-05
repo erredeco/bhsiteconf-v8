@@ -3,14 +3,14 @@
 <f:section name="Header" />
 <f:section name="Main">
 
-    <div class="row">
-        <div class="medium-4 column">
+    <div class="grid-x grid-margin-x">
+        <div class="medium-4 cell">
             <f:render partial="Header/All" arguments="{_all}" />
             <f:if condition="{data.teaser}">    
               <div class="lead"><f:format.html>{data.teaser}</f:format.html></div>
             </f:if>        
         </div>
-        <div class="medium-8 column">
+        <div class="medium-8 cell">
             <f:format.html>{data.bodytext}</f:format.html>
         </div>
     </div>

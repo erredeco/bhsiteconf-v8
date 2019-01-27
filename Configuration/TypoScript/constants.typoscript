@@ -1,6 +1,6 @@
 
 ## Include whole folder!
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:bhsiteconf/Configuration/TypoScript/Constants/" extensions="typoscript">
+@import 'EXT:bhsiteconf/Configuration/TypoScript/Constants/*.typoscript'
 
 # customsubcategory=0_general=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.cat.general
 # customsubcategory=1_extension=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.cat.extension

@@ -1,2 +1,3 @@
 ## Include whole folder!
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:bhsiteconf/Configuration/TypoScript/Setup/" extensions="typoscript">
+@import 'EXT:bhsiteconf/Configuration/TypoScript/Setup/*.typoscript'
+

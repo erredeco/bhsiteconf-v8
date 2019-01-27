@@ -15,7 +15,7 @@ $EM_CONF[$_EXTKEY] = array(
 	'description' => 'Templates for my site, content and pages',
 	'category' => 'misc',
 	'shy' => 0,
-	'version' => '0.0.3',
+	'version' => '0.0.5',
 	'dependencies' => 'cms,extbase,fluid,vhs',
 	'conflicts' => '',
 	'priority' => 'bottom',
@@ -33,12 +33,12 @@ $EM_CONF[$_EXTKEY] = array(
 	'CGLcompliance_note' => '',
 	'constraints' => array(
 		'depends' => array(
-			'typo3' => '8.7.0-8.7.99',
+			'typo3' => '9.5.0-9.5.99',
 			'cms' => '',
 			'extbase' => '',
 			'fluid' => '',
-      'vhs' => '4.0.0-4.9.9',
-      'gridelements' => '',      
+      'vhs' => '5.1.0-5.9.9',
+      'gridelements' => '9.0.0-9.9.9',      
 		),
 		'conflicts' => array(
 		),

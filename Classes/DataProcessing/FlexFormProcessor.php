@@ -1,29 +1,15 @@
 <?php
-namespace BH\bhsiteconf\DataProcessing;
+declare(strict_types = 1);
 
 /*
- *  The MIT License (MIT)
+ * This file is part of the package bk2k/bootstrap-package.
+ * I copied it and renamed the namespace; all merit and grants must go to Benjamin Kott
  *
- *  Copyright (c) 2015 Benjamin Kott, http://www.bk2k.info
- *
- *  Permission is hereby granted, free of charge, to any person obtaining a copy
- *  of this software and associated documentation files (the "Software"), to deal
- *  in the Software without restriction, including without limitation the rights
- *  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- *  copies of the Software, and to permit persons to whom the Software is
- *  furnished to do so, subject to the following conditions:
- *
- *  The above copyright notice and this permission notice shall be included in
- *  all copies or substantial portions of the Software.
- *
- *  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- *  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- *  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- *  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- *  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- *  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
- *  THE SOFTWARE.
+ * For the full copyright and license information, please read the
+ * LICENSE file that was distributed with this source code.
  */
+
+namespace BH\bhsiteconf\DataProcessing;
 
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Service\FlexFormService;
@@ -40,7 +26,7 @@ use TYPO3\CMS\Frontend\ContentObject\DataProcessorInterface;
  * Advanced TypoScript configuration
  * Process field assigned in fieldName and stores processed data to new key
  *
- * 10 = BK2K\BootstrapPackage\DataProcessing\FlexFormProcessor
+ * 10 = BH\bhsiteconf\DataProcessing\FlexFormProcessor
  * 10 {
  *   fieldName = pi_flexform
  *   as = flexform
@@ -72,10 +58,11 @@ class FlexFormProcessor implements DataProcessorInterface
     {
         // The field name to process
         $fieldName = $cObj->stdWrapValue('fieldName', $processorConfiguration);
-        if (empty($fieldName) && !$processedData['data']['pi_flexform']) {
-            return $processedData;
-        } else {
+        if (empty($fieldName)) {
             $fieldName = 'pi_flexform';
+        }
+        if (!$processedData['data'][$fieldName]) {
+            return $processedData;
         }
 
         // Process Flexform

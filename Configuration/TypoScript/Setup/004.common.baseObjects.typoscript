@@ -108,25 +108,6 @@ lib.stdContent {
             value= level-{level:-1}      
             insertData = 1    
         }
-
-        ##------------------------------------------ 
-        # Use the image in the media field - old method - see below
-        ##------------------------------------------
-        #
-        # headerImg= FILES
-        # headerImg{
-        #    references {
-        #       data = levelmedia:-1, slide
-        #       listNum = 0
-        #    }
-        #    renderObj = IMG_RESOURCE
-        #    renderObj {
-        #       file {
-        #           import.data = file:current:publicUrl
-        #       }            
-        #    }
-        # }
-
     }
 
     ##------------------------------------------

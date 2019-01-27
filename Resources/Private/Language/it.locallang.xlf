@@ -8,7 +8,10 @@
 			</trans-unit>
 			<trans-unit id="page.label.allsitetitle" xml:space="preserve">
 				<target>&lt;h1&gt;B Human S.r.L. &lt;/h1&gt; &lt;h2&gt; Profitable Innovation &lt;/h2&gt;</target>
-			</trans-unit> 			
+			</trans-unit> 
+			<trans-unit id="page.label.sitetitle" xml:space="preserve">
+				<target>Titolo del sito</target>
+			</trans-unit>						
 			<trans-unit id="page.label.footer.bhcopyright" xml:space="preserve">
 				<target>B Human S.r.L. Tutti i diritti riservati.</target>
 			</trans-unit>
@@ -17,7 +20,8 @@
 			</trans-unit>
 			<trans-unit id="page.label.breadcrumbs" xml:space="preserve">
 				<target>Voi siete qui:</target>
-			</trans-unit>			  			
+			</trans-unit>
+						  			
 		</body>
 	</file>
 </xliff>

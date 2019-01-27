@@ -23,6 +23,7 @@ editor:
       - { name: "Yellow marker", element: "span", styles: { background-color: "yellow" } }
 
     format_tags: "p;h2;h3;h4;pre"
+
     toolbarGroups:
       - { name: clipboard, groups: [clipboard, undo] }
       - { name: editing,   groups: [find, selection, spellchecker] }
@@ -34,8 +35,9 @@ editor:
       - { name: document,  groups: [ mode, document, doctools ] }
       - { name: others }
       - "/"
-      - { name: basicstyles, groups: [ basicstyles, align, cleanup] }
+      - { name: basicstyles, groups: [ basicstyles, align, cleanup ] }
       - { name: paragraph,   groups: [ list, indent, blocks, align, bidi ] }
+      - { name: specialcharacters,   groups: [ insertcharacters ] }      
       - { name: colors }
       - "/"
       - { name: styles }
@@ -51,10 +53,13 @@ editor:
       - font
       - find
       - bidi
+      - selectall
+      - autolink
+      - wordcount
       - copyformatting
-      - specialchar
       - liststyle
-      - colorbutton   
+      - colorbutton
+      - templates
 
     removePlugins:
       - image
@@ -62,6 +67,11 @@ editor:
     #Available colors in colorbutton:  
     colorButton_colors: "00923E,F8C100,28166F"
 
+    templates: test
+
+    templates_files:
+      - EXT:bhsiteconf/Resources/Public/templates/default.js
+    
     removeButtons:
 
 # Allow s and u tag

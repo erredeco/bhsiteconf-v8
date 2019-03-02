@@ -15,7 +15,7 @@ page {
 	}
 
 	includeJSFooter {
-    	all = EXT:bhsiteconf/Resources/Public/Assets/Js/all.min.js	
+    	all = EXT:bhsiteconf/Resources/Public/Assets/Js/app.min.js	
 	}
 }
 

@@ -11,7 +11,10 @@
 			</trans-unit> 
 			<trans-unit id="page.label.sitetitle" xml:space="preserve">
 				<target>Titolo del sito</target>
-			</trans-unit>						
+			</trans-unit>	
+			<trans-unit id="page.label.menu" xml:space="preserve">
+				<target>Menu</target>
+			</trans-unit>								
 			<trans-unit id="page.label.footer.bhcopyright" xml:space="preserve">
 				<target>B Human S.r.L. Tutti i diritti riservati.</target>
 			</trans-unit>

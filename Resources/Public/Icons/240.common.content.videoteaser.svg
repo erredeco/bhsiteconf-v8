@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="37px" height="37px" viewBox="0 0 37 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Icon teaser media</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Icon-teaser-media" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="border" stroke="#999999" stroke-width="2" fill="#FFFFFF" x="1" y="1" width="35" height="35"></rect>
+        <rect id="Rectangle" fill="#515151" x="4" y="20" width="29" height="3"></rect>
+        <rect id="Rectangle" fill="#663399" x="4" y="4" width="29" height="14"></rect>
+        <g id="media" transform="translate(11.000000, 3.000000)">
+            <g>
+                <polygon id="Path" fill="#663399" fill-rule="nonzero" points="-1.42108547e-14 1.42108547e-14 16 1.42108547e-14 16 16 -1.42108547e-14 16"></polygon>
+                <polygon id="Triangle" fill="#FFFFFF" transform="translate(8.000000, 8.000000) rotate(90.000000) translate(-8.000000, -8.000000) " points="8 5 12 11 4 11"></polygon>
+            </g>
+        </g>
+        <rect id="Rectangle" fill="#5599FF" x="4" y="30" width="29" height="3"></rect>
+        <rect id="Rectangle" fill="#B9B9B9" x="4" y="25" width="29" height="3"></rect>
+        <rect id="Rectangle" fill="#FFFFFF" x="4" y="18" width="29" height="2"></rect>
+        <rect id="Rectangle" fill="#FFFFFF" x="4" y="2" width="29" height="2"></rect>
+    </g>
+</svg>

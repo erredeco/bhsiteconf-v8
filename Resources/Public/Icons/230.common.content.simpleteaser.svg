@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="37px" height="37px" viewBox="0 0 37 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Icon teaser image</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Icon-teaser-image" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="border" stroke="#999999" stroke-width="2" fill="#FFFFFF" x="1" y="1" width="35" height="35"></rect>
+        <rect id="Rectangle" fill="#515151" x="4" y="20" width="29" height="3"></rect>
+        <rect id="Rectangle" fill="#5599FF" x="4" y="2" width="29" height="16"></rect>
+        <g id="image" transform="translate(11.000000, 2.000000)">
+            <g>
+                <polygon id="Path" fill="#5599FF" fill-rule="nonzero" points="0 0 16 0 16 16 0 16"></polygon>
+                <polygon id="Path" fill="#FFFFFF" fill-rule="nonzero" points="10.6666667 13.3333333 2.66666667 13.3333333 4.66666667 10.6666667 6.66666667 8 8.66666667 10.6666667"></polygon>
+                <polygon id="Path" fill="#FFFFFF" fill-rule="nonzero" points="13.3333333 13.3333333 6.22133333 13.3333333 8 11.5546667 9.77866667 9.77866667 11.5546667 11.5546667"></polygon>
+                <circle id="Oval" fill="#FFFFFF" fill-rule="nonzero" cx="12" cy="6.66666667" r="1.33333333"></circle>
+            </g>
+        </g>
+        <rect id="Rectangle" fill="#5599FF" x="4" y="30" width="29" height="3"></rect>
+        <rect id="Rectangle" fill="#B9B9B9" x="4" y="25" width="29" height="3"></rect>
+        <rect id="Rectangle" fill="#FFFFFF" x="4" y="2" width="29" height="2"></rect>
+    </g>
+</svg>

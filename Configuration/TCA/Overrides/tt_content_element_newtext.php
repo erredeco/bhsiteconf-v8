@@ -27,7 +27,7 @@ call_user_func(function () {
 	[
 	    'LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:ttcontent.newtext.title',
 	    'newtext',
-	    'content-text'
+	    'additionalcontent-newtext'
 	],
 	'text',
 	'after'
@@ -37,7 +37,7 @@ call_user_func(function () {
 	 * Assign Icon
 	 */
 
-	$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['newtext'] = 'content-text'; 
+	$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['newtext'] = 'additionalcontent-newtext'; 
 
     /**
      * Define fields

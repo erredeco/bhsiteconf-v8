@@ -24,7 +24,7 @@ call_user_func(function()
         [
             'LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:ttcontent.textteaser.title',
             'textteaser',
-            'content-text-teaser'
+            'additionalcontent-textteaser'
         ],
         'texticon',
         'after'
@@ -33,7 +33,7 @@ call_user_func(function()
     /**
      * Assign Icon
      */
-    $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['textteaser'] = 'content-text-teaser'; 
+    $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['textteaser'] = 'additionalcontent-textteaser'; 
 
     /**
      * Define fields

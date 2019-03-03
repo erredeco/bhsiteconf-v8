@@ -3,7 +3,7 @@ mod.wizards.newContentElement.wizardItems{
      header = LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:wizards.tabs.additionalce
      elements{    
       textteaser {
-            iconIdentifier = content-text-teaser
+            iconIdentifier = additionalcontent-textteaser
             title = LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:ttcontent.textteaser.title
             description = LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:ttcontent.textteaser.description
             tt_content_defValues {

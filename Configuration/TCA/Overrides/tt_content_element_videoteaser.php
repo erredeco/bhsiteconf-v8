@@ -24,7 +24,7 @@ call_user_func(function () {
 		[
 		    'LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:ttcontent.simpleteaser.title',
 		    'videoteaser',
-		    'content-textmedia' 
+		    'additionalcontent-videoteaser' 
 		],
 		'simpletext',
 		'after'
@@ -33,7 +33,7 @@ call_user_func(function () {
 	/**
 	 * Assign Icon
 	 */
-	$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['videoteaser'] = 'content-textmedia'; 
+	$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['videoteaser'] = 'additionalcontent-videoteaser'; 
 
 	/**
 	 * Define fields

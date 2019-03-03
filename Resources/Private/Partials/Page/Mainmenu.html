@@ -1,16 +1,11 @@
 {namespace v=FluidTYPO3\Vhs\ViewHelpers}
 <div class="grid-container">
-
   <div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
     <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
     <div class="title-bar-title">{f:translate(key:'page.label.menu')}</div>
   </div>
-
-
   <div class="top-bar" id="responsive-menu">
     <div class="top-bar-left">
-
-
       <v:menu entryLevel="0" levels="3" expandAll="1">
         <ul class="vertical menu medium-horizontal medium-dropdown" data-responsive-menu="accordion medium-dropdown">
           <li class="menu-text">{f:translate(key:'page.label.sitetitle')->f:format.raw()}</li>
@@ -44,8 +39,6 @@
           </f:for> 
         </ul>
       </v:menu> 
-
-      
     </div>
     <div class="top-bar-right">
       <ul class="menu">
@@ -53,7 +46,6 @@
         <li><button type="button" class="button">Search</button></li>
       </ul>      
     </div>
-
   </div>
 </div>
 

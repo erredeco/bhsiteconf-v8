@@ -28,6 +28,10 @@ call_user_func(function () {
 		$iconFilePrefix = 'EXT:bhsiteconf/Resources/Public/Icons/';  
 		$iconIdentifiers = [   
 			'accordion' => '350.gridelements.accordion.svg',
+			'additionalcontent-newtext' => '220.common.content.newtext.svg',
+			'additionalcontent-simpleteaser' => '230.common.content.simpleteaser.svg',
+			'additionalcontent-textteaser' => '250.common.content.textteaser.svg',
+			'additionalcontent-videoteaser' => '240.common.content.videoteaser.svg',
 			'container' =>  'interface-square-symbol.svg',
 			'fourcolumns' => '330.gridelements.fourcolumnscontainer.svg',	
 			'genericicon' => 'typo3logo.svg',
@@ -35,7 +39,7 @@ call_user_func(function () {
 			'homepagelayout' => '010.page.layout.home.svg',    
 			'tab' => '360.gridelements.tab.svg',
 			'threecolumns' => '320.gridelements.threecolumnscontainer.svg',
-			'twocolumns' => '310.gridelements.twocolumnscontainer.svg' 
+			'twocolumns' => '310.gridelements.twocolumnscontainer.svg'
   		];  
   
     	foreach ($iconIdentifiers as $iconIdentifier => $iconFile) {

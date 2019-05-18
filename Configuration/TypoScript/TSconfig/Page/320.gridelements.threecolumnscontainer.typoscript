@@ -1,4 +1,4 @@
-tx_gridelements.setup.threecolumnscontainer {
+tx_gridelements.setup.GridElementThreeColumns {
   title = LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:gridelements.threecolumns.title
 	description = LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:gridelements.threecolumns.description
   iconIdentifier = threecolumns

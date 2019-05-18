@@ -1,6 +1,9 @@
 <f:layout name="Default"/>
 <f:section name="Main">
-	<div class="accordion" {f:if(condition: data.flexform_allowmultiexpand, then: 'data-multi-expand="true"')} {f:if(condition: data.flexform_allowallclosed, then: 'data-allow-all-closed="true"')} data-accordion>
-		{data.tx_gridelements_view_column_100-> f:format.raw()}
+	<div class="accordion" {f:if(condition:data.pi_flexform.data.general.lDEF.allowmultiexpand.vDEF, then: 'data-multi-expand="true"')} {f:if(condition: data.pi_flexform.data.general.lDEF.allowallclosed.vDEF, then: 'data-allow-all-closed="true"')} data-accordion>
+	    <f:for each="{children.1.100}" as="child">
+	        <f:render partial="Child"
+	                  arguments="{data: child.data, children: child.children, options: options, settings: settings}"/>
+	    </f:for>
 	</div>
 </f:section>

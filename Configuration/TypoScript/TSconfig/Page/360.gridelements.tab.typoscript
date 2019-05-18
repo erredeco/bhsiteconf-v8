@@ -1,5 +1,5 @@
 # Tabs Container
-tx_gridelements.setup.fftab_container {
+tx_gridelements.setup.GridElementTabContainer {
 	title = LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:gridelements.tab_container.title
 	description = LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:gridelements.tab_container.description
 	iconIdentifier = tab
@@ -22,7 +22,7 @@ tx_gridelements.setup.fftab_container {
 }
 
 # Tabs Element
-tx_gridelements.setup.fftab_element {
+tx_gridelements.setup.GridElementTabElement {
 	title = LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:gridelements.tab_element.title
 	description = LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:gridelements.tab_element.description
 	flexformDS = FILE:EXT:bhsiteconf/Configuration/FlexForms/gridelements_ffaccordion_element.xml

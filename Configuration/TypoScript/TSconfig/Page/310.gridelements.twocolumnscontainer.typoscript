@@ -1,4 +1,4 @@
-tx_gridelements.setup.twocolumnscontainer {
+tx_gridelements.setup.GridElementTwoColumns {
   title = LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:gridelements.twocolumns.title
 	description = LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:gridelements.twocolumns.description
   iconIdentifier = twocolumns

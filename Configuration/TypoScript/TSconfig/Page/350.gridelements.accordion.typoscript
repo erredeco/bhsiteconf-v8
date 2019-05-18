@@ -1,5 +1,5 @@
 # Accordion Container
-tx_gridelements.setup.ffaccordion_container {
+tx_gridelements.setup.GridElementAccordionContainer {
 	title = LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:gridelements.accordion_container.title
 	description = LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:gridelements.accordion_container.description
 	flexformDS = FILE:EXT:bhsiteconf/Configuration/FlexForms/gridelements_ffaccordion_container.xml
@@ -23,7 +23,7 @@ tx_gridelements.setup.ffaccordion_container {
 }
 
 # Accordion Element
-tx_gridelements.setup.ffaccordion_element {
+tx_gridelements.setup.GridElementAccordionElement {
 	title = LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:gridelements.accordion_element.title
 	description = LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:gridelements.accordion_element.description
 	flexformDS = FILE:EXT:bhsiteconf/Configuration/FlexForms/gridelements_ffaccordion_element.xml

@@ -147,54 +147,37 @@ lib.contentElement {
 # template cObject for content grids
 ## ---------------------------------------------------------
 
-lib.gridelements.defaultGridSetup.cObject =<  lib.contentElement 
-
-
-//NOTE: here is an alternative https://coders.care/blog/tutorial/gridelements-and-cms-8/ but it does not seem to work....
-
-# This is the definition you should use if you don't want to reference the lib.contentElement cObject
-
 /*
-lib.gridelements.defaultGridSetup { 
-    cObject = FLUIDTEMPLATE
-    cObject {
-        templateRootPaths {
-            0 = EXT:fluid_styled_content/Resources/Private/Templates/
-            10 = {$styles.templates.templateRootPath}
-        }
-        partialRootPaths {
-            0 = EXT:fluid_styled_content/Resources/Private/Partials/
-            10 = {$styles.templates.partialRootPath}
-        }
-        layoutRootPaths {
-            0 = EXT:fluid_styled_content/Resources/Private/Layouts/
-            10 = {$styles.templates.layoutRootPath}
-        }       
+I removed 
 
-        
-        dataProcessing.99 = TYPO3\CMS\Frontend\DataProcessing\SplitProcessor
-        dataProcessing.99 {
-            if.isTrue.field = layout
-            delimiter =,
-            removeEmptyEntries = 1
-            fieldName = layout     
-            as = splitlayout
-        }  
+tt_content.gridelements_pi1.partialRootPaths {
+        2 = EXT:bhsiteconf/Resources/Private/Partials/ContentElements/GridElements/
     }
-}
+
+As right now I don't need to overwrite the standard EXT:gridelements partials    
+
 */
 
-//THis is not needed anymore: as a copy of lib.contentElement  you have the header!
-// And in version 8 lib.stdHeader has been removed
-/*
-tt_content.gridelements_pi1 { 
-    # uncomment this to wrap the grid as the other elements
-    #stdWrap.dataWrap=<div id="c{field:uid}">|</div>
-   
-    #uncomment this to have the header back again!
-    #10 =< lib.stdheader 
-}
-*/
+tt_content.gridelements_pi1 {
+    dataProcessing{
+        20 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+        20 {
+            references.fieldName = media
+            as = backgroundimage 
+        } 
+    }   
+}    
+
+
+
+
+
+
+
+
+
+
+
 
 
 

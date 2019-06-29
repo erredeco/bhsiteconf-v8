@@ -16,7 +16,7 @@
 				<target>Menu</target>
 			</trans-unit>								
 			<trans-unit id="page.label.footer.bhcopyright" xml:space="preserve">
-				<target>B Human S.r.L. Tutti i diritti riservati.</target>
+				<target>&#64; %s B Human S.r.L. Tutti i diritti riservati.</target>
 			</trans-unit>
 			<trans-unit id="page.label.linktotop" xml:space="preserve">
 				<target>Torna Su</target>

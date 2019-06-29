@@ -1,13 +1,14 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
       xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
       data-namespace-typo3-fluid="true">
+
+{f:format.date(format:'Y' date:'now') -> f:variable(name:'year')}
+
 <hr class="hide" />
 <div  id="footer" class="grid-container" role="contentinfo">
   	<div class="grid-x  grid-padding-x">
     	<div class="medium-9 cell">
-    	    &copy;
-    	    <f:format.date format="Y" date="now" />
-    	    <f:translate key="page.label.footer.bhcopyright" />
+            <f:translate key="page.label.footer.bhcopyright" arguments="{0:year}" />    
     	    <nav role="navigation">
     	        <v:menu.list showHiddenInMenu="1" pages="{settings.pagesInFooterMenu}" class="menu" classActive=""/>
     	    </nav>

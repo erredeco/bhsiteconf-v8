@@ -3,14 +3,14 @@
 /***************************************************************
  * Extension Manager/Repository config file for ext "bhsiteconf".
  *
- * Auto generated 27-04-2014 19:51
+ * 15-06-2019 16:15
  *
  * Manual updates:
  * Only the data in the array - everything else is removed by next
  * writing. "version" and "dependencies" must not be touched!
  ***************************************************************/
 
-$EM_CONF[$_EXTKEY] = array(
+$EM_CONF[$_EXTKEY] = [
 	'title' => 'My Provider extension for pages and content',
 	'description' => 'Templates for my site, content and pages',
 	'category' => 'misc',
@@ -31,18 +31,18 @@ $EM_CONF[$_EXTKEY] = array(
 	'author_company' => '',
 	'CGLcompliance' => '',
 	'CGLcompliance_note' => '',
-	'constraints' => array(
-		'depends' => array(
+	'constraints' => [
+		'depends' => [
 			'typo3' => '9.5.0-9.5.99',
 			'cms' => '',
 			'extbase' => '',
 			'fluid' => '',
-      'vhs' => '5.1.0-5.9.9',
-      'gridelements' => '9.0.0-9.9.9',      
-		),
-		'conflicts' => array(
-		),
-		'suggests' => array(
-		),
-	),
-);
+			'vhs' => '5.1.0-5.9.9',
+			'gridelements' => '9.0.0-9.9.9',      
+		],
+		'conflicts' => [
+		],
+		'suggests' => [
+		],
+	],
+];

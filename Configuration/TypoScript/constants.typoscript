@@ -2,28 +2,34 @@
 ## Include whole folder!
 @import 'EXT:bhsiteconf/Configuration/TypoScript/Constants/*.typoscript'
 
-# customsubcategory=0_general=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.cat.general
-# customsubcategory=1_extension=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.cat.extension
+# customsubcategory=100=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.cat.general
+# customsubcategory=110=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.cat.extension
+
+# customsubcategory=200=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.cat.extensionoverrides 
+
+
+Extension Overrides
+
 
 plugin.tx_bhsiteconf.settings {
-	# cat=plugin.tx_bhsiteconf/0_general/0010; type=string; label=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.settings.headerText
+	# cat=plugin.tx_bhsiteconf/100/0010; type=string; label=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.settings.headerText
 	headerText = Realized by: B Human S.r.L.  
-	# cat=plugin.tx_bhsiteconf/0_general/0020; type=string; label=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.settings.pagesInFooterMenu
+	# cat=plugin.tx_bhsiteconf/100/0020; type=string; label=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.settings.pagesInFooterMenu
 	pagesInFooterMenu =
 
-	# cat=plugin.tx_bhsiteconf/0_general/0030; type=string; label=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.settings.pagesInHeaderMenu
+	# cat=plugin.tx_bhsiteconf/100/0030; type=string; label=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.settings.pagesInHeaderMenu
 	pagesInHeaderMenu =
 }
 
+
+
 plugin.tx_bhsiteconf.view {
-	# cat=plugin.tx_bhsiteconf/file/0010; type=string; label=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.file.templateRootPath
+	# cat=plugin.tx_bhsiteconf/200/0010; type=string; label=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.file.templateRootPath
 	templateRootPath = EXT:bhsiteconf/Resources/Private/Templates/
-	# cat=plugin.tx_bhsiteconf/file/0020; type=string; label=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.file.partialsRootPath
+	# cat=plugin.tx_bhsiteconf/200/0020; type=string; label=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.file.partialsRootPath
 	partialRootPath = EXT:bhsiteconf/Resources/Private/Partials/
-	# cat=plugin.tx_bhsiteconf/file/0030; type=string; label=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.file.layoutRootPath
+	# cat=plugin.tx_bhsiteconf/200/0030; type=string; label=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.file.layoutRootPath
 	layoutRootPath =  EXT:bhsiteconf/Resources/Private/Layouts/
-	# cat=plugin.tx_bhsiteconf/file/0040; type=string; label=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.file.overlaysRootPath
-	overlaysRootPath = EXT:bhsiteconf/Resources/Private/
 }
 
 

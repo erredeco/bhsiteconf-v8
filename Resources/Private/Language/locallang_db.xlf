@@ -10,6 +10,11 @@
 				<source>Extensions setup</source>
 			</trans-unit>
 
+			<trans-unit id="constant.cat.extension" xml:space="preserve">
+				<source>Extensions Overrides</source>
+			</trans-unit>
+
+
 			<trans-unit id="constant.settings.pagesInFooterMenu" xml:space="preserve">
 				<source>IDs of pages in footer menu</source>
 			</trans-unit>
@@ -22,17 +27,15 @@
 				<source>Comment in Header</source>
 			</trans-unit>			
 			<trans-unit id="constant.file.templateRootPath" xml:space="preserve">
-				<source>Path to templates for this site (FE)</source>
+				<source>Path to templates</source>
 			</trans-unit>
 			<trans-unit id="constant.file.layoutRootPath" xml:space="preserve">
-				<source>Path to layouts for this site (FE)</source>
+				<source>Path to layouts</source>
 			</trans-unit>
 			<trans-unit id="constant.file.partialsRootPath" xml:space="preserve">
-				<source>Path to partials for this site (FE)</source>
+				<source>Path to partials</source>
 			</trans-unit>
-			<trans-unit id="constant.file.overlaysRootPath" xml:space="preserve">
-				<source>Path to root folder for overlays</source>
-			</trans-unit>
+
 		</body>
 	</file>
 </xliff>

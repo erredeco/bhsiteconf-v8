@@ -9,12 +9,12 @@
 			<trans-unit id="constant.cat.extension" xml:space="preserve">
 				<source>Extensions setup</source>
 			</trans-unit>
-
+			<trans-unit id="constant.cat.fluidtemplate" xml:space="preserve">
+				<source>Page Fuild Template</source>
+			</trans-unit>
 			<trans-unit id="constant.cat.extension" xml:space="preserve">
 				<source>Extensions Overrides</source>
 			</trans-unit>
-
-
 			<trans-unit id="constant.settings.pagesInFooterMenu" xml:space="preserve">
 				<source>IDs of pages in footer menu</source>
 			</trans-unit>
@@ -35,7 +35,6 @@
 			<trans-unit id="constant.file.partialsRootPath" xml:space="preserve">
 				<source>Path to partials</source>
 			</trans-unit>
-
 		</body>
 	</file>
 </xliff>

@@ -39,13 +39,16 @@ lib.stdContent {
     }
 
     layoutRootPaths {
-        0 = EXT:bhsiteconf/Resources/Private/Layouts/Page/  
+        0 = EXT:bhsiteconf/Resources/Private/Layouts/Page/
+        1 = {$plugin.tx_bhsiteconf.fluidtemplate.layoutRootPath}  
     }
     partialRootPaths {
         0 = EXT:bhsiteconf/Resources/Private/Partials/Page/  
+        1 = {$plugin.tx_bhsiteconf.fluidtemplate.partialRootPath}  
     }
     templateRootPaths {
         0 = EXT:bhsiteconf/Resources/Private/Templates/Page/  
+        1 = {$plugin.tx_bhsiteconf.fluidtemplate.partialRootPath}  
     }
 
     ## with this I can omit the LLL:EXT:bhsiteconf/Resources/Private/Language/locallang.xml:label in  <f:translate key !! 

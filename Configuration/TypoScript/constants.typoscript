@@ -4,7 +4,7 @@
 
 # customsubcategory=100=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.cat.general
 # customsubcategory=110=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.cat.extension
-
+# customsubcategory=120=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.cat.fluidtemplate
 # customsubcategory=200=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.cat.extensionoverrides 
 
 
@@ -19,6 +19,17 @@ plugin.tx_bhsiteconf.settings {
 
 	# cat=plugin.tx_bhsiteconf/100/0030; type=string; label=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.settings.pagesInHeaderMenu
 	pagesInHeaderMenu =
+}
+
+plugin.tx_bhsiteconf{
+	fluidtemplate{
+		# cat=plugin.tx_bhsiteconf/120/0010; type=string; label=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.file.templateRootPath
+		templateRootPath = EXT:bhsiteconf/Resources/Private/Templates/Page/
+		# cat=plugin.tx_bhsiteconf/120/0020; type=string; label=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.file.partialsRootPath
+		partialRootPath = EXT:bhsiteconf/Resources/Private/Partials/Page/
+		# cat=plugin.tx_bhsiteconf/120/0030; type=string; label=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.file.layoutRootPath
+		layoutRootPath =  EXT:bhsiteconf/Resources/Private/Layouts/Page/
+	}
 }
 
 

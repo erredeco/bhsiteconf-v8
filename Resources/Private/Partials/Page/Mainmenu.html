@@ -8,34 +8,56 @@
   </div>
   <div class="top-bar" id="responsive-menu">
     <div class="top-bar-left">
-      <v:menu entryLevel="0" levels="3" expandAll="1">
+      <v:menu entryLevel="0" levels="3" expandAll="1" includeSpacers="1">
         <ul class="vertical menu medium-horizontal medium-dropdown" data-responsive-menu="accordion medium-dropdown">
           <li class="menu-text">{f:translate(key:'page.label.sitetitle')->f:format.raw()}</li>
 
           <f:for each="{menu}" as="item">
             <li>
-              <f:link.page pageUid="{item.uid}" title="{item.linktext}">{item.linktext}</f:link.page>
+              <f:if condition="{item.hasSubPages}">
+                <f:then>
+                  <a href="#" title="{item.linktext}">{item.linktext}</a>  
+                  <v:menu pageUid="{item.uid}">
+                    <ul class="vertical menu">
+                      <f:for each="{menu}" as="subItem">  
+                        <li>
+                          <f:if condition="{subItem.hasSubPages}">
+                            <f:then>
+                              <a href="#" title="{subItem.linktext}">{subItem.linktext}</a>
+
+                                <v:menu pageUid="{subItem.uid}">
+                                  <ul class="vertical menu">
+                                    <f:for each="{menu}" as="subsubItem">  
+                                      <li>
+                                        <f:link.page pageUid="{subsubItem.uid}" title="{subsubItem.linktext}">{subsubItem.linktext}</f:link.page>
+                                       </li> 
+                                    </f:for>
+                                  </ul>
+                                </v:menu>
+                            </f:then>
+                            <f:else>
+                              <f:link.page pageUid="{subItem.uid}" title="{subItem.linktext}">{subItem.linktext}</f:link.page>
+                            </f:else>
+                          </f:if>
+                        </li>
+                      </f:for>
+                    </ul>
+                  </v:menu>
+
+                  
+
+                </f:then>
+                <f:else>
+                  <f:link.page pageUid="{item.uid}" title="{item.linktext}">{item.linktext}</f:link.page>  
+                </f:else>
+              </f:if> 
+
+
+
+
+              
               <f:if condition="item.hasSubpages">
-                <v:menu pageUid="{item.uid}">
-                  <ul class="vertical menu">
-                    <f:for each="{menu}" as="subItem">  
-                      <li>
-                        <f:link.page pageUid="{subItem.uid}" title="{subItem.linktext}">{subItem.linktext}</f:link.page>
-                        <f:if condition="subItem.hasSubpages">
-                          <v:menu pageUid="{subItem.uid}">
-                            <ul class="vertical menu">
-                              <f:for each="{menu}" as="subsubItem">  
-                                <li>
-                                  <f:link.page pageUid="{subsubItem.uid}" title="{subsubItem.linktext}">{subsubItem.linktext}</f:link.page>
-                                 </li> 
-                              </f:for>
-                            </ul>
-                          </v:menu>
-                        </f:if>
-                      </li>
-                    </f:for>
-                  </ul>
-                </v:menu>
+
               </f:if>
             </li>
           </f:for> 

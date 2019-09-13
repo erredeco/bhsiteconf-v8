@@ -1,6 +1,6 @@
 
 ## Include whole folder!
-@import 'EXT:bhsiteconf/Configuration/TypoScript/Constants/*.typoscript'
+## @import 'EXT:bhsiteconf/Configuration/TypoScript/Constants/*.typoscript'
 
 # customsubcategory=100=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.cat.general
 # customsubcategory=110=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.cat.extension
@@ -8,7 +8,7 @@
 # customsubcategory=200=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.cat.extensionoverrides 
 
 
-Extension Overrides
+## Extension Overrides
 
 
 plugin.tx_bhsiteconf.settings {

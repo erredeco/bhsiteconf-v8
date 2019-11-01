@@ -9,10 +9,10 @@ declare(strict_types = 1);
  * LICENSE file that was distributed with this source code.
  */
 
-namespace ERREDECO\Bhsiteconf\DataProcessing;
+namespace Erredeco\Bhsiteconf\DataProcessing;
 
 use TYPO3\CMS\Core\Utility\GeneralUtility;
-use TYPO3\CMS\Extbase\Service\FlexFormService;
+use TYPO3\CMS\Core\Service\FlexFormService;
 use TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer;
 use TYPO3\CMS\Frontend\ContentObject\DataProcessorInterface;
 
@@ -20,13 +20,13 @@ use TYPO3\CMS\Frontend\ContentObject\DataProcessorInterface;
  * Minimal TypoScript configuration
  * Process field pi_flexform and overrides the values stored in data
  *
- * 10 = ERREDECO\Bhsiteconf\DataProcessing\FlexFormProcessor
+ * 10 = Erredeco\Bhsiteconf\DataProcessing\FlexFormProcessor
  *
  *
  * Advanced TypoScript configuration
  * Process field assigned in fieldName and stores processed data to new key
  *
- * 10 = ERREDECO\Bhsiteconf\DataProcessing\FlexFormProcessor
+ * 10 = Erredeco\Bhsiteconf\DataProcessing\FlexFormProcessor
  * 10 {
  *   fieldName = pi_flexform
  *   as = flexform

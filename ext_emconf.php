@@ -42,4 +42,9 @@ $EM_CONF[$_EXTKEY] = [
 		'suggests' => [
 		],
 	],
+    'autoload' => [
+        'psr-4' => [
+            'ERREDECO\\Bhsiteconf\\' => 'Classes'
+        ],
+    ],	
 ];

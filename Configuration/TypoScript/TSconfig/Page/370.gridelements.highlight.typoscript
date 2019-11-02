@@ -1,0 +1,22 @@
+# Highlight section
+tx_gridelements.setup.GridElementHighlight {
+	title = LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:gridelements.highlight.title
+	description = LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:gridelements.highlight.description
+	iconIdentifier = highlight
+	config {
+		colCount = 1
+		rowCount = 1
+
+		rows {
+			1 {
+				columns {
+					1 {
+						name = LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:gridelements.highlight.title
+						colPos = 100
+						#allowed = gridelements_pi1
+					}
+				}
+			}
+		}
+	}
+}

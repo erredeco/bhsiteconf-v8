@@ -8,7 +8,7 @@
 # customsubcategory=200=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.cat.extensionoverrides 
 
 
-## Extension Overrides
+## Extension Overrides
 
 
 plugin.tx_bhsiteconf.settings {

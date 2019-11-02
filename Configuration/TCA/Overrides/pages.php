@@ -24,6 +24,7 @@ call_user_func(function () {
         '330.gridelements.fourcolumnscontainer.typoscript' => 'Grid Element, Four columns container',
         '350.gridelements.accordion.typoscript' => 'Grid Element, Accordion',
         '360.gridelements.tab.typoscript' => 'Grid Element, Tabs',
+        '370.gridelements.highlight.typoscript' => 'Grid Element, Highlight section',
         '500.RTE.default.typoscript' => 'Default RTE Configuration',
         '502.RTE.styles.typoscript' => 'Allowed styles for RTE links'
     ];

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="37px" height="37px" viewBox="0 0 37 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>Icon Highlight Section</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Icon-Highlight-Section" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="border" stroke="#8C8C8C" stroke-width="2" fill="#FFFFFF" x="1" y="1" width="35" height="35"></rect>
+        <rect id="Rectangle" fill="#515151" x="4" y="4" width="13" height="29"></rect>
+        <g id="Rows" transform="translate(20.000000, 10.000000)" fill="#B9B9B9" fill-rule="nonzero">
+            <polygon id="Path" points="0 0 13 0 13 3 0 3"></polygon>
+            <polygon id="Path" points="0 5 13 5 13 8 0 8"></polygon>
+            <polygon id="Path" points="0 10 13 10 13 13 0 13"></polygon>
+            <polygon id="Path-Copy" points="0 15 13 15 13 18 0 18"></polygon>
+            <polygon id="Path-Copy-2" points="0 20 13 20 13 23 0 23"></polygon>
+        </g>
+        <rect id="Title" fill="#515151" x="20" y="4" width="13" height="3"></rect>
+    </g>
+</svg>

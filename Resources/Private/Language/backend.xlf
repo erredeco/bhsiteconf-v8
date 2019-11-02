@@ -110,16 +110,29 @@
 			</trans-unit>
 
 
-      <trans-unit id="ttcontent.textteaser.title">
-          <source>Text with Teaser</source>
-      </trans-unit>
-      <trans-unit id="ttcontent.textteaser.description">
-          <source>Insert Text with Teaser</source>
-      </trans-unit>
+			<trans-unit id="ttcontent.textteaser.title">
+				<source>Text with Teaser</source>
+			</trans-unit>
+			<trans-unit id="ttcontent.textteaser.description">
+				<source>Insert Text with Teaser</source>
+			</trans-unit>
 
-      <trans-unit id="field.teaser">
-          <source>Teaser</source>
-      </trans-unit>
+			<trans-unit id="field.teaser">
+				<source>Teaser</source>
+			</trans-unit>
+
+			<trans-unit id="palette.readmore">
+				<source>Read more</source>
+			</trans-unit>			      
+
+			<trans-unit id="field.readmore_label">
+				<source>Label read more</source>
+			</trans-unit>		      
+
+			<trans-unit id="field.readmore_link">
+				<source>Read more link</source>
+			</trans-unit>	
+
 
 			<trans-unit id="ttcontent.newtextmedia.title" xml:space="preserve">
 				<source>Text &amp; Media, another version</source>
@@ -175,6 +188,16 @@
 			<trans-unit id="gridelements.accordion_element.description" xml:space="preserve">
 				<source>Single element for the accordion. WARNING! Never use alone! ONLY INSIDE accordion container!!</source>
 			</trans-unit>
+
+
+			<trans-unit id="gridelements.highlight.title" xml:space="preserve">
+				<source>Highlight Section</source>
+			</trans-unit>       
+			<trans-unit id="gridelements.highlight.description" xml:space="preserve">
+				<source>Highlight section container, with an element and some text</source>
+			</trans-unit>
+
+
 			<trans-unit id="gridelements.tab_container.title" xml:space="preserve">
 				<source>Tabs container</source>
 			</trans-unit>       

@@ -66,6 +66,7 @@ call_user_func(function()
                     'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel',
                     'config' => [
                         'enableRichtext' => true,
+                        'softref' => 'typolink_tag,images,email[subst],url',
                         'richtextConfiguration' => 'default'
                     ]
                 ]

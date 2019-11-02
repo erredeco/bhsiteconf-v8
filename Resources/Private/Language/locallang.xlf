@@ -25,7 +25,9 @@
 				<source>You are here:</source>
 			</trans-unit>	
 
-
+			<trans-unit id="content.label.readmore_label" xml:space="preserve">
+				<source>Show more</source>
+			</trans-unit>
 
 		</body>
 	</file>

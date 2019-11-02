@@ -46,6 +46,9 @@ call_user_func(function () {
 	                --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
 	                --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.headers;headers,
 	                bodytext,
+	                --palette--;LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:palette.readmore;readmore,
+
+
                 --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.images,
                     image,
                     --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.imagelinks;imagelinks,                    

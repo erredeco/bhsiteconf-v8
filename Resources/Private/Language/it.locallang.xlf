@@ -24,6 +24,9 @@
 			<trans-unit id="page.label.breadcrumbs" xml:space="preserve">
 				<target>Voi siete qui:</target>
 			</trans-unit>
+			<trans-unit id="content.label.readmore_label" xml:space="preserve">
+				<target>Scopri</target>
+			</trans-unit>			
 						  			
 		</body>
 	</file>

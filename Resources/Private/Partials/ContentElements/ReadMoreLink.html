@@ -1,0 +1,12 @@
+<f:if condition="{data.readmore_link}">
+	<f:link.typolink parameter="{data.readmore_link}" class="button expanded">
+            <f:if condition="{data.readmore_label}">
+                <f:then>
+                    {data.readmore_label}
+                </f:then>
+                <f:else>
+                    <f:translate key="content.label.readmore_label" extensionName="bhsiteconf"/>
+                </f:else>
+            </f:if>
+	</f:link.typolink>
+</f:if>

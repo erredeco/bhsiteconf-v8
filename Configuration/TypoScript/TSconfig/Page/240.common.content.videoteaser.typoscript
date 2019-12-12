@@ -4,8 +4,8 @@ mod.wizards.newContentElement.wizardItems{
      elements{    
       videoteaser {
             iconIdentifier = additionalcontent-videoteaser
-            title = LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:ttcontent.simpleteaser.title
-            description = LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:ttcontent.simpleteaser.description
+            title = LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:ttcontent.videoteaser.title
+            description = LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:ttcontent.videoteaser.description
             tt_content_defValues {
                CType = videoteaser
             }

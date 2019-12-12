@@ -15,13 +15,7 @@
 	
 
 	<f:if condition="{data.subheader}"><h4>{data.subheader}</h4></f:if>
-
-
-
 	<f:format.html>{data.bodytext}</f:format.html>
-
-	<f:if condition="{data.header_link}">
-		<p><f:link.typolink parameter="{data.header_link}">More</f:link.typolink></p>
-	</f:if>
+	<f:render partial="ReadMoreLink" arguments="{data:data}" />
 </f:section>
 </html>

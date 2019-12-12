@@ -22,7 +22,7 @@ call_user_func(function () {
 		'tt_content',
 		'CType',
 		[
-		    'LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:ttcontent.simpleteaser.title',
+		    'LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:ttcontent.videoteaser.title',
 		    'videoteaser',
 		    'additionalcontent-videoteaser' 
 		],
@@ -46,6 +46,7 @@ call_user_func(function () {
 	                --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
 	                --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.headers;headers,
 	                bodytext,
+	                --palette--;LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:palette.readmore;readmore,	                
                 --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.media,
                     assets,
                     --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.imagelinks;imagelinks,                    

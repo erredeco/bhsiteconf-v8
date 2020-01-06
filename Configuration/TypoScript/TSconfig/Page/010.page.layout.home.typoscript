@@ -5,7 +5,7 @@ mod.web_layout.BackendLayouts {
   home {
     title = LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:backend_layout.home.title
     description = LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:backend_layout.home.description
-    icon = homepagelayout
+    icon = EXT:bhsiteconf/Resources/Public/Icons/010.page.layout.home.svg
     config {
       backend_layout {
         colCount = 1

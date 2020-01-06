@@ -35,9 +35,7 @@ call_user_func(function () {
 			'container' =>  'interface-square-symbol.svg',
 			'fourcolumns' => '330.gridelements.fourcolumnscontainer.svg',	
 			'genericicon' => 'typo3logo.svg',
-			'genericpagelayout' => '011.page.layout.default.svg',
 			'highlight' => '370.gridelements.highlight.svg',   
-			'homepagelayout' => '010.page.layout.home.svg',    
 			'tab' => '360.gridelements.tab.svg',
 			'threecolumns' => '320.gridelements.threecolumnscontainer.svg',
 			'twocolumns' => '310.gridelements.twocolumnscontainer.svg'

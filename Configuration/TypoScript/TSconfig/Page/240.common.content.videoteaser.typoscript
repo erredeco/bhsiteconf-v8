@@ -11,7 +11,7 @@ mod.wizards.newContentElement.wizardItems{
             }
          }       
      }
-     show  = *
+     show := addToList(videoteaser)
   }
 }
 

@@ -8,15 +8,48 @@
 		<f:uri.image image="{ItemImage}" />
 
 	</f:for>
-	</f:comment>
+
+	Using the fileProcessor TypoScript approach
 	<f:if condition="{headerImage.0}">
+		<img data-interchange="[{f:uri.image(image:headerImage.0,cropVariant:'small',width:'640')}, small], [{f:uri.image(image:headerImage.0,cropVariant:'medium',width:'1024')}, medium], [{f:uri.image(image:headerImage.0,cropVariant:'default')}, large]">
+
 		<img srcset="
 		{f:uri.image(image:headerImage.0,cropVariant:'small',width:'640')} 640w,
 		{f:uri.image(image:headerImage.0,cropVariant:'medium',width:'1024')} 1024w,
         {f:uri.image(image:headerImage.0,cropVariant:'default')} 1920w" src="{f:uri.image(image:headerImage.0,cropVariant:'default')}"  alt="" >
+
+
 	</f:if>
+	</f:comment>
+
+
+  <f:for each="{v:page.resources.fal(field: 'media',slide:'-1')}" as="image">
+		<f:comment>
+
+			The plain image
+    		<f:image src="{image.url}" alt="{image.alternative} {image.name}" title="{image.title}"/>
+	
+    		Using data-interchange
+
+			<img data-interchange="
+				[{f:uri.image(src:image.uid,treatIdAsReference:1,cropVariant:'small',width:'640')}, small], 
+				[{f:uri.image(src:image.uid,treatIdAsReference:1,cropVariant:'medium',width:'1024')}, medium], 
+				[{f:uri.image(src:image.uid,treatIdAsReference:1,cropVariant:'default')}, large]">
+
+
+
+		</f:comment>
+
+		<img srcset="
+		{f:uri.image(src:image.uid, treatIdAsReference:1, cropVariant:'small',width:'640')} 640w,
+		{f:uri.image(src:image.uid, treatIdAsReference:1, cropVariant:'medium',width:'1024')} 1024w,
+        {f:uri.image(src:image.uid, treatIdAsReference:1, cropVariant:'default')} 1920w" src="{f:uri.image(src:image.uid, treatIdAsReference:1, cropVariant:'default')}"  alt="" >
+
+  </f:for>
+
 	<nav role="navigation">
 		<v:page.menu.list showHiddenInMenu="1" pages="{settings.pagesInHeaderMenu}" class="menu" classActive=""/>
 	</nav>
+
 </header>
 </html>

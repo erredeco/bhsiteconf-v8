@@ -4,7 +4,7 @@ defined('TYPO3_MODE') || die();
 //Here I define a new content element "simpleteaser"!
 
 //prevent defining global variables 
-call_user_func(function () {
+(function () {
 
 	/**
 	 * Add Content Element

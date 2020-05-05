@@ -4,8 +4,8 @@ defined('TYPO3_MODE') || die();
 /**
  * Prevents defining global variables
  */
-call_user_func(function()
-{
+(function () {
+	
 	/**
 	 * Adjust columns for generic usage; I am adding to TCA the field "teaser" which is used by now by tt_content.textteaser
 	 */

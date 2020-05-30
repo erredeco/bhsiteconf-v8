@@ -14,4 +14,4 @@ defined('TYPO3_MODE') || die();
         'Configuration/TypoScript',
         'My Provider extension for pages and content'
     );
-});
+})();

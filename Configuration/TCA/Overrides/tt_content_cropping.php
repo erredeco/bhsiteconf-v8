@@ -127,4 +127,4 @@ $GLOBALS['TCA']['tt_content']['columns']['image']['config']['overrideChildTca'][
 ];
 */
 
-});
+})();

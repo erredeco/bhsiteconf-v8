@@ -95,4 +95,4 @@ $GLOBALS['TCA']['pages']['columns']['media']['config']['overrideChildTca']['colu
 ];
 */
 
-});
+})();

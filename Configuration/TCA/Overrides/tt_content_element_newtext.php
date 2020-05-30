@@ -86,4 +86,4 @@ defined('TYPO3_MODE') || die();
         'FILE:EXT:bhsiteconf/Configuration/FlexForms/newtext.xml',
         'newtext'
     );
-});
+})();

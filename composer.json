@@ -1,0 +1,24 @@
+{
+    "name": "erredeco/bhsiteconf",
+    "type": "typo3-cms-extension",
+    "description": "Templates for my site, content and pages",
+    "license": "GPL-2.0-or-later",
+    "keywords": ["TYPO3 CMS"],    
+    "version": "v0.0.6",
+    "authors": [
+        {
+            "name": "Riccardo De Contardi",
+            "email": "erredeco@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Erredeco\\Bhsiteconf\\": "Classes"
+        }
+    },
+    "require": {
+        "typo3/cms-core": "^10",
+        "fluidtypo3/vhs": "^6.0",
+        "gridelementsteam/gridelements": "^10" 
+    }
+}

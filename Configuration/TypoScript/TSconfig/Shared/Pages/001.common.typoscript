@@ -5,7 +5,9 @@
 TCEMAIN {
     permissions {
     	//Set "Global" group as default for new pages
-        groupid = 2
+    	// This is set in the config.yaml file under /config/sites/
+    	// The feature is available since TYPO3 10.4 see https://docs.typo3.org/c/typo3/cms-core/master/en-us/Changelog/10.4/Feature-91080-SiteSettingsAsTsConstantsAndInTsConfig.html
+        groupid = {$permissions.groupid}
         user = show, editcontent, edit, new, delete
         group = show, editcontent, edit, new
         everybody = show, editcontent, edit, new

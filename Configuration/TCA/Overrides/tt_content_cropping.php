@@ -14,19 +14,19 @@ defined('TYPO3_MODE') || die();
 	    'title' => 'LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:option.default',
 	    'allowedAspectRatios' => [
 	        '16:9' => [
-	            'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.16_9',
+	            'title' => 'LLL:EXT:core/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.16_9',
 	            'value' => 16 / 9
 	        ],
 	        '4:3' => [
-	            'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.4_3',
+	            'title' => 'LLL:EXT:core/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.4_3',
 	            'value' => 4 / 3
 	        ],
 	        '1:1' => [
-	            'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.1_1',
+	            'title' => 'LLL:EXT:core/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.1_1',
 	            'value' => 1.0
 	        ],
 	        'NaN' => [
-	            'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.free',
+	            'title' => 'LLL:EXT:core/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.free',
 	            'value' => 0.0
 	        ],
 	    ],

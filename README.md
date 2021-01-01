@@ -8,7 +8,7 @@ it depends on vhs
 
 ##Running instructions
 
-The assets inside /Resources/Public/Assets/Css, ##The assets inside /Resources/Public/Assets/Js, ##The assets inside /Resources/Public/Assets/Img_layout
+The assets inside /Resources/Public/Assets/Css,  /Resources/Public/Assets/Js, /Resources/Public/Assets/Img_layout
 are provided by the project my-foundation-1 (https://github.com/erredeco/my-foundation-1)
 in that project you will find a task named "deploy" that copies all the assets into that folders;
 please see the readme.md of that project about how to adjust the path

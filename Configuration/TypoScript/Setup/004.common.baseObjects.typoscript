@@ -48,7 +48,7 @@ lib.stdContent {
     }
     templateRootPaths {
         0 = EXT:bhsiteconf/Resources/Private/Templates/Page/  
-        1 = {$plugin.tx_bhsiteconf.fluidtemplate.partialRootPath}  
+        1 = {$plugin.tx_bhsiteconf.fluidtemplate.templateRootPath}  
     }
 
     ## with this I can omit the LLL:EXT:bhsiteconf/Resources/Private/Language/locallang.xml:label in  <f:translate key !! 

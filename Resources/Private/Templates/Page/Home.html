@@ -1,15 +1,14 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
-      xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
       data-namespace-typo3-fluid="true">
 
 <f:layout name="Default" />
 <f:section name="Main">
-	<div class="grid-container top">
-		<v:content.render column="1" />
-	</div>	
+	
+	<f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '1', wrap: '<div class=\"grid-container top\">|</div>'}" />
+	
 	<hr />
 	<div class="grid-container main">
-		<v:content.render column="0" />
+		<f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '0'}" />
 	</div>		
 	<f:render partial="LinkToTop" /> 
 </f:section>

@@ -1,14 +1,14 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
-      xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
-      data-namespace-typo3-fluid="true">
+        data-namespace-typo3-fluid="true">
+       
 {f:format.date(format:'Y',date:'now') -> f:variable(name:'year')}
 <hr class="hide" />
 <div  id="footer" class="grid-container" role="contentinfo">
   	<div class="grid-x  grid-padding-x">
     	<div class="medium-9 cell">
             <f:translate key="page.label.footer.bhcopyright" arguments="{0:year}" />    
-    	    <nav role="navigation">
-    	        <v:menu.list showHiddenInMenu="1" pages="{settings.pagesInFooterMenu}" class="menu" classActive=""/>
+    	    <nav>
+                <f:render section="FooterMenu" arguments="{menu: footernavigation, level: 0}" />
     	    </nav>
     	</div>
     	<div class="medium-3 cell">
@@ -24,6 +24,24 @@
     </div>
 </div>
 <f:render partial="LinkToTop" />
+
+
+<f:section name="FooterMenu">
+    <f:if condition="{menu}">
+        <f:variable name="level" value="{level + 1}" />
+        <ul class="menu menu--footer level-{level}">
+            <f:for each="{menu}" as="item">
+                <li class="menu__item level-{level}">
+                    <a href="{item.link}" title="{item.title}">
+                        {item.title}
+                    </a>
+                </li>
+            </f:for>
+        </ul>
+    </f:if>
+</f:section>
+
 </html>
+
 
 

@@ -19,10 +19,10 @@
 				<source>Extensions Overrides</source>
 			</trans-unit>
 			<trans-unit id="constant.settings.pagesInFooterMenu" xml:space="preserve">
-				<source>IDs of pages in footer menu</source>
+				<source>Pages in footer menu: comma separated list of page uids</source>
 			</trans-unit>
 			<trans-unit id="constant.settings.pagesInHeaderMenu" xml:space="preserve">
-				<source>IDs of pages in header menu</source>
+				<source>Pages in header menu: Comma separated list of page uids</source>
 			</trans-unit>
 			<trans-unit id="constant.settings.breadcrumbEnableLevel" xml:space="preserve">
 				<source>Breadcrumb Enable Level: Enable breadcrumb menu is greater or equal this value</source>

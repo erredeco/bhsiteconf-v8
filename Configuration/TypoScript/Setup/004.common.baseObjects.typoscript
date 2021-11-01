@@ -111,6 +111,17 @@ lib.stdContent {
             value= level-{level:-1}      
             insertData = 1    
         }
+
+        ##------------------------------------------
+        # BreadcrumbExtendedValue should be used to display the title of a
+        # single record. For example the title of a news record.
+        ##------------------------------------------        
+
+        breadcrumbExtendedValue = COA
+        breadcrumbExtendedValue {
+           
+        }
+
     }
 
     ##------------------------------------------
@@ -118,6 +129,79 @@ lib.stdContent {
     ##------------------------------------------
     
     dataProcessing{    
+        
+
+        10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+        10 {
+            levels = 2
+            includeSpacer = 1
+            as = mainnavigation
+        }
+
+
+        20 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+        20 {
+            special = rootline
+            special.range = 0|-1
+            includeNotInMenu = 1
+            as = breadcrumb
+            if {
+                value = {$plugin.tx_bhsiteconf.settings.breadcrumbEnableLevel}
+                value {
+                    insertData = 1
+                    prioriCalc = 1
+                    stdWrap.wrap = |-1
+                }
+                isGreaterThan {
+                    data = level
+                }
+            }
+        }
+
+
+        30 = TYPO3\CMS\Frontend\DataProcessing\LanguageMenuProcessor
+        30 {
+            languages = {$page.theme.language.languageValue}
+            as = languagenavigation
+        }
+
+
+
+        40 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+        40 {
+            special = list
+            special.value = {$plugin.tx_bhsiteconf.settings.pagesInHeaderMenu}
+            includeNotInMenu = 1
+            levels = 1
+            as = headernavigation
+            if {
+                isTrue = {$plugin.tx_bhsiteconf.settings.pagesInHeaderMenu}
+            }
+
+        }
+
+
+        50 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+        50 {
+            special = list
+            special.value = {$plugin.tx_bhsiteconf.settings.pagesInFooterMenu}
+            includeNotInMenu = 1
+            levels = 1
+            as = footernavigation
+            if {
+                isTrue = {$plugin.tx_bhsiteconf.settings.pagesInFooterMenu}
+            }
+
+        }
+
+
+
+
+
+
+
+
+
         99 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
         99 {
             references {
@@ -161,6 +245,7 @@ As right now I don't need to overwrite the standard EXT:gridelements partials
 
 */
 
+/*
 tt_content.gridelements_pi1 {
     dataProcessing{
         20 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
@@ -170,6 +255,7 @@ tt_content.gridelements_pi1 {
         } 
     }   
 }
+*/
 
 
 

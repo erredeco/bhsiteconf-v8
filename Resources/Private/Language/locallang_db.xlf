@@ -24,6 +24,9 @@
 			<trans-unit id="constant.settings.pagesInHeaderMenu" xml:space="preserve">
 				<source>IDs of pages in header menu</source>
 			</trans-unit>
+			<trans-unit id="constant.settings.breadcrumbEnableLevel" xml:space="preserve">
+				<source>Breadcrumb Enable Level: Enable breadcrumb menu is greater or equal this value</source>
+			</trans-unit>			
 			<trans-unit id="constant.settings.headerText" xml:space="preserve">
 				<source>Comment in Header</source>
 			</trans-unit>		

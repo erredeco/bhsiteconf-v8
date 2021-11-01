@@ -1,7 +1,34 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
-      xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
-      data-namespace-typo3-fluid="true">
-<nav class="grid-container" aria-label="{f:translate(key:'page.label.breadcrumbs')}" role="navigation">
-	<v:page.breadCrumb showHiddenInMenu="1" linkCurrent="FALSE" class="breadcrumbs" />
-</nav>
+    data-namespace-typo3-fluid="true">
+
+	<f:if condition="{breadcrumb}">
+        <nav class="grid-container" aria-label="{f:translate(key:'page.label.breadcrumbs')}">
+            <ol class="breadcrumbs">
+                <f:for each="{breadcrumb}" as="item">
+                  
+                    <f:variable name="isCurrent" value="0" />
+                    <f:if condition="{item.current} && {breadcrumbExtendedValue} == ''">
+                        <f:variable name="isCurrent" value="1" />
+                    </f:if>
+                    <li {f:if(condition: isCurrent, then: ' aria-current="page"')}>
+                        <f:if condition="{isCurrent}">
+                            <f:then>
+                                {item.title}
+                            </f:then>
+                            <f:else>
+                                <a class="breadcrumb-link" href="{item.link}"{f:if(condition: item.target, then: ' target="{item.target}"')} title="{item.title}">
+                                    {item.title}
+                                </a>
+                            </f:else>
+                        </f:if>
+                    </li>
+                </f:for>
+                <f:if condition="{breadcrumbExtendedValue}">
+                    <li aria-current="page">
+                        {breadcrumbExtendedValue}
+                    </li>
+                </f:if>
+            </ol>       
+        </nav>
+    </f:if>  
 </html>	

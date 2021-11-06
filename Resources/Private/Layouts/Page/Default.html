@@ -1,8 +1,8 @@
 <body id="page-{data.uid}" class="page {pageLevel} layout-{data.layout}">
 	<f:render partial="AllSiteTitle" />
-	<f:render partial="Header" arguments="{headerImage:headerImage}"/>
-	<f:render partial="Mainmenu" />
+	<f:render partial="Header" arguments="{headernavigation:headernavigation, level:level,headerImage:headerImage}"/>
+	<f:render partial="Mainmenu" arguments="{mainnavigation:mainnavigation}"/>
 	<f:render partial="Title" arguments="{data:data}"/>
-	<f:render partial="Breadcrumbs"/>
+	<f:render partial="Breadcrumbs" arguments="{breadcrumb:breadcrumb}"/>
 	<f:render section="Main" />
-	<f:render partial="Footer" />
+	<f:render partial="Footer" arguments="{footernavigation:footernavigation, level:level}" />

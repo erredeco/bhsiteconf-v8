@@ -12,7 +12,7 @@
 				<el type="array">
 					<allowmultiexpand type="array">
 						<TCEforms type="array">
-							<label>LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:gridelements.accordion_container.allowmultiexpand</label>
+							<label>LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:b13container.accordion_container.allowmultiexpand</label>
 							<config type="array">
 								<type>check</type>
 							</config>
@@ -21,7 +21,7 @@
           
 					<allowallclosed type="array">
 						<TCEforms type="array">
-							<label>LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:gridelements.accordion_container.allowallclosed</label>
+							<label>LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:b13container.accordion_container.allowallclosed</label>
 							<config type="array">
 								<type>check</type>
 							</config>

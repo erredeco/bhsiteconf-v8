@@ -27,18 +27,18 @@ call_user_func(function () {
   	if (TYPO3_MODE === 'BE') {    
 		$iconFilePrefix = 'EXT:bhsiteconf/Resources/Public/Icons/';  
 		$iconIdentifiers = [   
-			'accordion' => '350.gridelements.accordion.svg',
+			'accordion' => '350.b13container.accordion.svg',
 			'additionalcontent-newtext' => '220.common.content.newtext.svg',
 			'additionalcontent-simpleteaser' => '230.common.content.simpleteaser.svg',
 			'additionalcontent-textteaser' => '250.common.content.textteaser.svg',
 			'additionalcontent-videoteaser' => '240.common.content.videoteaser.svg',
 			'container' =>  'interface-square-symbol.svg',
-			'fourcolumns' => '330.gridelements.fourcolumnscontainer.svg',	
+			'fourcolumns' => '330.b13container.fourcolumnscontainer.svg',	
 			'genericicon' => 'typo3logo.svg',
 			'highlight' => '370.gridelements.highlight.svg',   
 			'tab' => '360.gridelements.tab.svg',
-			'threecolumns' => '320.gridelements.threecolumnscontainer.svg',
-			'twocolumns' => '310.gridelements.twocolumnscontainer.svg'
+			'threecolumns' => '320.b13container.threecolumns.svg',			
+			'twocolumns' => '310.b13container.twocolumns.svg'
   		];  
   
     	foreach ($iconIdentifiers as $iconIdentifier => $iconFile) {

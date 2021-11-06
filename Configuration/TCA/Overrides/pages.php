@@ -19,12 +19,6 @@ defined('TYPO3_MODE') || die();
         '230.common.content.simpleteaser.typoscript' => 'New Simple Teaser content element',
         '240.common.content.videoteaser.typoscript' => 'New Video Teaser content element',
         '250.common.content.textteaser.typoscript' => 'New Text with Teaser content element',
-        '310.gridelements.twocolumnscontainer.typoscript' => 'Grid Element, Two columns container',
-        '320.gridelements.threecolumnscontainer.typoscript' => 'Grid Element, Three columns container',
-        '330.gridelements.fourcolumnscontainer.typoscript' => 'Grid Element, Four columns container',
-        '350.gridelements.accordion.typoscript' => 'Grid Element, Accordion',
-        '360.gridelements.tab.typoscript' => 'Grid Element, Tabs',
-        '370.gridelements.highlight.typoscript' => 'Grid Element, Highlight section',
         '500.RTE.default.typoscript' => 'Default RTE Configuration',
         '502.RTE.styles.typoscript' => 'Allowed styles for RTE links'
     ];

@@ -10,18 +10,11 @@
 	</f:comment>
 	<f:if condition="{headerImage.0}">
 		<img data-interchange="[{f:uri.image(image:headerImage.0,cropVariant:'small',width:'640')}, small], [{f:uri.image(image:headerImage.0,cropVariant:'medium',width:'1024')}, medium], [{f:uri.image(image:headerImage.0,cropVariant:'default')}, large]">
-
 		<img srcset="
 		{f:uri.image(image:headerImage.0,cropVariant:'small',width:'640')} 640w,
 		{f:uri.image(image:headerImage.0,cropVariant:'medium',width:'1024')} 1024w,
         {f:uri.image(image:headerImage.0,cropVariant:'default')} 1920w" src="{f:uri.image(image:headerImage.0,cropVariant:'default')}"  alt="" >
-
-
 	</f:if>
-	
-
-
-
 
 	<nav>
 	<f:render section="HeaderMenu" arguments="{menu: headernavigation, level: 0}" />	

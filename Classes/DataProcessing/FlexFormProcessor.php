@@ -11,8 +11,8 @@ declare(strict_types = 1);
 
 namespace Erredeco\Bhsiteconf\DataProcessing;
 
-use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Core\Service\FlexFormService;
+use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer;
 use TYPO3\CMS\Frontend\ContentObject\DataProcessorInterface;
 
@@ -57,24 +57,36 @@ class FlexFormProcessor implements DataProcessorInterface
     public function process(ContentObjectRenderer $cObj, array $contentObjectConfiguration, array $processorConfiguration, array $processedData)
     {
         // The field name to process
-        $fieldName = $cObj->stdWrapValue('fieldName', $processorConfiguration);
-        if (empty($fieldName)) {
+        $fieldName = (string) $cObj->stdWrapValue('fieldName', $processorConfiguration);
+        if ($fieldName === '') {
             $fieldName = 'pi_flexform';
         }
-        if (!$processedData['data'][$fieldName]) {
+        
+        //20211106 - this correction is made to get flexform work from the children elements of b13-container!
+        //See discussion here: https://github.com/b13/container/issues/146#issuecomment-894371210
+        //if (!isset($processedData['data'][$fieldName])) {
+        
+        if (!isset($cObj->data[$fieldName])) {
             return $processedData;
         }
 
         // Process Flexform
-        $originalValue = $processedData['data'][$fieldName];
+        //20211106 - this correction is made to get flexform work from the children elements of b13-container!
+        //See discussion here: https://github.com/b13/container/issues/146#issuecomment-894371210
+
+        //$originalValue = $processedData['data'][$fieldName];
+        
+
+        $originalValue = $cObj->data[$fieldName];
+
         if (!is_string($originalValue)) {
             return $processedData;
         }
         $flexformData = $this->flexFormService->convertFlexFormContentToArray($originalValue);
 
         // Set the target variable
-        $targetVariableName = $cObj->stdWrapValue('as', $processorConfiguration);
-        if (!empty($targetVariableName)) {
+        $targetVariableName = (string) $cObj->stdWrapValue('as', $processorConfiguration);
+        if ($targetVariableName !== '') {
             $processedData[$targetVariableName] = $flexformData;
         } else {
             $processedData['data'][$fieldName] = $flexformData;

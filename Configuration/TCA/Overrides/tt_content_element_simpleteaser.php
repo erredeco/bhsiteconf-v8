@@ -10,7 +10,7 @@ defined('TYPO3_MODE') || die();
 	 * Add Content Element
 	 */
 
-	if (!is_array($GLOBALS['TCA']['tt_content']['types']['simpleteaser'])) {
+	if (!is_array($GLOBALS['TCA']['tt_content']['types']['simpleteaser'] ?? false)) {
 	    $GLOBALS['TCA']['tt_content']['types']['simpleteaser'] = [];
 	}
 

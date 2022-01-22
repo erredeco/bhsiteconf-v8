@@ -11,7 +11,7 @@ defined('TYPO3_MODE') || die();
 	/**
 	 * Add Content Element
 	 */
-	if (!is_array($GLOBALS['TCA']['tt_content']['types']['videoteaser'])) {
+	if (!is_array($GLOBALS['TCA']['tt_content']['types']['videoteaser'] ?? false)) {
 	    $GLOBALS['TCA']['tt_content']['types']['videoteaser'] = [];
 	}
 

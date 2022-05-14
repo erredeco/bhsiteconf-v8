@@ -24,6 +24,7 @@ call_user_func(function () {
 	/** 
 	 * Add icons identifiers
 	 */
+	/*  No more necessary here since TYPO3 11
   	if (TYPO3_MODE === 'BE') {    
 		$iconFilePrefix = 'EXT:bhsiteconf/Resources/Public/Icons/';  
 		$iconIdentifiers = [   
@@ -49,56 +50,8 @@ call_user_func(function () {
   			);
       	}
   	}
+	*/
 
-/* Old method (not much different, only call each time the function):
-
-	$iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Imaging\IconRegistry::class);
-	$iconFilePrefix = 'EXT:bhsiteconf/Resources/Public/Icons/ContentElements/';
-
-	$iconRegistry->registerIcon(
-		'genericicon',
-		\TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-	  ['source' => $iconFilePrefix . 'typo3logo.svg']
-	); 
-
-
-	$iconRegistry->registerIcon(
-		'tab',
-		\TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-	  ['source' => $iconFilePrefix . '001-tabs.svg']
-	); 
-
-	$iconRegistry->registerIcon(
-		'accordion',
-		\TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-	  ['source' => $iconFilePrefix . '002-accordion-menu.svg']
-	); 
-
-	$iconRegistry->registerIcon(
-		'threecolumns',
-		\TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-	  ['source' => $iconFilePrefix . '003-three-columns-layout.svg']
-	); 
-
-	$iconRegistry->registerIcon(
-		'twocolumns',
-		\TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-	  ['source' => $iconFilePrefix . '004-two-columns-layout.svg']
-	); 
-
-	$iconRegistry->registerIcon(
-		'container',
-		\TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-	  ['source' => $iconFilePrefix . '005-full-display-layout-interface-square-symbol.svg']
-	); 
-
-	$iconRegistry->registerIcon(
-		'fourcolumns',
-		\TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-	  ['source' => $iconFilePrefix . '006-four-columns-layout-interface-symbol.svg']
-	); 
-
-*/
 	/** 
 	 * Configuration for CKEditor 
 	 */

@@ -1,5 +1,5 @@
 <?php
-defined('TYPO3_MODE') || die();
+defined('TYPO3') || die();
 
 /** 
  * Here I define a new content element "newtext" that is a copy of "text"!

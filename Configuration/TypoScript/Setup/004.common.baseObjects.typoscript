@@ -51,10 +51,6 @@ lib.stdContent {
         1 = {$plugin.tx_bhsiteconf.fluidtemplate.templateRootPath}  
     }
 
-    ## with this I can omit the LLL:EXT:bhsiteconf/Resources/Private/Language/locallang.xml:label in  <f:translate key !! 
-
-    extbase.controllerExtensionName = bhsiteconf  
-
     ##------------------------------------------
     #	Declaring Settings
     ##------------------------------------------

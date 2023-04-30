@@ -1,4 +1,5 @@
 <?php
+	defined('TYPO3') || die();
 	/** 
 	 * Add icons identifiers calling TYPO3 Icon API - https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ApiOverview/Icon/Index.html
 	 */

@@ -1,25 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <T3DataStructure>
-  	<meta type="array">
-		<langDisable>1</langDisable>
-	</meta>
-	<sheets>
-		<general>
-			<ROOT type="array">
-				<TCEforms>
-					<sheetTitle>LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:flexform.settings</sheetTitle>
-				</TCEforms>
-				<el type="array">
-					<active type="array">
-						<TCEforms type="array">
-							<label>LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:flexform.active</label>
-							<config type="array">
-								<type>check</type>
-							</config>
-						</TCEforms>
-					</active>
-				</el>
-			</ROOT>
-		</general>
-	</sheets>
+    <meta type="array">
+        <langDisable>1</langDisable>
+    </meta>
+    <sheets>
+        <general>
+            <ROOT type="array">
+                <sheetTitle>LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:flexform.settings</sheetTitle>
+                <el type="array">
+                    <active type="array">
+                        <label>LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:flexform.active</label>
+                        <config type="array">
+                            <type>check</type>
+                        </config>
+                    </active>
+                </el>
+            </ROOT>
+        </general>
+    </sheets>
 </T3DataStructure>

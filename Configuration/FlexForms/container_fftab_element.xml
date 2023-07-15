@@ -6,17 +6,13 @@
 	<sheets>
 		<general>
 			<ROOT type="array">
-				<TCEforms>
-					<sheetTitle>LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:flexform.settings</sheetTitle>
-				</TCEforms>
+				<sheetTitle>LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:flexform.settings</sheetTitle>
 				<el type="array">
 					<active type="array">
-						<TCEforms type="array">
-							<label>LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:flexform.active</label>
-							<config type="array">
-								<type>check</type>
-							</config>
-						</TCEforms>
+						<label>LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:flexform.active</label>
+						<config type="array">
+							<type>check</type>
+						</config>
 					</active>
 				</el>
 			</ROOT>

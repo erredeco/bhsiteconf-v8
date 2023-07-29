@@ -4,6 +4,7 @@
 *.log
 prova.*
 Bck
+bhsiteconf.code-workspace
 Resources/Public/Assets/Js
 Resources/Public/Assets/Css
 Resources/Public/Assets/Fonts

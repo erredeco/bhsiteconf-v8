@@ -1,13 +1,13 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
     data-namespace-typo3-fluid="true">
-
+    
 	<f:if condition="{breadcrumb}">
         <nav class="grid-container" aria-label="{f:translate(key:'page.label.breadcrumbs',extensionName:'bhsiteconf')}">
             <ol class="breadcrumbs">
-                <f:for each="{breadcrumb}" as="item">
+                <f:for each="{breadcrumb}" as="item" iteration="iterator">
                   
                     <f:variable name="isCurrent" value="0" />
-                    <f:if condition="{item.current} && {breadcrumbExtendedValue} == ''">
+                    <f:if condition="{item.current} && {breadcrumbExtendedValue} == '' && {iterator.isLast}">
                         <f:variable name="isCurrent" value="1" />
                     </f:if>
                     <li {f:if(condition: isCurrent, then: ' aria-current="page"')}>

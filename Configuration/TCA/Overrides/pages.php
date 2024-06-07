@@ -35,4 +35,26 @@ defined('TYPO3') || die();
         );
     }
 
+    /** 
+     * Custom doktypes
+     */    
+    // SAME as registered in ext_tables.php
+    $customPageDoktype = 116;
+    //Same as registered in /Configuration/Icons.php
+    $customIconClass = 'tx-bhsiteconf-overview-page';
+
+    // Add the new doktype to the page type selector
+    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItem(
+        'pages',
+        'doktype',
+        [
+            'label' => 'LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:page.doktype.overview_page_type',
+            'value' => $customPageDoktype,
+            'icon'  => $customIconClass,
+            'group' => 'default',
+        ],
+    );
+    // Add the icon to the icon class configuration
+    $GLOBALS['TCA']['pages']['ctrl']['typeicon_classes'][$customPageDoktype] = $customIconClass;
+
 })();

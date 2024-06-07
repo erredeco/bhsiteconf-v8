@@ -62,6 +62,11 @@
 	        'source' => 'EXT:bhsiteconf/Resources/Public/Icons/320.b13container.threecolumns.svg',
 	    ],
 
+		'tx-bhsiteconf-overview-page' => [
+			'provider' => SvgIconProvider::class,
+			'source' => 'EXT:bhsiteconf/Resources/Public/Icons/110.doktype.page.overview.svg',
+		],
+
 	    'twocolumns' => [
 	        'provider' => SvgIconProvider::class,
 	        'source' => 'EXT:bhsiteconf/Resources/Public/Icons/310.b13container.twocolumns.svg',

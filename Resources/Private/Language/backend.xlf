@@ -140,7 +140,10 @@
 			<trans-unit id="field.readmore_link">
 				<source>Read more link</source>
 			</trans-unit>	
-
+			
+			<trans-unit id="page.doktype.overview_page_type" xml:space="preserve">
+				<source>Overview Page Type</source>
+			</trans-unit>
 
 			<trans-unit id="ttcontent.newtextmedia.title" xml:space="preserve">
 				<source>Text &amp; Media, another version</source>
@@ -154,7 +157,6 @@
 			<trans-unit id="b13container.default.description" xml:space="preserve">
 				<source>Simple grid content element test (description)</source>
 			</trans-unit>
-
 
 			<trans-unit id="b13container.twocolumns.title" xml:space="preserve">
 				<source>2-columns container</source>

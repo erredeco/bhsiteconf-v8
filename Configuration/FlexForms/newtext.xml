@@ -6,12 +6,9 @@
 	<sheets>
 		<general>
 			<ROOT type="array">
-				<TCEforms>
-					<sheetTitle>Settings</sheetTitle>
-				</TCEforms>
+				<sheetTitle>Settings</sheetTitle>
 				<el type="array">
 					<awesomeproperty type="array">
-						<TCEforms type="array">
 							<label>Some awesome property to select</label>
 							<config type="array">
 								<type>select</type>
@@ -35,12 +32,9 @@
 				                  </numIndex>                
 				                </items>  
 							</config>
-						</TCEforms>
 					</awesomeproperty>
 				</el>
 			</ROOT>
 		</general>
 	</sheets>
-
-
 </T3DataStructure>	

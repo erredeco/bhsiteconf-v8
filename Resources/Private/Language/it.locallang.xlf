@@ -14,9 +14,15 @@
 			</trans-unit>	
 			<trans-unit id="page.label.menu" xml:space="preserve">
 				<target>Menu</target>
-			</trans-unit>								
+			</trans-unit>	
+			<trans-unit id="page.label.search.button" xml:space="preserve">
+				<target>Cerca</target>
+			</trans-unit>
+			<trans-unit id="page.label.search.placeholder" xml:space="preserve">
+				<target>Cerca</target>
+			</trans-unit>										
 			<trans-unit id="page.label.footer.bhcopyright" xml:space="preserve">
-				<target>&#169; %s B Human S.r.L. Tutti i diritti riservati.</target>
+				<target>&#169; %s B Human S.r.L. Tutti i diritti riservati</target>
 			</trans-unit>
 			<trans-unit id="page.label.linktotop" xml:space="preserve">
 				<target>Torna Su</target>

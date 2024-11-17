@@ -13,8 +13,14 @@
 				<source>Site title</source>
 			</trans-unit>
 			<trans-unit id="page.label.menu" xml:space="preserve">
-				<target>Menu</target>
-			</trans-unit>									
+				<source>Menu</source>
+			</trans-unit>	
+			<trans-unit id="page.label.search.button" xml:space="preserve">
+				<source>Search</source>
+			</trans-unit>
+			<trans-unit id="page.label.search.placeholder" xml:space="preserve">
+				<source>Search</source>
+			</trans-unit>
 			<trans-unit id="page.label.footer.bhcopyright" xml:space="preserve">
 				<source>&#169; %s B Human S.r.L. All rights reserved.</source>
 			</trans-unit>

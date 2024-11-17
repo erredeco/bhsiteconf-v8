@@ -4,7 +4,7 @@
     "description": "Templates for my site, content and pages",
     "license": "GPL-2.0-or-later",
     "keywords": ["TYPO3 CMS"],    
-    "version": "v0.0.8",
+    "version": "v0.0.9",
     "authors": [
         {
             "name": "Riccardo De Contardi",
@@ -17,8 +17,8 @@
         }
     },
     "require": {
-        "typo3/cms-core": "^12",
-        "b13/container": "^2.0.0"
+        "typo3/cms-core": "^13",
+        "b13/container": "^3.0.0"
     },
     "extra": {
         "typo3/cms": {

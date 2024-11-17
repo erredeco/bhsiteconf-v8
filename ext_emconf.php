@@ -15,7 +15,7 @@ $EM_CONF[$_EXTKEY] = [
 	'description' => 'Templates for my site, content and pages',
 	'category' => 'misc',
 	'shy' => 0,
-	'version' => '0.0.8',
+	'version' => '0.0.9',
 	'dependencies' => 'cms,extbase,fluid,container',
 	'conflicts' => '',
 	'priority' => 'bottom',
@@ -33,8 +33,8 @@ $EM_CONF[$_EXTKEY] = [
 	'CGLcompliance_note' => '',
 	'constraints' => [
 		'depends' => [
-			'typo3' => '12.4.0-12.99.99',
-			'container' => '2.0.0-2.9.9'    
+			'typo3' => '12.4.0-13.99.99',
+			'container' => '3.0.0-3.9.9'    
 		],
 		'conflicts' => [
 		],

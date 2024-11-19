@@ -4,7 +4,8 @@
 
 # customsubcategory=100=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.cat.general
 # customsubcategory=110=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.cat.extension
-# customsubcategory=120=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.cat.fluidtemplate
+# customsubcategory=120=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.cat.meta
+# customsubcategory=150=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.cat.fluidtemplate
 # customsubcategory=200=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.cat.extensionoverrides 
 
 
@@ -16,18 +17,29 @@ plugin.tx_bhsiteconf.settings {
 	headerText = Realized by: B Human S.r.L.  
 	# cat=plugin.tx_bhsiteconf/100/0020; type=string; label=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.settings.pagesInFooterMenu
 	pagesInFooterMenu =
-
 	# cat=plugin.tx_bhsiteconf/100/0030; type=string; label=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.settings.pagesInHeaderMenu
 	pagesInHeaderMenu =
+
+	# cat=plugin.tx_bhsiteconf/100/0040; type=string; label=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.settings.breadcrumbEnableLevel
+	breadcrumbEnableLevel = 1
+}
+
+plugin.tx_bhsiteconf {
+	meta {
+		# cat=plugin.tx_bhsiteconf/120/0010; type=string; label=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.meta.viewport
+		viewport = width=device-width, initial-scale=1, minimum-scale=1
+		# cat=plugin.tx_bhsiteconf/120/0020; type=string; label=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.meta.apple-mobile-web-app-capable	
+		apple-mobile-web-app-capable = no
+	}
 }
 
 plugin.tx_bhsiteconf{
 	fluidtemplate{
-		# cat=plugin.tx_bhsiteconf/120/0010; type=string; label=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.file.templateRootPath
+		# cat=plugin.tx_bhsiteconf/150/0010; type=string; label=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.file.templateRootPath
 		templateRootPath = EXT:bhsiteconf/Resources/Private/Templates/Page/
-		# cat=plugin.tx_bhsiteconf/120/0020; type=string; label=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.file.partialsRootPath
+		# cat=plugin.tx_bhsiteconf/150/0020; type=string; label=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.file.partialsRootPath
 		partialRootPath = EXT:bhsiteconf/Resources/Private/Partials/Page/
-		# cat=plugin.tx_bhsiteconf/120/0030; type=string; label=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.file.layoutRootPath
+		# cat=plugin.tx_bhsiteconf/150/0030; type=string; label=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.file.layoutRootPath
 		layoutRootPath =  EXT:bhsiteconf/Resources/Private/Layouts/Page/
 	}
 }

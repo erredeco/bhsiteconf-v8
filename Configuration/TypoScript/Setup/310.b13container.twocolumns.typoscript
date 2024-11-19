@@ -1,0 +1,11 @@
+// default/general configuration (will add 'children_<colPos>' variable to processedData for each colPos in container
+tt_content.b13-container-twocolumns < lib.contentElement
+tt_content.b13-container-twocolumns {
+    templateName = ContainerTwoColumns
+    templateRootPaths {
+        10 = EXT:bhsiteconf/Resources/Private/Templates/ContentElements
+    }
+    dataProcessing {
+        100 = B13\Container\DataProcessing\ContainerProcessor
+    }
+}

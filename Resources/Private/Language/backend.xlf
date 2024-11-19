@@ -140,7 +140,10 @@
 			<trans-unit id="field.readmore_link">
 				<source>Read more link</source>
 			</trans-unit>	
-
+			
+			<trans-unit id="page.doktype.overview_page_type" xml:space="preserve">
+				<source>Overview Page Type</source>
+			</trans-unit>
 
 			<trans-unit id="ttcontent.newtextmedia.title" xml:space="preserve">
 				<source>Text &amp; Media, another version</source>
@@ -148,74 +151,73 @@
 			<trans-unit id="ttcontent.newtextmedia.description" xml:space="preserve">
 				<source>Any number of media wrapped right around a regular text element, with a different appearance</source>
 			</trans-unit>
-			<trans-unit id="gridelements.default.title" xml:space="preserve">
+			<trans-unit id="b13container.default.title" xml:space="preserve">
 				<source>Simple grid content element test</source>
 			</trans-unit> 
-			<trans-unit id="gridelements.default.description" xml:space="preserve">
+			<trans-unit id="b13container.default.description" xml:space="preserve">
 				<source>Simple grid content element test (description)</source>
 			</trans-unit>
 
-
-			<trans-unit id="gridelements.twocolumns.title" xml:space="preserve">
+			<trans-unit id="b13container.twocolumns.title" xml:space="preserve">
 				<source>2-columns container</source>
 			</trans-unit> 
-			<trans-unit id="gridelements.twocolumns.description" xml:space="preserve">
+			<trans-unit id="b13container.twocolumns.description" xml:space="preserve">
 				<source>Sub-grid with 2 elements</source>
 			</trans-unit> 
-			<trans-unit id="gridelements.threecolumns.title" xml:space="preserve">
+			<trans-unit id="b13container.threecolumns.title" xml:space="preserve">
 				<source>3-columns container</source>
 			</trans-unit> 
-			<trans-unit id="gridelements.threecolumns.description" xml:space="preserve">
+			<trans-unit id="b13container.threecolumns.description" xml:space="preserve">
 				<source>Sub-grid with 3 elements</source>
 			</trans-unit> 
-			<trans-unit id="gridelements.fourcolumns.title" xml:space="preserve">
+			<trans-unit id="b13container.fourcolumns.title" xml:space="preserve">
 				<source>4-columns container</source>
 			</trans-unit>       
-			<trans-unit id="gridelements.fourcolumns.description" xml:space="preserve">
+			<trans-unit id="b13container.fourcolumns.description" xml:space="preserve">
 				<source>Sub-grid with 4 elements</source>
 			</trans-unit>            
-			<trans-unit id="gridelements.accordion_container.title" xml:space="preserve">
+			<trans-unit id="b13container.accordion_container.title" xml:space="preserve">
 				<source>Accordion container</source>
 			</trans-unit>       
-			<trans-unit id="gridelements.accordion_container.description" xml:space="preserve">
+			<trans-unit id="b13container.accordion_container.description" xml:space="preserve">
 				<source>This element contains all the accordion elements</source>
 			</trans-unit>
 
-			<trans-unit id="gridelements.accordion_container.allowmultiexpand" xml:space="preserve">
+			<trans-unit id="b13container.accordion_container.allowmultiexpand" xml:space="preserve">
 				<source>Allow multiple elements to be expanded at once</source>
 			</trans-unit>
 
-			<trans-unit id="gridelements.accordion_container.allowallclosed" xml:space="preserve">
+			<trans-unit id="b13container.accordion_container.allowallclosed" xml:space="preserve">
 				<source>Allow all elements to be closed</source>
 			</trans-unit>
 
 
-			<trans-unit id="gridelements.accordion_element.title" xml:space="preserve">
+			<trans-unit id="b13container.accordion_element.title" xml:space="preserve">
 				<source>Accordion Element</source>
 			</trans-unit> 
-			<trans-unit id="gridelements.accordion_element.description" xml:space="preserve">
+			<trans-unit id="b13container.accordion_element.description" xml:space="preserve">
 				<source>Single element for the accordion. WARNING! Never use alone! ONLY INSIDE accordion container!!</source>
 			</trans-unit>
 
 
-			<trans-unit id="gridelements.highlight.title" xml:space="preserve">
+			<trans-unit id="b13container.highlight.title" xml:space="preserve">
 				<source>Highlight Section</source>
 			</trans-unit>       
-			<trans-unit id="gridelements.highlight.description" xml:space="preserve">
+			<trans-unit id="b13container.highlight.description" xml:space="preserve">
 				<source>Highlight section container, with an element and some text</source>
 			</trans-unit>
 
 
-			<trans-unit id="gridelements.tab_container.title" xml:space="preserve">
+			<trans-unit id="b13container.tab_container.title" xml:space="preserve">
 				<source>Tabs container</source>
 			</trans-unit>       
-			<trans-unit id="gridelements.tab_container.description" xml:space="preserve">
+			<trans-unit id="b13container.tab_container.description" xml:space="preserve">
 				<source>This element contains all the Tabs elements</source>
 			</trans-unit>
-			<trans-unit id="gridelements.tab_element.title" xml:space="preserve">
+			<trans-unit id="b13container.tab_element.title" xml:space="preserve">
 				<source>Tab Element</source>
 			</trans-unit> 
-			<trans-unit id="gridelements.tab_element.description" xml:space="preserve">
+			<trans-unit id="b13container.tab_element.description" xml:space="preserve">
 				<source>Single element for the Tabs. WARNING! Never use alone! ONLY INSIDE Tabs container!!</source>
 			</trans-unit>
 		</body>

@@ -1,0 +1,34 @@
+// default/general configuration (will add 'children_<colPos>' variable to processedData for each colPos in container
+tt_content.b13-container-accordioncontainer < lib.contentElement
+tt_content.b13-container-accordioncontainer {
+    templateName = ContainerAccordionContainer.html
+    templateRootPaths {
+        10 = EXT:bhsiteconf/Resources/Private/Templates/ContentElements
+    }
+    dataProcessing {
+	    10 = TYPO3\CMS\Frontend\DataProcessing\FlexFormProcessor
+	    10 {
+	      fieldName = pi_flexform
+	      as = flexform
+	    }
+
+        100 = B13\Container\DataProcessing\ContainerProcessor
+    }
+}
+
+tt_content.b13-container-accordionelement < lib.contentElement
+tt_content.b13-container-accordionelement {
+    templateName = ContainerAccordionElement.html
+    templateRootPaths {
+        10 = EXT:bhsiteconf/Resources/Private/Templates/ContentElements
+    }
+    dataProcessing {
+	    10 = TYPO3\CMS\Frontend\DataProcessing\FlexFormProcessor
+	    10 {
+	      fieldName = pi_flexform
+	      as = flexform
+	    }
+
+        100 = B13\Container\DataProcessing\ContainerProcessor
+    }
+}

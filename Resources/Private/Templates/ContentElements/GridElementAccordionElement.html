@@ -1,9 +1,0 @@
-<div class="accordion-item {f:if(condition: data.pi_flexform.data.general.lDEF.active.vDEF, then: 'is-active')}" data-accordion-item>
-	<a class="accordion-title">{data.header}</a>
-	<div class="accordion-content" data-tab-content>
-	    <f:for each="{children.1.100}" as="child">
-	        <f:render partial="Child"
-	                  arguments="{data: child.data, children: child.children, options: options, settings: settings}"/>
-	    </f:for>
-	</div>
-</div>

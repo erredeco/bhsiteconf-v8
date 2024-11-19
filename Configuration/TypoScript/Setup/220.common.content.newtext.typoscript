@@ -12,7 +12,7 @@ tt_content.newtext {
   }
    
   dataProcessing {
-    10 = Erredeco\Bhsiteconf\DataProcessing\FlexFormProcessor
+    10 = TYPO3\CMS\Frontend\DataProcessing\FlexFormProcessor
     10 {
       fieldName = pi_flexform
       as = flexform

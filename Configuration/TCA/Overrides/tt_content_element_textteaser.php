@@ -1,5 +1,5 @@
 <?php
-defined('TYPO3_MODE') || die();
+defined('TYPO3') || die();
 
 /**
  * Prevents defining global variables
@@ -10,7 +10,7 @@ defined('TYPO3_MODE') || die();
     /**
      * Add Content Element
      */
-    if (!is_array($GLOBALS['TCA']['tt_content']['types']['textteaser'])) {
+    if (!is_array($GLOBALS['TCA']['tt_content']['types']['textteaser'] ?? false)) {
         $GLOBALS['TCA']['tt_content']['types']['textteaser'] = [];
     }
 

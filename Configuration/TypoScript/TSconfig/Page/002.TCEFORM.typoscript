@@ -26,6 +26,16 @@ TCEFORM {
                         customstyle2 = LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:ttcontent.layout.types.textmedia.style2
                     }
                 }
+
+                // after the changes to the flexformProcessor.php this is no more required, Keep it for a while
+                // b13-container-tabelement{
+                //    removeItems = default, 0,2,3
+                //    altLabels {
+                //        1 = LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:flexform.active
+                //    
+                //    }                    
+                // }
+
             }
 		}
 	}

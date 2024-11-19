@@ -1,5 +1,5 @@
 <?php
-defined('TYPO3_MODE') || die();
+defined('TYPO3') || die();
 
 //Here I define a new content element "videoteaser"!
 
@@ -11,7 +11,7 @@ defined('TYPO3_MODE') || die();
 	/**
 	 * Add Content Element
 	 */
-	if (!is_array($GLOBALS['TCA']['tt_content']['types']['videoteaser'])) {
+	if (!is_array($GLOBALS['TCA']['tt_content']['types']['videoteaser'] ?? false)) {
 	    $GLOBALS['TCA']['tt_content']['types']['videoteaser'] = [];
 	}
 

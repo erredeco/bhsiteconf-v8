@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3DataStructure>
+  <meta type="array">
+        <langDisable>1</langDisable>
+    </meta>
+    <sheets>
+        <general>
+            <ROOT type="array">
+                <sheetTitle>LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:flexform.settings</sheetTitle>
+                <el type="array">
+                    <allowmultiexpand type="array">
+                        <label>LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:b13container.accordion_container.allowmultiexpand</label>
+                        <config type="array">
+                            <type>check</type>
+                        </config>
+                    </allowmultiexpand>
+          
+                    <allowallclosed type="array">
+                        <label>LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:b13container.accordion_container.allowallclosed</label>
+                        <config type="array">
+                            <type>check</type>
+                        </config>
+                    </allowallclosed>  
+                </el>
+            </ROOT>
+        </general>
+    </sheets>
+</T3DataStructure>

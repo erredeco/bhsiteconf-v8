@@ -9,6 +9,9 @@
 			<trans-unit id="constant.cat.extension" xml:space="preserve">
 				<source>Extensions setup</source>
 			</trans-unit>
+			<trans-unit id="constant.cat.meta" xml:space="preserve">
+				<source>Meta tag setup</source>
+			</trans-unit>			
 			<trans-unit id="constant.cat.fluidtemplate" xml:space="preserve">
 				<source>Page Fuild Template</source>
 			</trans-unit>
@@ -16,16 +19,23 @@
 				<source>Extensions Overrides</source>
 			</trans-unit>
 			<trans-unit id="constant.settings.pagesInFooterMenu" xml:space="preserve">
-				<source>IDs of pages in footer menu</source>
+				<source>Pages in footer menu: comma separated list of page uids</source>
 			</trans-unit>
-
 			<trans-unit id="constant.settings.pagesInHeaderMenu" xml:space="preserve">
-				<source>IDs of pages in header menu</source>
+				<source>Pages in header menu: Comma separated list of page uids</source>
 			</trans-unit>
-
+			<trans-unit id="constant.settings.breadcrumbEnableLevel" xml:space="preserve">
+				<source>Breadcrumb Enable Level: Enable breadcrumb menu is greater or equal this value</source>
+			</trans-unit>			
 			<trans-unit id="constant.settings.headerText" xml:space="preserve">
 				<source>Comment in Header</source>
-			</trans-unit>			
+			</trans-unit>		
+			<trans-unit id="constant.meta.viewport" xml:space="preserve">
+				<source>Viewport</source>
+			</trans-unit>
+			<trans-unit id="constant.meta.apple-mobile-web-app-capable" xml:space="preserve">
+				<source>apple-mobile-web-app-capable (open in full screen in iOS)</source>
+			</trans-unit>
 			<trans-unit id="constant.file.templateRootPath" xml:space="preserve">
 				<source>Path to templates</source>
 			</trans-unit>

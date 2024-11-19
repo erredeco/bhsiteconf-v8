@@ -4,80 +4,133 @@
 
 # Load default processing options
 imports:
-    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Processing.yaml" }
-    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Base.yaml" }
-    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Plugins.yaml" }
+    - { resource: 'EXT:rte_ckeditor/Configuration/RTE/Processing.yaml' }
+    - { resource: 'EXT:rte_ckeditor/Configuration/RTE/Editor/Base.yaml' }
+    - { resource: 'EXT:rte_ckeditor/Configuration/RTE/Editor/Plugins.yaml' }
 
 # Add configuration for the editor
-# For complete documentation see http://docs.ckeditor.com/#!/api/CKEDITOR.config
+# For complete documentation see https://ckeditor.com/docs/ckeditor5/latest/features/index.html
 editor:
   config:
-    # can be "default", but a custom stylesSet can be defined here, which fits TYPO3 best
-    stylesSet:
-      # block level styles
-      - { name: "Orange title H2", element: "h2", styles: { color: "orange", background: "blue" } }
-      - { name: "Orange title H3", element: "h3", styles: { color: "orange", background: "blue" } }
-      - { name: "Quote / Citation", element: "blockquote" }
-      - { name: "Code block", element: "code" }
-      # Inline styles
-      - { name: "Yellow marker", element: "span", styles: { background-color: "yellow" } }
+    style:
+      definitions:
+        # block level styles
+        - { name: 'Orange title H2', element: 'h2', classes: [], styles: { color: 'orange', background: 'blue' } }
+        - { name: 'Orange title H3', element: 'h3', classes: [], styles: { color: 'orange', background: 'blue' } }
+        - { name: 'Quote / Citation', element: 'blockquote', classes: [],  }
+        - { name: 'Code block', element: 'code', classes: [],  }
+        # Inline styles
+        - { name: 'Yellow marker', element: 'span', classes: [], styles: { background-color: 'yellow' } }
 
-    format_tags: "p;h2;h3;h4;pre"
-
-    toolbarGroups:
-      - { name: clipboard, groups: [clipboard, undo] }
-      - { name: editing,   groups: [find, selection, spellchecker] }
-      - { name: links }
-      - { name: insert }
-      - { name: tools }
-      - { name: table }
-      - { name: tabletools }
-      - { name: document,  groups: [ mode, document, doctools ] }
-      - { name: others }
-      - "/"
-      - { name: basicstyles, groups: [ basicstyles, align, cleanup ] }
-      - { name: paragraph,   groups: [ list, indent, blocks, align, bidi ] }
-      - { name: specialcharacters,   groups: [ insertcharacters ] }      
-      - { name: colors }
-      - "/"
-      - { name: styles }
-
-    justifyClasses:
-      - text-left
-      - text-center
-      - text-right
-      - text-justify
-
-    extraPlugins:
-      - justify
-      - font
-      - find
-      - bidi
-      - selectall
-      - autolink
-      - wordcount
-      - copyformatting
-      - liststyle
-      - colorbutton
-      - templates
-
-    removePlugins:
-      - image
-
-    #Available colors in colorbutton:  
-    colorButton_colors: "00923E,F8C100,28166F"
-
-    templates: test
-
-    templates_files:
-      - EXT:bhsiteconf/Resources/Public/templates/default.js
+    heading:
+      options:
+        - { model: 'paragraph', title: 'Paragraph' }
+        - { model: 'heading2', view: 'h2', title: 'Heading 2' }
+        - { model: 'heading3', view: 'h3', title: 'Heading 3' }
+        - { model: 'formatted', view: 'pre', title: 'Pre-Formatted Text' }
     
-    removeButtons:
+    toolbar:
+      items:
+        - clipboard
+        - removeFormat
+        - undo
+        - redo
+        # grouping separator
+        - '|'
+        - find
+        - selectAll
+        - '|'
+        - link
+        - insertTable
+        - tableColumn
+        - tableRow
+        - mergeTableCells
+        - '|'
+        - sourceEditing
+        - horizontalLine
+        # line break
+        - '-'
+        - bold
+        - italic
+        - underline
+        - strikethrough
+        - subscript
+        - superscript
+        - softhyphen
+        - '|'
+        - bulletedList
+        - numberedList
+        - blockQuote
+        - indent
+        - outdent
+        - alignment
+        - '|'
+        - specialCharacters
+        - '-'
+        - style
+        - heading
+        - fontFamily
+        - fontBackgroundColor
+        - fontColor
+        - fontSize
+    alignment:
+      options:
+        - { name: 'left', className: 'text-start' }
+        - { name: 'center', className: 'text-center' }
+        - { name: 'right', className: 'text-end' }
+        - { name: 'justify', className: 'text-justify' }
+    
+    fontColor:
+      colors:
+        - { label: 'Orange', color: '#ff8700' }
+        - { label: 'Blue', color: '#0080c9' }
+        - { label: 'Green', color: '#209d44' }
 
-# Allow s and u tag
-processing:
-  allowTags:
-    - s
-    - u
+    fontBackgroundColor:
+      colors:
+        - { label: 'Stage orange light', color: '#fab85c' }
+
+    fontFamily:
+      options:
+        - 'default'
+        - 'Arial, sans-serif'
+
+    fontSize:
+      options:
+        - 'default'
+        - 18
+        - 21
+
+    importModules:
+      - { 'module': '@ckeditor/ckeditor5-font', 'exports': ['Font'] }
+      - { 'module': '@ckeditor/ckeditor5-show-blocks', 'exports': ['ShowBlocks'] }
+      - { 'module': '@ckeditor/ckeditor5-word-count', 'exports': ['WordCount'] }
+
+
+
+
+classesAnchor:
+  page:
+    class: 'internal-link'
+    type: 'page'
+  folder:
+    class: 'folder-link'
+    type: 'folder'
+  file:
+    class: 'download'
+    type: 'file'
+  external:
+    class: 'external-link-new-window'
+    type: 'url'
+  mail:
+    class: 'mail'
+    type: 'mail'
+
+buttons:
+  link:
+    properties:
+      class:
+        allowedClasses: 'arrow-link, internal-link, folder-link, download, external-link-new-window, mail'
+
 
 

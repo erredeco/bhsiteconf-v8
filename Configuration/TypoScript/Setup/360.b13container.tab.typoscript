@@ -1,0 +1,46 @@
+// default/general configuration (will add 'children_<colPos>' variable to processedData for each colPos in container
+tt_content.b13-container-tabcontainer < lib.contentElement
+tt_content.b13-container-tabcontainer {
+    templateName = ContainerTabContainer.html
+    templateRootPaths {
+        10 = EXT:bhsiteconf/Resources/Private/Templates/ContentElements
+    }
+    dataProcessing {
+        100 = B13\Container\DataProcessing\ContainerProcessor
+
+        100 {
+        	colPos=100
+        	as=children
+
+			dataProcessing{
+			    //use a modified version of B.Kott's dataprocessor  to make it work  with subelements - see
+                //See discussion here: https://github.com/b13/container/issues/146#issuecomment-894371210
+
+                10 = Erredeco\Bhsiteconf\DataProcessing\FlexFormProcessor
+			    10 {
+			      fieldName = pi_flexform
+			      as = flexform
+			    }
+			}        	
+
+        }
+
+    }
+}
+
+tt_content.b13-container-tabelement < lib.contentElement
+tt_content.b13-container-tabelement {
+    templateName = ContainerTabElement.html
+    templateRootPaths {
+        10 = EXT:bhsiteconf/Resources/Private/Templates/ContentElements
+    }
+    dataProcessing {
+        10 = TYPO3\CMS\Frontend\DataProcessing\FlexFormProcessor
+        10 {
+          fieldName = pi_flexform
+          as = flexform
+        }
+
+        100 = B13\Container\DataProcessing\ContainerProcessor
+    }
+}

@@ -6,9 +6,149 @@
 config.disableBodyTag = 1
 
 #create the page
-page=PAGE
+page = PAGE
 
-# standard object inside page
-page.10 =< lib.stdContent
+// Part 1: PAGEVIEW section
+page {
+    10 = PAGEVIEW
+    10 {
+        paths {
+            0 = EXT:bhsiteconf/Resources/Private/Templates/
+            10 = {$bhsiteconf-base.template_path}
+        }
+
+        variables {
+            ##------------------------------------------ 
+            # Tests for the presence of subpages
+            ##------------------------------------------
+
+            #Test if there are subpages
+            testThereAreSubpages = TEXT
+            testThereAreSubpages.value = 1
+            testThereAreSubpages.if.isTrue.numRows {
+                table = pages
+                select.pidInList.data =  field:uid
+                select.where = nav_hide = 0       
+            }
+
+            ##------------------------------------------ 
+            # Tests for the presence of content
+            ##------------------------------------------
+
+            #test there is content on column 0 (colpos=0)
+            testThereIsContent0 = TEXT
+            testThereIsContent0.value=1
+            testThereIsContent0.if.isTrue.numRows {
+                table=tt_content
+                select{
+                    pidInList=this
+                    where=colPos=0
+                } 
+            } 
+
+            #test there is content on column 1 (colpos=1) (uncomment if needed; add others if needed)
+            //testThereIsContent1 < .testThereIsContent0
+            //testThereIsContent1.if.isTrue.numRows.select.where=colPos=1
+
+            ##------------------------------------------
+            # Write the page level
+            ##------------------------------------------
+
+            pageLevel=TEXT
+            pageLevel{
+                value= level-{level:-1}      
+                insertData = 1    
+            }
+
+            ##------------------------------------------
+            # BreadcrumbExtendedValue should be used to display the title of a
+            # single record. For example the title of a news record.
+            ##------------------------------------------        
+
+            breadcrumbExtendedValue = COA
+            breadcrumbExtendedValue {
+            
+            }
+        }
+
+        dataProcessing {
+            # makes content elements available as {content} in Fluid template
+            10 = page-content
+        
+            20 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+            20 {
+                levels = 3
+                includeSpacer = 1
+                as = mainnavigation
+            }
+
+            30 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+            30 {
+                special = rootline
+                special.range = 0|-1
+                includeNotInMenu = 1
+                as = breadcrumb
+                if {
+                    value = {$bhsiteconf-base.breadcrumb_enable_level}
+                    value {
+                        insertData = 1
+                        prioriCalc = 1
+                        stdWrap.wrap = |-1
+                    }
+                    isGreaterThan {
+                        data = level
+                    }
+                }
+            }
+
+            40 = TYPO3\CMS\Frontend\DataProcessing\LanguageMenuProcessor
+            40 {
+                languages = {$page.theme.language.languageValue}
+                as = languagenavigation
+            }
+
+            50 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+            50 {
+                special = list
+                special.value = {$bhsiteconf-base.pages_in_header_menu}
+                includeNotInMenu = 1
+                levels = 1
+                as = headernavigation
+                if {
+                    isTrue = {$bhsiteconf-base.pages_in_header_menu}
+                }
+            }
+
+            60 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+            60 {
+                special = list
+                special.value = {$bhsiteconf-base.pages_in_footer_menu}
+                includeNotInMenu = 1
+                levels = 1
+                as = footernavigation
+                if {
+                    isTrue = {$bhsiteconf-base.pages_in_footer_menu}
+                }
+            }
+
+            99 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+            99 {
+                references {
+                    table = pages
+                    fieldName = media
+                }
+            as = headerImage
+            }            
+        }
+    }
+}
+
+
+
+
+# OLD standard object inside page
+#page.10 =< lib.stdContent
+
+
 
 

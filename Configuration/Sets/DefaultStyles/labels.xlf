@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:bhsiteconf/Configuration/Sets/DefaultStyles/labels.xlf" date="2024-11-17T21:00:00Z" product-name="tx_bhsiteconf">
+		<header/>
+		<body>
+			<trans-unit id="label">
+				<source>bhsiteconf package (default styles)</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

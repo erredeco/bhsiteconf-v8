@@ -55,10 +55,10 @@ lib.stdContent {
     #	Declaring Settings
     ##------------------------------------------
 
-    settings {
-        pagesInHeaderMenu = {$plugin.tx_bhsiteconf.settings.pagesInHeaderMenu}
-        pagesInFooterMenu = {$plugin.tx_bhsiteconf.settings.pagesInFooterMenu}
-    }
+    #settings {
+    #    pagesInHeaderMenu = {$plugin.tx_bhsiteconf.settings.pagesInHeaderMenu}
+    #    pagesInFooterMenu = {$plugin.tx_bhsiteconf.settings.pagesInFooterMenu}
+    #}
 
     ##------------------------------------------
     #	Declaring Variables
@@ -142,7 +142,7 @@ lib.stdContent {
             includeNotInMenu = 1
             as = breadcrumb
             if {
-                value = {$plugin.tx_bhsiteconf.settings.breadcrumbEnableLevel}
+                value = {$bhsiteconf.breadcrumb_enable_level}
                 value {
                     insertData = 1
                     prioriCalc = 1
@@ -166,12 +166,12 @@ lib.stdContent {
         40 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
         40 {
             special = list
-            special.value = {$plugin.tx_bhsiteconf.settings.pagesInHeaderMenu}
+            special.value = {$bhsiteconf.pages_in_header_menu}
             includeNotInMenu = 1
             levels = 1
             as = headernavigation
             if {
-                isTrue = {$plugin.tx_bhsiteconf.settings.pagesInHeaderMenu}
+                isTrue = {$bhsiteconf.pages_in_header_menu}
             }
 
         }
@@ -180,12 +180,12 @@ lib.stdContent {
         50 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
         50 {
             special = list
-            special.value = {$plugin.tx_bhsiteconf.settings.pagesInFooterMenu}
+            special.value = {$bhsiteconf.pages_in_footer_menu}
             includeNotInMenu = 1
             levels = 1
             as = footernavigation
             if {
-                isTrue = {$plugin.tx_bhsiteconf.settings.pagesInFooterMenu}
+                isTrue = {$bhsiteconf.pages_in_footer_menu}
             }
 
         }

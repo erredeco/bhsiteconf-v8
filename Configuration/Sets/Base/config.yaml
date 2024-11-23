@@ -1,0 +1,4 @@
+name: erredeco/bhsiteconf-base
+dependencies:
+  - typo3/fluid-styled-content
+  - typo3/fluid-styled-content-css

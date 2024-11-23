@@ -1,7 +1,8 @@
 {
     "name": "erredeco/bhsiteconf",
     "type": "typo3-cms-extension",
-    "description": "Templates for my site, content and pages",
+    "description": "Sitepackage for TYPO3 13",
+    "homepage": "https://www.linkedin.com/in/riccardo-de-contardi-a3709229/",
     "license": "GPL-2.0-or-later",
     "keywords": ["TYPO3 CMS"],    
     "version": "v0.0.9",
@@ -17,7 +18,9 @@
         }
     },
     "require": {
-        "typo3/cms-core": "^13",
+        "typo3/cms-core": "^13.4",
+        "typo3/cms-rte-ckeditor": "^13.4",
+        "typo3/cms-fluid-styled-content": "^13.4",        
         "b13/container": "^3.0.0"
     },
     "extra": {

@@ -1,0 +1,21 @@
+
+page:
+  meta:
+    compatible: 'IE=edge'
+
+
+# Define here the constants for the alternative templates, layouts, partials path for the lib.contentElement object.
+# Remember that they occupy the .10 position on the array!
+styles:
+  templates:
+    layoutRootPath: EXT:bhsiteconf/Resources/Private/Layouts/ContentElements
+    partialRootPath: EXT:bhsiteconf/Resources/Private/Partials/ContentElements
+    templateRootPath: EXT:bhsiteconf/Resources/Private/Templates/ContentElements
+
+  content:
+    textmedia:
+      maxW: 1200
+      maxWInText: 600
+      linkWrap:
+        lightboxEnabled: true
+        lightboxCssClass: lightbox    

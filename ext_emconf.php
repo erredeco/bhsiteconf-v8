@@ -3,7 +3,7 @@
 /***************************************************************
  * Extension Manager/Repository config file for ext "bhsiteconf".
  *
- * 15-06-2019 16:15
+ * 22-11-2024 16:15
  *
  * Manual updates:
  * Only the data in the array - everything else is removed by next
@@ -12,8 +12,8 @@
 
 $EM_CONF[$_EXTKEY] = [
 	'title' => 'My Provider extension for pages and content',
-	'description' => 'Templates for my site, content and pages',
-	'category' => 'misc',
+	'description' => 'Sitepackage for TYPO3 13',
+	'category' => 'templates',
 	'shy' => 0,
 	'version' => '0.0.9',
 	'dependencies' => 'cms,extbase,fluid,container',
@@ -21,7 +21,7 @@ $EM_CONF[$_EXTKEY] = [
 	'priority' => 'bottom',
 	'loadOrder' => '',
 	'module' => '',
-	'state' => 'experimental',
+	'state' => 'stable',
 	'uploadfolder' => 0,
 	'createDirs' => '',
 	'clearcacheonload' => 1,
@@ -33,7 +33,9 @@ $EM_CONF[$_EXTKEY] = [
 	'CGLcompliance_note' => '',
 	'constraints' => [
 		'depends' => [
-			'typo3' => '12.4.0-13.99.99',
+            'typo3' => '13.4.0-13.4.99',
+            'fluid_styled_content' => '13.4.0-13.4.99',
+            'rte_ckeditor' => '13.4.0-13.4.99',
 			'container' => '3.0.0-3.9.9'    
 		],
 		'conflicts' => [

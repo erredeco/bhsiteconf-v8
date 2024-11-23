@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:bhsiteconf/Configuration/Sets/Base/labels.xlf" date="2024-11-17T21:00:00Z" product-name="tx_bhsiteconf">
+		<header/>
+		<body>
+			<trans-unit id="label" resname="label">
+				<source>bhsiteconf package (base)</source>
+			</trans-unit>
+			<trans-unit id="categories.bhsiteconf-base">
+				<source>My Sitepackage bhsiteconf</source>
+			</trans-unit>            
+			<trans-unit id="categories.bhsiteconf-base.general">
+				<source>General</source>
+			</trans-unit>
+			<trans-unit id="categories.bhsiteconf-base.meta">
+				<source>Meta tags setup</source>
+			</trans-unit>
+			<trans-unit id="categories.bhsiteconf-base.navigation">
+				<source>Navigation</source>
+			</trans-unit>
+
+			<trans-unit id="categories.bhsiteconf-base.templates">
+				<source>Page Fuild Templates</source>
+			</trans-unit>
+
+
+
+
+			<trans-unit id="settings.bhsiteconf-base.header_text">
+				<source>Comment in Header</source>
+			</trans-unit>
+			<trans-unit id="settings.description.bhsiteconf-base.header_text">
+				<source>This comment will be written in the &lt;head&gt; section of all pages</source>
+			</trans-unit>
+			<trans-unit id="settings.bhsiteconf-base.viewport">
+				<source>Viewport</source>
+			</trans-unit>
+			<trans-unit id="settings.bhsiteconf-base.apple-mobile-web-app-capable">
+				<source>apple-mobile-web-app-capable (open in full screen in iOS)</source>
+			</trans-unit>
+			<trans-unit id="settings.bhsiteconf-base.pages_in_footer_menu">
+				<source>Pages in footer menu</source>
+			</trans-unit>
+			<trans-unit id="settings.description.bhsiteconf-base.pages_in_footer_menu">
+				<source>Comma separated list of page uids that will appear in the footer section of the site</source>
+			</trans-unit>
+			<trans-unit id="settings.bhsiteconf-base.pages_in_header_menu">
+				<source>Pages in header menu</source>
+			</trans-unit>
+			<trans-unit id="settings.description.bhsiteconf-base.pages_in_header_menu">
+				<source>Comma separated list of page uids that will appear in the header section of the site</source>
+			</trans-unit>
+			<trans-unit id="settings.bhsiteconf-base.breadcrumb_enable_level">
+				<source>Breadcrumb Enable Level</source>
+			</trans-unit>
+			<trans-unit id="settings.description.bhsiteconf-base.breadcrumb_enable_level">
+				<source>Enabled breadcrumb menu level is greater or equal this value</source>
+			</trans-unit>
+
+
+			<trans-unit id="settings.bhsiteconf-base.template_path">
+				<source>Template paths</source>
+			</trans-unit>
+			<trans-unit id="settings.description.bhsiteconf-base.template_path">
+				<source>Path to the templates of this site package.</source>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

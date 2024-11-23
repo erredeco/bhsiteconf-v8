@@ -4,27 +4,17 @@
 # 
 # -------------------------------------------------------------
 
+
 page {
 	meta {
- 		viewport = {$plugin.tx_bhsiteconf.meta.viewport}
-		apple-mobile-web-app-capable = {$plugin.tx_bhsiteconf.meta.apple-mobile-web-app-capable}
-	}	
-
-
-
-	includeCSS {
-		all = EXT:bhsiteconf/Resources/Public/Assets/Css/app.min.css
-	}
+ 		viewport = {$bhsiteconf-base.viewport}  
+		apple-mobile-web-app-capable = {$bhsiteconf-base.apple-mobile-web-app-capable}
 	
-	includeJSFooterlibs {
-    	jquery = EXT:bhsiteconf/Resources/Public/Assets/Js/Vendor/jquery.min.js
-    	jquery.forceOnTop = 1
-	}
-
-	includeJSFooter {
-    	all = EXT:bhsiteconf/Resources/Public/Assets/Js/app.min.js	
-	}
-
-
+        X-UA-Compatible = {$page.meta.compatible}
+        X-UA-Compatible {
+            attribute = http-equiv
+        } 	
+	
+	}	
 
 }

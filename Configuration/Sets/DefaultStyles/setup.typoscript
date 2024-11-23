@@ -1,0 +1,14 @@
+page {
+	includeCSS {
+		all = EXT:bhsiteconf/Resources/Public/Assets/Css/app.min.css
+	}
+	
+	includeJSFooterlibs {
+    	jquery = EXT:bhsiteconf/Resources/Public/Assets/Js/Vendor/jquery.min.js
+    	jquery.forceOnTop = 1
+	}
+
+	includeJSFooter {
+    	all = EXT:bhsiteconf/Resources/Public/Assets/Js/app.min.js	
+	}
+}

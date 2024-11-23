@@ -56,7 +56,7 @@ config{
 	#   Header Comment, see constants
 	# -------------------------------------------------------------
 	headerComment(
-	{$plugin.tx_bhsiteconf.settings.headerText}  
+	{$bhsiteconf-base.header_text}  
 	)
 	# -------------------------------------------------------------
 	#   Indexed Search Engine

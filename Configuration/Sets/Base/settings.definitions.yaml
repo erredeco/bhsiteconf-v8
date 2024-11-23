@@ -1,0 +1,49 @@
+categories:
+  bhsiteconf-base: ~
+  bhsiteconf-base.general:
+    parent: bhsiteconf-base
+  bhsiteconf-base.meta:
+    parent: bhsiteconf-base
+  bhsiteconf-base.navigation:
+    parent: bhsiteconf-base    
+  bhsiteconf-base.templates:
+    parent: bhsiteconf-base       
+
+settings:
+  bhsiteconf-base.header_text:
+    category: bhsiteconf-base.general
+    type: string
+    default: 'Realized by: B Human S.r.L.'
+
+  bhsiteconf-base.viewport:
+    category: bhsiteconf-base.meta
+    type: string
+    default: 'width=device-width, initial-scale=1, minimum-scale=1'
+
+  bhsiteconf-base.apple-mobile-web-app-capable:
+    category: bhsiteconf-base.meta
+    type: string
+    default: no
+    enum:
+      no: 'no'
+      yes: 'yes'
+
+  bhsiteconf-base.pages_in_footer_menu:
+      category: bhsiteconf-base.navigation
+      type: string
+      default: ''
+
+  bhsiteconf-base.pages_in_header_menu:
+      category: bhsiteconf-base.navigation
+      type: string
+      default: ''
+
+  bhsiteconf-base.breadcrumb_enable_level:
+      category: bhsiteconf-base.navigation
+      type: int
+      default: 1
+
+  bhsiteconf-base.template_path:
+    category: bhsiteconf-base.templates
+    type: string
+    default: 'EXT:bhsiteconf-base/Resources/Private/Templates/'

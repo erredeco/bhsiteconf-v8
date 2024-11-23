@@ -11,10 +11,8 @@
 
 ## Extension Overrides
 
-
-plugin.tx_bhsiteconf.settings {
-	# cat=plugin.tx_bhsiteconf/100/0010; type=string; label=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.settings.headerText
-	headerText = Realized by: B Human S.r.L.  
+/*
+plugin.tx_bhsiteconf.settings { 
 	# cat=plugin.tx_bhsiteconf/100/0020; type=string; label=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.settings.pagesInFooterMenu
 	pagesInFooterMenu =
 	# cat=plugin.tx_bhsiteconf/100/0030; type=string; label=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.settings.pagesInHeaderMenu
@@ -23,7 +21,8 @@ plugin.tx_bhsiteconf.settings {
 	# cat=plugin.tx_bhsiteconf/100/0040; type=string; label=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.settings.breadcrumbEnableLevel
 	breadcrumbEnableLevel = 1
 }
-
+*/
+/*
 plugin.tx_bhsiteconf {
 	meta {
 		# cat=plugin.tx_bhsiteconf/120/0010; type=string; label=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.meta.viewport
@@ -32,7 +31,8 @@ plugin.tx_bhsiteconf {
 		apple-mobile-web-app-capable = no
 	}
 }
-
+*/
+/*
 plugin.tx_bhsiteconf{
 	fluidtemplate{
 		# cat=plugin.tx_bhsiteconf/150/0010; type=string; label=LLL:EXT:bhsiteconf/Resources/Private/Language/locallang_db.xlf:constant.file.templateRootPath
@@ -43,7 +43,7 @@ plugin.tx_bhsiteconf{
 		layoutRootPath =  EXT:bhsiteconf/Resources/Private/Layouts/Page/
 	}
 }
-
+*/
 
 
 plugin.tx_bhsiteconf.view {
@@ -57,7 +57,8 @@ plugin.tx_bhsiteconf.view {
 
 
 //I define here the constants for the alternative templates, layouts, partials path for the lib.contentElement object. remember that they occupy the .10 position on the array!
-
+/*
 styles.templates.templateRootPath = EXT:bhsiteconf/Resources/Private/Templates/ContentElements/ 
 styles.templates.partialRootPath = EXT:bhsiteconf/Resources/Private/Partials/ContentElements/
 styles.templates.layoutRootPath = EXT:bhsiteconf/Resources/Private/Layouts/ContentElements/
+*/

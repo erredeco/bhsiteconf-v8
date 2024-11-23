@@ -1,4 +1,5 @@
-<body id="page-{data.uid}" class="page {pageLevel} layout-{data.layout}">
+<f:debug>{_all}</f:debug>
+<body id="page-{page.id}" class="page {pageLevel} layout-{page.pageRecord.layout}">
 	<f:render partial="AllSiteTitle" />
 	<f:render partial="Header" arguments="{headernavigation:headernavigation, level:level,headerImage:headerImage}"/>
 	<f:render partial="Mainmenu" arguments="{mainnavigation:mainnavigation}"/>

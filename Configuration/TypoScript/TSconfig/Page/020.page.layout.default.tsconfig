@@ -18,6 +18,7 @@ mod.web_layout.BackendLayouts {
                 name = LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:layout.column.top
                 colspan = 3
                 colPos = 1
+                identifier = top
               }
             }
           }
@@ -27,6 +28,7 @@ mod.web_layout.BackendLayouts {
                 name = LLL:EXT:bhsiteconf/Resources/Private/Language/backend.xlf:layout.column.main
                 colspan = 3
                 colPos = 0
+                identifier = main
               }
             }
           }
@@ -35,14 +37,17 @@ mod.web_layout.BackendLayouts {
               1 {
                 name = footer left
                 colPos = 2
+                identifier = footer_left
               }
               2 {
                 name = footer center
                 colPos = 3
+                identifier = footer_center
               }
               3 {
                 name = footer right
                 colPos = 4
+                identifier = footer_right
               }
             }
           }

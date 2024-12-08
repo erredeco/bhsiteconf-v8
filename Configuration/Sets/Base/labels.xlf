@@ -37,7 +37,7 @@
 			</trans-unit>
 			<trans-unit id="settings.bhsiteconf-base.apple-mobile-web-app-capable">
 				<source>apple-mobile-web-app-capable (open in full screen in iOS)</source>
-			</trans-unit>
+			</trans-unit>			
 			<trans-unit id="settings.bhsiteconf-base.pages_in_footer_menu">
 				<source>Pages in footer menu</source>
 			</trans-unit>

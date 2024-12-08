@@ -1,9 +1,3 @@
-
-page:
-  meta:
-    compatible: 'IE=edge'
-
-
 # Define here the constants for the alternative templates, layouts, partials path for the lib.contentElement object.
 # Remember that they occupy the .10 position on the array!
 styles:

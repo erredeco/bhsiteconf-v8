@@ -9,12 +9,6 @@ page {
 	meta {
  		viewport = {$bhsiteconf-base.viewport}  
 		apple-mobile-web-app-capable = {$bhsiteconf-base.apple-mobile-web-app-capable}
-	
-        X-UA-Compatible = {$page.meta.compatible}
-        X-UA-Compatible {
-            attribute = http-equiv
-        } 	
-	
 	}	
 
 }

@@ -9,7 +9,7 @@ categories:
   bhsiteconf-base.templates:
     parent: bhsiteconf-base       
 
-settings:
+settings:  
   bhsiteconf-base.header_text:
     category: bhsiteconf-base.general
     type: string
@@ -27,7 +27,7 @@ settings:
     enum:
       no: 'no'
       yes: 'yes'
-
+      
   bhsiteconf-base.pages_in_footer_menu:
       category: bhsiteconf-base.navigation
       type: string

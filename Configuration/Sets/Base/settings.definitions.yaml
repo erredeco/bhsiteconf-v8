@@ -15,6 +15,13 @@ settings:
     type: string
     default: 'Realized by: B Human S.r.L.'
 
+
+  bhsiteconf-base.page_permissions_groupid:
+      category: bhsiteconf-base.general
+      type: string
+      default: '1'
+
+
   bhsiteconf-base.viewport:
     category: bhsiteconf-base.meta
     type: string
@@ -27,7 +34,7 @@ settings:
     enum:
       no: 'no'
       yes: 'yes'
-      
+
   bhsiteconf-base.pages_in_footer_menu:
       category: bhsiteconf-base.navigation
       type: string
@@ -46,4 +53,4 @@ settings:
   bhsiteconf-base.template_path:
     category: bhsiteconf-base.templates
     type: string
-    default: 'EXT:bhsiteconf-base/Resources/Private/Templates/'
+    default: 'EXT:bhsiteconf-base/Resources/Private/PageView/'

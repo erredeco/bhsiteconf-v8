@@ -22,15 +22,14 @@
 			<trans-unit id="categories.bhsiteconf-base.templates">
 				<source>Page Fuild Templates</source>
 			</trans-unit>
-
-
-
-
 			<trans-unit id="settings.bhsiteconf-base.header_text">
 				<source>Comment in Header</source>
 			</trans-unit>
 			<trans-unit id="settings.description.bhsiteconf-base.header_text">
 				<source>This comment will be written in the &lt;head&gt; section of all pages</source>
+			</trans-unit>
+			<trans-unit id="settings.bhsiteconf-base.page_permissions_groupid">
+				<source>(BACKEND) Default Group ID for new pages</source>
 			</trans-unit>
 			<trans-unit id="settings.bhsiteconf-base.viewport">
 				<source>Viewport</source>

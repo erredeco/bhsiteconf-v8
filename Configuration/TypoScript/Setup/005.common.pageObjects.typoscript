@@ -13,7 +13,7 @@ page {
     10 = PAGEVIEW
     10 {
         paths {
-            0 = EXT:bhsiteconf/Resources/Private/Templates/
+            0 = EXT:bhsiteconf/Resources/Private/PageView/
             10 = {$bhsiteconf-base.template_path}
         }
 

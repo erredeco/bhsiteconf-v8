@@ -1,0 +1,29 @@
+#################
+#### TCEMAIN ####
+#################
+
+TCEMAIN {
+   table {
+      pages {
+         # Pages will *not* have "(copy)" appended:
+         disablePrependAtCopy = 1
+         # Pages will *not* be hidden upon copy:
+         disableHideAtCopy = 1      
+      } 
+      tt_content {
+         # Content will *not* have "(copy)" appended:
+         disablePrependAtCopy = 1
+      }
+   }
+   
+   permissions {
+      # Default group id for new pages could be set in the config.yaml file under /config/sites/ since TYPO3 10.4
+      # see  https://docs.typo3.org/c/typo3/cms-core/master/en-us/Changelog/10.4/Feature-91080-SiteSettingsAsTsConstantsAndInTsConfig.html
+      # since TYPO3 13 I use the "site sets" to provide a default value
+      
+      groupid = {$bhsiteconf-base.page_permissions_groupid}
+      user = show, editcontent, edit, new, delete
+      group = show, editcontent, edit, new
+      everybody = show, editcontent, edit, new
+   }
+}

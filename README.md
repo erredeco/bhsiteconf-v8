@@ -30,7 +30,6 @@ Users/riccardo/Progetti/Public_assets_for_typo3.whatever.development.it (mac)
 
 
 
-
 Vector Icons in /Resources/Public/Icons/ were:
 
 designed by Vaadin from Flaticon - http://vaadin.com/font-icons
